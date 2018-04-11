@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ирина Романова](https://up.htmlacademy.ru/adaptive/14/user/635997).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Алипкин] (https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
