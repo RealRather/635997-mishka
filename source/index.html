@@ -36,7 +36,6 @@
         </header>
 
         <main class="page-main">
-
             <h1 class="visually-hidden">"Мишка" - магазин аксессуаров и игрушек ручной работы</h1>
 
             <section class="assortment">
@@ -112,14 +111,14 @@
             </section>
 
             <section class="reviews">
-                <div class="reviews__wrapper">
+                <div class="reviews__wrapper slider">
                     <h2 class="reviews__title">Отзывы</h2>
                     <div class="reviews__list  slider__list">
                         <blockquote class="reviews__item slider__item">
                             <p class="reviews__text">Я молодая мама, но всё равно фотографии не
                               набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                             <p class="reviews__author">
-                                <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                                <cite class="reviews__author-name">Анастасия Красильникова</cite><br>
                                 <span class="reviews__author-mail">@misssssiskras</span>
                             </p>
                         </blockquote>
@@ -128,39 +127,60 @@
                         <button class="slider__toggle slider__toggle--left" type="button">left</button>
                         <button class="slider__toggle slider__toggle--right" type="button">rigth</button>
                     </p>
-                    <a class="reviews__write button" href="#">Написать</a>
+                    <a class="reviews__comment button" href="#">Написать</a>
                 </div>
             </section>
-
         </main>
 
         <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Контакты</b>
-          <p class="contacts__text">
-            г. Санкт-Петербург, ул. Большая Конюшенная 19/8, офис 101<br>
-          </p>
-        </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
+            <div class="page-footer__contacts-wrapper contacts">
+                <h2 class="page-footer__title">Контакты</h2>
+                <table class="page-footer__list contacts__list">
+                    <tr>
+                        <td class="page-footer__field">
+                            e-mail:
+                        </td>
+                        <td class="page-footer__value">
+                            <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="page-footer__field">
+                            адрес:
+                        </td>
+                        <td class="page-footer__value">
+                            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="page-footer__map">
+                <img src="img/footer__map.png" width="322" height="457" alt="Карта">
+            </div>
+            <a class="page-footer__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
+            <div class="page-footer__social-wrapper">
+                <div class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                    <b class="copyright__text">Разработано:</b>
+                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </div>
+            </div>
+        </footer>
 
         <section class="modal-basket">
-            <div class="modal-basket__wrapper">
+            <div class="modal-basket__wrapper parameter">
                 <h2 class="modal-basket__title">Добавить в корзину</h2>
                 <p  class="modal-basket__choice">Выберите размер:</p>
                 <ul class="modal-basket__list parameter-list">
