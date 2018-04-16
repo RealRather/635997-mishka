@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Мишка</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <a class="page-header__logo">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
+            </a>
+            <nav class="main-nav">
+                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <div class="main-nav__wrapper">
+                    <ul class="main-nav__list site-list">
+                        <li class="site-list__item">
+                            <a class="site-list__catalog" href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <li class="site-list__item">
+                            <a class="site-list__form" href="form.html">Вязание на заказ</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list search-list">
+                        <li class="search-list__item">
+                            <a href="#">Поиск по сайту</a>
+                        </li>
+                    </ul>
+                    <ul class="main-nav__list basket-list">
+                        <li class="backet-list__item">
+                            <a class="basket-list__basket" href="basket.html">Корзина: пока пуста</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="page-main inner">
+            <h1 class="inner__title">Каталог товаров</h1>
+            <section class="assortment">
+                <div class="assortment__wrapper">
+                    <h2 class="visually-hidden">Аксессуары и игрушки ручной работы</h2>
+                    <ul class="assortment__list">
+                        <li class="assortment__item assortment__item--bunny">
+                            <p class="assortment__picture">
+                                <img class="assortment__image" src="img/bunny.png" width="260"
+                                height="195" alt="Зайчик">
+                            </p>
+                            <p class="assortment__description">
+                                <strong class="assortment__title">Зайчик-попрыгайчик</strong>
+                                <span class="assortment__text">Рост 30 см, вес 200 г</span>
+                            </p>
+                            <p class="assortment__buy">
+                                <b class="assortment__price">1 200 руб.</b>
+                            </p>
+                        </li>
+                        <li class="assortment__item assortment__item--laundry-basket">
+                            <p class="assortment__picture">
+                                <img class="assortment__image" src="img/laundry-basket.png"
+                                width="260" height="195" alt="Корзинка для белья">
+                            </p>
+                            <p class="assortment__description">
+                                <strong class="assortment__title">Корзинка для белья</strong>
+                                <span class="assortment__text">Диаметр 15 см, высота 10 см</span>
+                            </p>
+                            <p class="assortment__buy">
+                                <b class="assortment__price">690 руб.</b>
+                            </p>
+                        </li>
+                        <li class="assortment__item assortment__item--toys-basket">
+                            <p class="assortment__picture">
+                                <img class="assortment__image" src="img/toys-basket.png" width="260"
+                                height="195" alt="Корзинка для игрушек">
+                            </p>
+                            <p class="assortment__description">
+                                <strong class="assortment__title">Большая корзинка для игрушек</strong>
+                                <span class="assortment__text">Диаметр 30 см, высота 30 см</span>
+                            </p>
+                            <p class="assortment__buy">
+                                <b class="assortment__price">1 500 руб.</b>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="making">
+                <div class="making__wrapper">
+                    <h2 class="making__title">Процесс производства</h2>
+                    <p class="making__video">
+                        <img class="making__image" src="img/making.png" width="260" height="150" alt="Производство товаров">
+                    </p>
+                    <p class="making__text">По просьбам наших любимых фолловеров мы сняли для вас
+                      подробное видео о том, как появляются наши товары.</p>
+                    <a class="making__do button" href="#">Сделать заказ</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="page-footer__social-wrapper">
+                <div class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-footer__copyright copyright">
+                    <b class="copyright__text">Разработано:</b>
+                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+                </div>
+            </div>
+        </footer>
+
+        <section class="modal-basket">
+            <div class="modal-basket__wrapper parameter">
+                <h2 class="modal-basket__title">Добавить в корзину</h2>
+                <p  class="modal-basket__choice">Выберите размер:</p>
+                <ul class="modal-basket__list parameter-list">
+                    <li class="parameter-list__item parameter-list__item--active">S</li>
+                    <li class="parameter-list__item">M</li>
+                    <li class="parameter-list__item">L</li>
+                </ul>
+                <p class="modal-basket__add">
+                    <button class="modal-basket__add-to" type="button">Добавить</button>
+                </p>
+            </div>
+        </section>
+
+    </body>
+</html>
