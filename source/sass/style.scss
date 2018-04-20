@@ -1,3 +1,8 @@
+@import "normalize.scss";
+@import "fonts.scss";
+
 body {
-  background: blue;
+    background: white;
+    font-family: "OpenSans", Arial, sans-serif;
+    font-weight: normal;
 }
