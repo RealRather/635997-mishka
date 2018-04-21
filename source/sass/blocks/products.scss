@@ -24,7 +24,3 @@
 .products__price {
   @include set-font (bold, 17px, 24px);
 }
-
-.products__order {
-  text-decoration: none;
-}

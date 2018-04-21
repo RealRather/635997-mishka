@@ -1,0 +1,10 @@
+/* parameter */
+.parameter {
+  @include paint-bg (inherit, inherit);
+}
+
+.parameter__size {
+  @include set-font (bold, 17px, 16px);
+  color: $dark-grey;
+  border: 1px solid $border-grey;
+}

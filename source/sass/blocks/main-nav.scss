@@ -1,10 +1,10 @@
 /* main-nav */
 .main-nav {
-  @include paint-bg($white, #000000);
+  @include paint-bg ($white, #000000);
 }
 
 .main-nav__toggle {
-  @include paint-bg(inherit, inherit);
+  @include paint-bg (inherit, inherit);
 }
 
 .main-nav__list {

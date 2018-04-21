@@ -1,1 +1,16 @@
 /* contacts */
+.contacts__title {
+  @include set-font (bold, 18px, 30px);
+  @include paint-bg ($white, #000000);
+}
+
+.contacts__list {
+  @include set-font (normal, 15px, 30px);
+  @include paint-bg ($white, $dark-grey);
+}
+
+.contacts__mail {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #46c1ae;
+}

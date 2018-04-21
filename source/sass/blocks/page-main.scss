@@ -1,4 +1,8 @@
 /* page-main */
-.page-header {
-  @include paint-bg ($white, $dark-grey);
+.page-main__wrapper {
+  @include paint-bg ($light-grey, #000000);
+}
+
+.page-main__title {
+  @include set-font (bold, 27px, 30px);
 }

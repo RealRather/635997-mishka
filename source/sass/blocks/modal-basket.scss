@@ -1,1 +1,25 @@
 /* modal-basket */
+.modal-basket__title {
+  text-transform: uppercase;
+  @include set-font(bold, 25px, 30px);
+}
+
+.modal-basket__choice {
+  @include set-font (normal, 15px, 30px);
+}
+
+.modal-basket__list {
+  list-style: none;
+}
+
+.modal-basket__add-to {
+  font-family: inherit;
+}
+
+.modal-basket__add-to {
+  font-family: inherit;
+  text-transform: uppercase;
+  @include set-font (bold, 17px, 16px);
+  @include paint-bg (#63d1bb, $white);
+  border: none;
+}

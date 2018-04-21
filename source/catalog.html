@@ -35,7 +35,7 @@
 
         <main class="page-main">
             <div class="page-main__wrapper">
-                <h1 class="page-title">Каталог товаров</h1>
+                <h1 class="page-main__title">Каталог товаров</h1>
             </div>
             <section class="catalog">
                 <h2 class="visually-hidden">Аксессуары и игрушки ручной работы</h2>
@@ -118,10 +118,16 @@
             <div class="modal-basket__wrapper">
                 <h2 class="modal-basket__title">Добавить в корзину</h2>
                 <p  class="modal-basket__choice">Выберите размер:</p>
-                <ul class="modal-basket__list parameter-list">
-                    <li class="parameter-list__item parameter-list__item--active">S</li>
-                    <li class="parameter-list__item">M</li>
-                    <li class="parameter-list__item">L</li>
+                <ul class="modal-basket__list parameter">
+                    <li class="parameter__item parameter__item--active">
+                        <button class="parameter__size" type="button">S</button>
+                    </li>
+                    <li class="parameter__item">
+                        <button class="parameter__size" type="button">M</button>
+                    </li>
+                    <li class="parameter__item">
+                        <button class="parameter__size" type="button">L</button>
+                    </li>
                 </ul>
                 <p class="modal-basket__add">
                     <button class="modal-basket__add-to" type="button">Добавить</button>
