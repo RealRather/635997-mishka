@@ -1,1 +1,13 @@
 /* Миксины*/
+@mixin paint-bg($background: $white, $color: $dark-grey) {
+  background-color: $background;
+  color: $color;
+}
+
+@mixin set-font($weight, $size, $height) {
+  font: {
+    weight: $weight;
+    size: $size;
+  }
+  line-height: $height;
+}
