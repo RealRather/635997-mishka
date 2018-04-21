@@ -1,0 +1,6 @@
+/* button*/
+.button {
+  @include set-font (bold, 18px, 20px);
+  color: $dark-grey;
+  border: 2px solid $dark-grey;
+}

@@ -1,1 +1,18 @@
 /* main-nav */
+.main-nav {
+  @include paint-bg($white, #000000);
+}
+
+.main-nav__toggle {
+  @include paint-bg(inherit, inherit);
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__link {
+  @include set-font (bold, 17px, 24px);
+  text-decoration: none;
+  @include paint-bg(inherit, inherit);
+}

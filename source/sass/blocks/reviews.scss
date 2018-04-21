@@ -1,1 +1,32 @@
 /* reviews */
+.reviews {
+  @include paint-bg ($white, $dark-grey);
+}
+
+.reviews__title {
+  @include set-font (bold, 25px, 30px);
+  color: #000000;
+}
+
+.reviews__text {
+  @include set-font (normal, 15px, 30px);
+}
+
+.reviews__author-name {
+  @include set-font (bold, 17px, 24px);
+  color: #000000;
+}
+
+.reviews__author-mail {
+  @include set-font (normal, 17px, 30px);
+}
+
+.reviews__toggle {
+  @include set-font (bold, 17px, 24px);
+  @include paint-bg ($white, #000000);
+  border: 1px solid #ececec;
+}
+
+.reviews__comment {
+  text-decoration: none;
+}

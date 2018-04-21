@@ -1,9 +1,13 @@
 /* copyright */
-.copyright__text {
-  font-weight: bold;
-  color: red;
+.copyright {
+  @include paint-bg (#f1f1f1, #000000);
 }
 
-.copyright__image {
-  color: #63d1bb;
+.copyright__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright__text {
+  @include set-font (bold, 19px, 18px);
 }

@@ -1,1 +1,25 @@
 /* assortment */
+.assortment {
+  @include paint-bg(#fafafa, $dark-grey);
+  background-image: url("../../img/hero-mobile@1x.jpg");
+  width: auto;
+  height: 373px;
+  background-repeat: no-repeat;
+}
+
+.assortment__title {
+  @include set-font (bold, 27px, 30px);
+  color: #000000;
+}
+
+.assortment__item {
+  @include set-font (bold, 19px, 24px);
+}
+
+.assortment__item--interior {
+  @include paint-bg (#63d1bb, #ffffff);
+}
+
+.assortment__item--toy {
+  @include paint-bg (#56c3b2, #ffffff);
+}

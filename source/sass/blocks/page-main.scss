@@ -1,1 +1,4 @@
 /* page-main */
+.page-header {
+  @include paint-bg ($white, $dark-grey);
+}
