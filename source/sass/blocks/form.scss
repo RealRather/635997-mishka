@@ -22,5 +22,5 @@
 
 .form__input,
 .form__textarea {
-    @include set-font (normal, 17px, 18px);
+  @include set-font (normal, 17px, 18px);
 }

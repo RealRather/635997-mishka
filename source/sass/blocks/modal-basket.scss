@@ -1,6 +1,7 @@
 /* modal-basket */
 .modal-basket__title {
   text-transform: uppercase;
+
   @include set-font(bold, 25px, 30px);
 }
 
@@ -12,14 +13,15 @@
   list-style: none;
 }
 
-.modal-basket__add-to {
+.modal-basket__add {
   font-family: inherit;
 }
 
 .modal-basket__add-to {
   font-family: inherit;
+  border: none;
   text-transform: uppercase;
+
   @include set-font (bold, 17px, 16px);
   @include paint-bg (#63d1bb, $white);
-  border: none;
 }

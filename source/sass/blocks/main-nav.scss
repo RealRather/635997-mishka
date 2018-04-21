@@ -12,7 +12,8 @@
 }
 
 .main-nav__link {
-  @include set-font (bold, 17px, 24px);
   text-decoration: none;
+
+  @include set-font (bold, 17px, 24px);
   @include paint-bg(inherit, inherit);
 }
