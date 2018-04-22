@@ -4,6 +4,6 @@
   text-transform: uppercase;
 
   @include set-font (bold, 18px, 20px);
-  color: $dark-grey;
+  @include paint-bg ($white, $dark-grey);
   border: 2px solid $dark-grey;
 }

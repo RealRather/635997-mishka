@@ -5,6 +5,6 @@
 
 .parameter__size {
   @include set-font (bold, 17px, 16px);
-  color: $dark-grey;
+  @include paint-bg ($white, $dark-grey);
   border: 1px solid $border-grey;
 }
