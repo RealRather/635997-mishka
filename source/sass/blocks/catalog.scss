@@ -1,0 +1,27 @@
+/* catalog */
+.catalog-list {
+  list-style: none;
+}
+
+.catalog__item {
+  @include set-font (inherit, inherit, inherit);
+}
+
+.catalog-card {
+  border: 1px solid $light-grey;
+}
+
+.catalog-card__title {
+  @include set-font (bold, 17px, 24px);
+  color: #000000;
+}
+
+.catalog-card__text {
+  @include set-font (normal, 13px, 30px);
+  color: $dark-grey;
+}
+
+.catalog-card__price {
+  @include set-font (bold, 15px, 24px);
+  color: #000000;
+}

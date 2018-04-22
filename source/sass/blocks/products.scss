@@ -1,0 +1,26 @@
+/* products */
+.products {
+  @include paint-bg ($white, $dark-grey);
+}
+
+.products__title {
+  @include set-font (bold, 25px, 30px);
+  color: #000000;
+}
+
+.products__rating {
+  @include set-font (bold, 17px, 20px);
+  @include paint-bg (inherit, #63d1bb);
+}
+
+.products__promo {
+  @include set-font (normal, 15px, 24px);
+}
+
+.products__list {
+  @include set-font (normal, 15px, 20px);
+}
+
+.products__price {
+  @include set-font (bold, 17px, 24px);
+}

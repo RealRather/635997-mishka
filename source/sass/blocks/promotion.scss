@@ -1,0 +1,17 @@
+/* promotion */
+.promotion {
+  @include set-font (bold, inherit, inherit);
+  @include paint-bg ($white, #000000);
+}
+
+.promotion__title {
+  @include set-font (bold, 25px, 30px);
+}
+
+.promotion__list {
+  list-style: none;
+}
+
+.promotion__item {
+  @include set-font (bold, 17px, 20px);
+}

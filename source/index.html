@@ -3,32 +3,30 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Мишка</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
         <header class="page-header">
             <a class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
             </a>
             <nav class="main-nav">
                 <button class="main-nav__toggle" type="button">Открыть меню</button>
                 <div class="main-nav__wrapper">
-                    <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
-                            <a class="site-list__catalog" href="catalog.html">Каталог товаров</a>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
                         </li>
-                        <li class="site-list__item">
-                            <a class="site-list__form" href="form.html">Вязание на заказ</a>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="form.html">Вязание на заказ</a>
                         </li>
-                    </ul>
-                    <ul class="main-nav__list search-list">
-                        <li class="search-list__item">
-                            <a href="#">Поиск по сайту</a>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="#">Поиск по сайту</a>
                         </li>
-                    </ul>
-                    <ul class="main-nav__list basket-list">
-                        <li class="backet-list__item">
-                            <a class="basket-list__basket" href="basket.html">Корзина: пока пуста</a>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="basket.html">Корзина: пока пуста</a>
                         </li>
                     </ul>
                 </div>
@@ -76,14 +74,12 @@
                         </td>
                     </tr>
                 </table>
-                <div class="products__wrapper">
-                    <p class="products__picture">
-                        <img class="products__image" src="img/triple-set.png" width="260"
+                <p class="products__picture">
+                    <img class="products__image" src="img/triple-set-mobile@1x.jpg" width="260"
                         height="315" alt="Вязаные корзинки">
-                    </p>
-                    <span class="products__price">Цена: 990 руб.</span>
-                    <a class="products__order button" href="#">Заказать</a>
-                </div>
+                </p>
+                <div class="products__price">Цена: 990 руб.</div>
+                <a class="products__order button" href="#">Заказать</a>
             </section>
 
             <section class="promotion">
@@ -113,8 +109,8 @@
             <section class="reviews">
                 <div class="reviews__wrapper slider">
                     <h2 class="reviews__title">Отзывы</h2>
-                    <div class="reviews__list  slider__list">
-                        <blockquote class="reviews__item slider__item">
+                    <div class="reviews__list">
+                        <blockquote class="reviews__item">
                             <p class="reviews__text">Я молодая мама, но всё равно фотографии не
                               набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
                             <p class="reviews__author">
@@ -123,70 +119,73 @@
                             </p>
                         </blockquote>
                     </div>
-                    <p class="reviews__toggles slider__toggles">
-                        <button class="slider__toggle slider__toggle--left" type="button">left</button>
-                        <button class="slider__toggle slider__toggle--right" type="button">rigth</button>
+                    <p class="reviews__toggles">
+                        <button class="reviews__toggle reviews__toggle--left" type="button">left</button>
+                        <button class="reviews__toggle reviews__toggle--right" type="button">rigth</button>
                     </p>
                     <a class="reviews__comment button" href="#">Написать</a>
                 </div>
             </section>
+
+            <section class="contacts">
+                <div class=" contacts-wrapper">
+                    <h2 class="contacts__title">Контакты</h2>
+                    <table class="contacts__list">
+                        <tr>
+                            <td class="contacts__field">e-mail:</td>
+                            <td class="contacts__value">
+                                <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contacts__field">адрес:</td>
+                            <td class="contacts__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contacts__map">
+                    <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
+                </div>
+                <a class="contacts__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
+            </section>
         </main>
 
         <footer class="page-footer">
-            <div class="page-footer__contacts-wrapper contacts">
-                <h2 class="page-footer__title">Контакты</h2>
-                <table class="page-footer__list contacts__list">
-                    <tr>
-                        <td class="page-footer__field">
-                            e-mail:
-                        </td>
-                        <td class="page-footer__value">
-                            <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="page-footer__field">
-                            адрес:
-                        </td>
-                        <td class="page-footer__value">
-                            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-                        </td>
-                    </tr>
-                </table>
+            <div class="page-footer__social social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Твиттер</a>
+                    </li>
+                </ul>
             </div>
-            <div class="page-footer__map">
-                <img src="img/footer__map.png" width="322" height="457" alt="Карта">
-            </div>
-            <a class="page-footer__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
-            <div class="page-footer__social-wrapper">
-                <div class="page-footer__social social">
-                    <ul class="social__list">
-                        <li class="social__item">
-                            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
-                        </li>
-                        <li class="social__item">
-                            <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Твиттер</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="page-footer__copyright copyright">
-                    <b class="copyright__text">Разработано:</b>
-                    <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-                </div>
+            <div class="page-footer__copyright copyright">
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                    <b class="copyright__text">Разработано</b>
+                    <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+                </a>
             </div>
         </footer>
 
         <section class="modal-basket">
-            <div class="modal-basket__wrapper parameter">
+            <div class="modal-basket__wrapper">
                 <h2 class="modal-basket__title">Добавить в корзину</h2>
                 <p  class="modal-basket__choice">Выберите размер:</p>
-                <ul class="modal-basket__list parameter-list">
-                    <li class="parameter-list__item parameter-list__item--active">S</li>
-                    <li class="parameter-list__item">M</li>
-                    <li class="parameter-list__item">L</li>
+                <ul class="modal-basket__list parameter">
+                    <li class="parameter__item parameter__item--active">
+                        <button class="parameter__size" type="button">S</button>
+                    </li>
+                    <li class="parameter__item">
+                        <button class="parameter__size" type="button">M</button>
+                    </li>
+                    <li class="parameter__item">
+                        <button class="parameter__size" type="button">L</button>
+                    </li>
                 </ul>
                 <p class="modal-basket__add">
                     <button class="modal-basket__add-to" type="button">Добавить</button>

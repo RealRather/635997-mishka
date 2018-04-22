@@ -1,0 +1,26 @@
+/* form */
+.form {
+  @include set-font (inherit, inherit, inherit);
+  border: none;
+  border-top: 1px solid #63d1bb; /*временно*/
+}
+
+.form__legend {
+  @include set-font (bold, 17px, 16px);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #63d1bb;
+}
+
+.form__list {
+  list-style: none;
+}
+
+.form__label {
+  @include set-font (bold, 17px, 18px);
+}
+
+.form__input,
+.form__textarea {
+  @include set-font (normal, 17px, 18px);
+}
