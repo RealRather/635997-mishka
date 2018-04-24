@@ -9,7 +9,7 @@
   text-decoration: none;
 
   @include set-font (bold, 15px, 24px);
-  @include paint-bg(inherit, inherit);
+  @include paint-bg (inherit, inherit);
 }
 
 .additional-list__link--delivery {
