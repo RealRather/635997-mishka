@@ -1,0 +1,17 @@
+/* additional-list */
+.additional-list {
+  list-style: none;
+
+  @include paint-bg ($white, $black);
+}
+
+.additional-list__link {
+  text-decoration: none;
+
+  @include set-font (bold, 15px, 24px);
+  @include paint-bg(inherit, inherit);
+}
+
+.additional-list__link--delivery {
+  @include set-font (normal, 15px, 24px);
+}

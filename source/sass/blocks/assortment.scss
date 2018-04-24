@@ -9,7 +9,7 @@
 
 .assortment__title {
   @include set-font (bold, 27px, 30px);
-  color: #000000;
+  color: $black;
 }
 
 .assortment__item {

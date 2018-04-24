@@ -1,7 +1,7 @@
 /* promotion */
 .promotion {
   @include set-font (bold, inherit, inherit);
-  @include paint-bg ($white, #000000);
+  @include paint-bg ($white, $black);
 }
 
 .promotion__title {

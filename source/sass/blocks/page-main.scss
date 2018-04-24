@@ -1,6 +1,6 @@
 /* page-main */
 .page-main__wrapper {
-  @include paint-bg ($light-grey, #000000);
+  @include paint-bg ($light-grey, $black);
 }
 
 .page-main__title {

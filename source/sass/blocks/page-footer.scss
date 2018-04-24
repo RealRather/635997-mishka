@@ -1,4 +1,4 @@
 /* page-footer */
 .page-footer__social {
-  @include paint-bg ($light-grey, #000000);
+  @include paint-bg ($light-grey, $black);
 }

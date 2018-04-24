@@ -13,7 +13,7 @@
 
 .catalog-card__title {
   @include set-font (bold, 17px, 24px);
-  color: #000000;
+  color: $black;
 }
 
 .catalog-card__text {
@@ -23,5 +23,5 @@
 
 .catalog-card__price {
   @include set-font (bold, 15px, 24px);
-  color: #000000;
+  color: $black;
 }

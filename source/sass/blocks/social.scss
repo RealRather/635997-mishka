@@ -1,6 +1,6 @@
 /* social */
 .social {
-  @include paint-bg ($light-grey, #000000);
+  @include paint-bg ($light-grey, $black);
   border-bottom: 1px solid $border-grey;
 }
 

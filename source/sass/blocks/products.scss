@@ -5,7 +5,7 @@
 
 .products__title {
   @include set-font (bold, 25px, 30px);
-  color: #000000;
+  color: $black;
 }
 
 .products__rating {

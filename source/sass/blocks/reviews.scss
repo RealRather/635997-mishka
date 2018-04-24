@@ -5,7 +5,7 @@
 
 .reviews__title {
   @include set-font (bold, 25px, 30px);
-  color: #000000;
+  color:$black;
 }
 
 .reviews__text {
@@ -14,7 +14,7 @@
 
 .reviews__author-name {
   @include set-font (bold, 17px, 24px);
-  color: #000000;
+  color: $black;
 }
 
 .reviews__author-mail {
@@ -23,7 +23,7 @@
 
 .reviews__toggle {
   @include set-font (bold, 17px, 24px);
-  @include paint-bg ($white, #000000);
+  @include paint-bg ($white, $black);
   border: 1px solid $border-grey;
 }
 

@@ -18,7 +18,7 @@
 
 .form__label {
   @include set-font (bold, 17px, 18px);
-  color: #000000;
+  color: $black;
 }
 
 .form__input,

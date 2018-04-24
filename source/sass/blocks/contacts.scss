@@ -1,7 +1,7 @@
 /* contacts */
 .contacts__title {
   @include set-font (bold, 18px, 30px);
-  @include paint-bg ($white, #000000);
+  @include paint-bg ($white, $black);
 }
 
 .contacts__list {
