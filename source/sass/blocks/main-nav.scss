@@ -10,14 +10,21 @@
 }
 
 .main-nav__toggle {
+  @include reset-list;
   @include paint-bg (inherit, inherit);
 }
 
+.main-nav__site-wrapper,
+.main-nav__user-wrapper {
+  display: flex;
+
+  @include reset-list;
+}
+
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
 
+  @include reset-list;
   /*временно для сетки*/
   min-height: 79px;
 }
@@ -28,6 +35,8 @@
 
 .main-nav__additional {
   list-style: none;
+
+  @include reset-list;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -35,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 668px;
+    min-width: 349px;
     margin: 0;
     /*временно для сетки*/
     min-height: 135px;
@@ -51,6 +60,8 @@
     width: 655px;
   }
 
+  .main-nav__site-wrapper,
+  .main-nav__user-wrapper,
   .main-nav__additional-wrapper {
     display: flex;
   }

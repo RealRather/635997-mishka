@@ -16,7 +16,10 @@
     width: 668px;
     margin: 0 auto;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    min-height: 135px;
+
   }
 
   .page-header__logo {

@@ -1,5 +1,5 @@
-/* search-list*/
-.search-list {
+/* user-list*/
+.user-list {
   list-style: none;
   /*временно для сетки*/
   min-height: 158px;
@@ -7,7 +7,7 @@
   @include paint-bg ($white, $black);
 }
 
-.search-list__link {
+.user-list__link {
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
 
@@ -15,11 +15,20 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .search-list {
+  .user-list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 349px;
     min-height: 88px;
+  }
+
+  /*временно для этого блока*/
+  .user-list__item  {
+    background-color: green;
+  }
+
+  .user-list__search--hidden {
+    display: none;
   }
 }
