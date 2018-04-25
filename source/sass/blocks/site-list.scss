@@ -1,6 +1,8 @@
 /* site-list */
 .site-list {
   list-style: none;
+  /*временно для сетки*/
+  min-height: 158px;
 
   @include paint-bg ($white, $black);
 }
@@ -10,4 +12,15 @@
   @include set-font (bold, 17px, 24px);
 
   text-decoration: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    order: 2;
+    width: 306px;
+    min-height: 88px;
+  }
 }

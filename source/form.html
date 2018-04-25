@@ -5,6 +5,7 @@
         <title>HTML Academy: Мишка</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
@@ -13,7 +14,7 @@
                 <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
             </a>
             <nav class="main-nav">
-                <button class="main-nav__toggle" type="button">Открыть меню</button>
+                <button class="main-nav__toggle main-nav__toggle--hidden" type="button">Открыть меню</button>
                 <div class="main-nav__wrapper">
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item">
@@ -35,12 +36,12 @@
                 <div class="main-nav__additional-wrapper">
                     <ul class="main-nav__additional additional-list">
                         <li class="additional-list__item">
-                            <a class="additional-list__link" href="#">Новые поступления</a>
+                            <a class="additional-list__link additional-list__link--hidden" href="#">Новые поступления</a>
                         </li>
                         <li class="additional-list__item">
-                            <a class="additional-list__link" href="#">Распродажа</a>
+                            <a class="additional-list__link additional-list__link--hidden" href="#">Распродажа</a>
                         </li>
-                        <li class="additional-list__item">
+                        <li class="additional-list__item additional-list__item--delivery">
                             <a class="additional-list__link additional-list__link--delivery" href="#">Бесплатная доставка по России</a>
                         </li>
                     </ul>

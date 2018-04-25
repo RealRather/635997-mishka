@@ -1,6 +1,8 @@
 /* search-list*/
 .search-list {
   list-style: none;
+  /*временно для сетки*/
+  min-height: 158px;
 
   @include paint-bg ($white, $black);
 }
@@ -10,4 +12,14 @@
   @include paint-bg (inherit, inherit);
 
   text-decoration: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .search-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 349px;
+    min-height: 88px;
+  }
 }

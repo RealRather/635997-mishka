@@ -1,5 +1,11 @@
 /* main-nav */
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
+  /*временно для сетки*/
+  min-height: 316px;
+  box-shadow: 0 0 5px red;
+
   @include paint-bg ($white, $black);
 }
 
@@ -7,7 +13,56 @@
   @include paint-bg (inherit, inherit);
 }
 
-.main-nav__list,
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /*временно для сетки*/
+  min-height: 79px;
+}
+
+.main-nav__additional-wrapper {
+  display: none;
+}
+
 .main-nav__additional {
   list-style: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 668px;
+    margin: 0;
+    /*временно для сетки*/
+    min-height: 135px;
+  }
+
+  .main-nav__toggle--hidden {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 655px;
+  }
+
+  .main-nav__additional-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .main-nav {
+    /*временно для сетки*/
+    min-height: 135px;
+  }
+
+  .main-nav__additional-wrapper {
+    display: flex;
+  }
 }

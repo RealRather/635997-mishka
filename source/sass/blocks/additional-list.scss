@@ -15,3 +15,15 @@
 .additional-list__link--delivery {
   @include set-font (normal, 15px, 24px);
 }
+
+@media screen and (min-width: $tablet-width) {
+  .additional-list__link--hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .additional-list__link--hidden {
+    display: block;
+  }
+}
