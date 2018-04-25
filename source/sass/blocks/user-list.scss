@@ -1,10 +1,19 @@
 /* user-list*/
 .user-list {
+  @include reset-list;
+
   list-style: none;
   /*временно для сетки*/
   min-height: 158px;
 
   @include paint-bg ($white, $black);
+}
+
+.user-list__item {
+  @include reset-list;
+
+  align-content: center;
+  min-height: 78px;
 }
 
 .user-list__link {
@@ -17,18 +26,30 @@
 @media screen and (min-width: $tablet-width) {
   .user-list {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    width: 349px;
+    width: 348px;
+
     min-height: 88px;
   }
 
-  /*временно для этого блока*/
-  .user-list__item  {
-    background-color: green;
+  .user-list__item {
+    display: flex;
+    align-items: center;
+    &--search {
+      width: 80px;
+    }
+    &--basket {
+      width: 234px;
+    }
   }
 
-  .user-list__search--hidden {
-    display: none;
+  .user-list__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .user-list {
+    width: 448px;
   }
 }

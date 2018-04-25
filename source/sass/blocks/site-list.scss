@@ -1,5 +1,7 @@
 /* site-list */
 .site-list {
+  @include reset-list;
+
   list-style: none;
   /*временно для сетки*/
   min-height: 158px;
@@ -7,20 +9,47 @@
   @include paint-bg ($white, $black);
 }
 
-.site-list__link {
-  @include paint-bg (inherit, inherit);
-  @include set-font (bold, 17px, 24px);
+.site-list__item {
+  @include reset-list;
 
+  align-content: center;
+  min-height: 78px;
+}
+
+.site-list__link {
+  display: block;
   text-decoration: none;
+
+  @include set-font (bold, 17px, 24px);
+  @include paint-bg (inherit, inherit);
 }
 
 @media screen and (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
-    order: 2;
-    width: 306px;
-    min-height: 88px;
+    width: 307px;
+
+    min-height: 45px;
+  }
+
+  .site-list__item {
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+  }
+
+  .site-list__link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .site-list {
+    width: 376px;
+  }
+
+  .site-list__link {
+    font-size: 17px;
   }
 }

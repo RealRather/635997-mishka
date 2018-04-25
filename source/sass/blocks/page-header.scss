@@ -6,8 +6,14 @@
   @include paint-bg ($white, $black);
 }
 
+.page-header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .page-header__logo {
-  display: block;
+  display: flex;
   height: 79px;
   }
 
@@ -16,20 +22,24 @@
     width: 668px;
     margin: 0 auto;
     flex-direction: row;
-    flex-wrap: nowrap;
-
-    min-height: 135px;
-
+    flex-wrap: wrap;
+    min-height: 133px;
   }
 
   .page-header__logo {
-    width: 319px;
+    order: 1;
+    width: 167px;
     min-height: 88px;
   }
 }
 
 @media  screen and (min-width: $desktop-width) {
+  .page-header {
+    width: 1050px;
+  }
+
   .page-header__logo {
+    order: 2;
     min-height: 88px;
   }
 }

@@ -10,10 +10,10 @@
     <body>
 
         <header class="page-header">
-            <a class="page-header__logo">
-                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
-            </a>
-            <nav class="main-nav">
+            <nav class="page-header__nav main-nav">
+                <a class="page-header__logo">
+                    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
+                </a>
                 <button class="main-nav__toggle main-nav__toggle--hidden" type="button">Открыть меню</button>
                 <div class="main-nav__site-wrapper">
                     <ul class="main-nav__list site-list">
@@ -27,20 +27,19 @@
                 </div>
                 <div class="main-nav__user-wrapper">
                     <ul class="main-nav__list user-list">
-                        <li class="user-list__item">
+                        <li class="user-list__item  user-list__item--search">
                             <a class="user-list__link" href="#">
                                 <span class="user-list__search user-list__search--hidden">Поиск по сайту</span>
-                                *
                             </a>
                         </li>
-                        <li class="user-list__item">
+                        <li class="user-list__item user-list__item--basket">
                             <a class="user-list__link" href="basket.html">Корзина: пока пуста</a>
                         </li>
                     </ul>
                 </div>
                 <div class="main-nav__additional-wrapper">
                     <ul class="main-nav__additional additional-list">
-                        <li class="additional-list__item">
+                        <li class="additional-list__item additional-list__item--new">
                             <a class="additional-list__link additional-list__link--hidden" href="#">Новые поступления</a>
                         </li>
                         <li class="additional-list__item">
