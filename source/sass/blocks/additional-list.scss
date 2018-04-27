@@ -1,9 +1,8 @@
 /* additional-list */
 .additional-list {
-  @include reset-list;
-
   list-style: none;
 
+  @include reset-list;
   @include paint-bg ($white, $black);
 }
 
@@ -42,6 +41,7 @@
 
   .additional-list__link {
     display: block;
+
     &--hidden {
       display: none;
     }
@@ -53,7 +53,6 @@
     display: flex;
     justify-content: space-between;
     width: 1050px;
-
     min-height: 45px;
   }
 
@@ -61,9 +60,11 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+
     &--new {
       margin-right: 45px;
     }
+
     &--delivery {
       margin-right: 0;
     }

@@ -3,6 +3,7 @@
   @include reset-list;
 
   list-style: none;
+  width: 320px;
   /*временно для сетки*/
   min-height: 158px;
 
@@ -10,9 +11,14 @@
 }
 
 .user-list__item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
   @include reset-list;
 
-  align-content: center;
+  padding-left: 75px;
+  width: 245px;
   min-height: 78px;
 }
 
@@ -27,19 +33,25 @@
   .user-list {
     display: flex;
     justify-content: space-between;
-    width: 348px;
 
+    @include reset-list;
+    width: 348px;
     min-height: 88px;
   }
 
   .user-list__item {
     display: flex;
     align-items: center;
+
+    @include reset-list;
+
     &--search {
       width: 80px;
     }
+
     &--basket {
       width: 234px;
+      justify-content: flex-end;
     }
   }
 
@@ -50,6 +62,6 @@
 
 @media screen and (min-width: $desktop-width) {
   .user-list {
-    width: 448px;
+    width: 350px;
   }
 }

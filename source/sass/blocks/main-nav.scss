@@ -13,13 +13,19 @@
 .main-nav__toggle {
   @include reset-list;
   @include paint-bg (inherit, inherit);
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .main-nav__site-wrapper,
 .main-nav__user-wrapper {
   display: flex;
+  width: 320px;
 
   @include reset-list;
+  margin: 0 auto;
 }
 
 .main-nav__list {
@@ -56,20 +62,22 @@
     min-height: 133px;
   }
 
-  .main-nav__toggle--hidden {
-    display: none;
-  }
-
   .main-nav__user-wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
     order: 2;
+
+    @include reset-list;
+
     width: 348px;
   }
 
   .main-nav__site-wrapper {
     flex-direction: row;
     order: 3;
+
+    @include reset-list;
+
     width: 307px;
   }
 
@@ -77,6 +85,9 @@
     display: flex;
     flex-direction: row;
     order: 4;
+
+    @include reset-list;
+
     width: 265px;
   }
 
@@ -93,13 +104,8 @@
     width: 1050px;
   }
 
-  .main-nav__additional-wrapper {
-    display: flex;
-    order: 4;
-  }
-
   .main-nav__user-wrapper {
-    width: 449px;
+    width: 350px;
     order: 3;
   }
 
@@ -109,6 +115,8 @@
   }
 
   .main-nav__additional-wrapper {
+    display: flex;
+    order: 4;
     width: 1050px;
   }
 }
