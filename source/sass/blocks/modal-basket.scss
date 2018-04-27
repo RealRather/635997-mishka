@@ -1,4 +1,11 @@
 /* modal-basket */
+.modal-basket {
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
+  height: 336px;
+}
+
 .modal-basket__title {
   text-transform: uppercase;
 
@@ -24,4 +31,20 @@
 
   @include set-font (bold, 17px, 16px);
   @include paint-bg (#63d1bb, $white);
+}
+
+@media screen and (min-width: $tablet-width) {
+  .modal-basket {
+    padding: 0 101px;
+    width: 566px;
+    height: 336px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .modal-basket {
+    padding: 0 342px;
+    width: 566px;
+    height: 336px;
+  }
 }

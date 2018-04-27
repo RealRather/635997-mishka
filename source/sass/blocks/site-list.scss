@@ -1,7 +1,6 @@
 /* site-list */
 .site-list {
   @include reset-list;
-
   list-style: none;
   width: 320px;
   /*временно для сетки*/
@@ -17,9 +16,9 @@
 
   @include reset-list;
 
-  padding-left: 75px;
-  width: 245px;
+  padding-left: 76px;
   min-height: 78px;
+  border-top: 1px solid $border-grey;
 }
 
 .site-list__link {
@@ -38,14 +37,14 @@
     @include reset-list;
     width: 307px;
     min-height: 45px;
+    background-color: transparent;
   }
 
   .site-list__item {
+    @include reset-list;
     display: flex;
     align-items: center;
-
-    @include reset-list;
-
+    border: none;
     width: 140px;
     min-height: 45px;
   }
@@ -61,8 +60,13 @@
   }
 
   .site-list__item {
-    width: 184px;
     margin-right: 35px;
+    width: 184px;
+    min-height: 88px;
+
+    &--catalog {
+      border-right: 1px solid $border-grey;
+    }
   }
 
   .site-list__link {

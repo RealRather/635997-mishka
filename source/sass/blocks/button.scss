@@ -1,7 +1,13 @@
 /* button*/
 .button {
+  @include reset-list;
+  padding-top: 14px;
+  padding-bottom: 14px;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
 
   @include set-font (bold, 18px, 20px);
   @include paint-bg ($white, $dark-grey);

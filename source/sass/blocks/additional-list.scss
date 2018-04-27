@@ -4,6 +4,7 @@
 
   @include reset-list;
   @include paint-bg ($white, $black);
+  background-color: transparent;
 }
 
 .additional-list__item {
@@ -50,15 +51,11 @@
 
 @media screen and (min-width: $desktop-width) {
   .additional-list {
-    display: flex;
-    justify-content: space-between;
     width: 1050px;
     min-height: 45px;
   }
 
   .additional-list__item {
-    display: flex;
-    align-items: center;
     margin-right: auto;
 
     &--new {

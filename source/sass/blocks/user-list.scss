@@ -1,7 +1,6 @@
 /* user-list*/
 .user-list {
   @include reset-list;
-
   list-style: none;
   width: 320px;
   /*временно для сетки*/
@@ -17,9 +16,9 @@
 
   @include reset-list;
 
-  padding-left: 75px;
-  width: 245px;
+  padding-left: 76px;
   min-height: 78px;
+  border-top: 1px solid $border-grey;
 }
 
 .user-list__link {
@@ -40,13 +39,15 @@
   }
 
   .user-list__item {
+    @include reset-list;
     display: flex;
     align-items: center;
-
-    @include reset-list;
+    border: none;
 
     &--search {
-      width: 80px;
+      border-left: 1px solid $border-grey;
+      border-right: 1px solid $border-grey;
+      width: 81px;
     }
 
     &--basket {
@@ -63,5 +64,11 @@
 @media screen and (min-width: $desktop-width) {
   .user-list {
     width: 350px;
+  }
+
+  .user-list__item {
+    &--search {
+      width: 83px;
+    }
   }
 }
