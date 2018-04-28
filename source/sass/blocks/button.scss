@@ -13,7 +13,8 @@
   border: 2px solid $dark-grey;
 }
 
-@media screen and (min-width: $desktop-width) {
+@media screen and (min-width: $tablet-width),
+(min-width: $desktop-width) {
   .button {
     @include set-font (bold, 17px, 20px);
   }

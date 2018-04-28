@@ -1,32 +1,242 @@
 /* reviews */
 .reviews {
+  @include reset-list;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-direction: column;
+
   @include paint-bg ($white, $dark-grey);
+  width: 260px;
 }
 
 .reviews__title {
+  @include reset-list;
+  margin-top: 26px;
+  margin-bottom: 30px;
+
   @include set-font (bold, 25px, 30px);
   color: $black;
 }
 
+.reviews__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__item {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__text {
+  @include reset-list;
+  margin-bottom: 35px;
+
   @include set-font (normal, 15px, 30px);
 }
 
+.reviews__author {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author-name {
+  @include reset-list;
+  margin-bottom: 13px;
+
   @include set-font (bold, 17px, 24px);
   color: $black;
 }
 
 .reviews__author-mail {
+  @include reset-list;
+  margin-bottom: 13px;
+
   @include set-font (normal, 17px, 30px);
 }
 
+.reviews__toggles {
+  @include reset-list;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
 .reviews__toggle {
+  @include reset-list;
+  padding-top: 13px;
+  padding-bottom: 12px;
+
   @include set-font (bold, 17px, 24px);
   @include paint-bg ($white, $black);
   border: 1px solid $border-grey;
+  width: 130px;
+
+  &--left {
+    padding-left: 37px;
+    padding-right: 40px;
+  }
+
+  &--right {
+    padding-right: 37px;
+    padding-left: 40px;
+    border-left: none;
+    width: 130px;
+  }
 }
 
 .reviews__comment {
+  @include reset-list;
+  display: block;
   text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .reviews {
+    margin: 0 auto 85px;
+    margin-left: -50px;
+    padding-top: 76px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 40;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+    width: 718px;
+  }
+
+  .reviews__title {
+    @include reset-list;
+    margin-right: 155px;
+    margin-left: 50px;
+    order: 0;
+
+    @include set-font (bold, 43px, 50px);
+    width: 332px;
+  }
+
+  .reviews__list {
+    @include reset-list;
+    margin-top: 45px;
+    margin-left: 50px;
+    flex-direction: row;
+    order: 3;
+    width: 668px;
+  }
+
+  .reviews__item {
+    @include reset-list;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .reviews__text {
+    @include reset-list;
+    margin-bottom: 57px;
+
+    @include set-font (normal, 17px, 30px);
+  }
+
+  .reviews__comment {
+    order: 1;
+    width: 175px;
+  }
+
+  .reviews__author {
+    @include reset-list;
+    order: 4;
+  }
+
+  .reviews__author-name {
+    @include reset-list;
+    margin-bottom: 5px;
+
+    @include set-font (bold, 17px, 30px);
+  }
+
+  .reviews__author-mail {
+    @include reset-list;
+    margin-bottom: 45px;
+
+    @include set-font (normal, 17px, 30px);
+  }
+
+  .reviews__toggles {
+    @include reset-list;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 5;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 167px;
+  }
+
+  .reviews__toggle {
+    @include reset-list;
+    border: none;
+    width: 167px;
+    &--left,
+    &--right {
+      width: 74px;
+      height: 44px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .reviews {
+    margin: 0 auto 70px;
+    padding-top: 76px;
+
+    width: 1050px;
+  }
+
+  .reviews__title {
+    margin-left: 170px;
+    margin-right: auto;
+
+    @include set-font (bold, 53px, 57px);
+    width: 525px;
+  }
+
+  .reviews__list {
+    margin-top: 40px;
+    margin-left: 170px;
+    width: 780px;
+  }
+
+  .reviews__item {
+    width: 780px;
+  }
+
+  .reviews__text {
+    margin-bottom: 35px;
+    width: 780px;
+  }
+
+  .reviews__author-mail {
+    margin-bottom: 94px;
+  }
+
+  .reviews__toggles {
+    margin-bottom: 100px;
+  }
+
+  .reviews__toggle {
+    width: 175px;
+    &--left,
+    &--right {
+      width: 81px;
+      height: 48px;
+    }
+  }
 }
