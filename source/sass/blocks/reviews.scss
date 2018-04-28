@@ -184,6 +184,7 @@
     @include reset-list;
     border: none;
     width: 167px;
+
     &--left,
     &--right {
       width: 74px;
@@ -233,6 +234,7 @@
 
   .reviews__toggle {
     width: 175px;
+
     &--left,
     &--right {
       width: 81px;
