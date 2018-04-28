@@ -1,9 +1,10 @@
 /* products */
 .products {
+  @include reset-list;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
 
-  @include reset-list;
   @include paint-bg ($white, $dark-grey);
 }
 
@@ -97,7 +98,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .products {
-    margin: 0 auto;
+    margin: 0 auto 70px;
     padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,7 +153,7 @@
     @include reset-list;
     position: absolute;
     top: 135px;
-    right: 0px;
+    right: 0;
     width: 333px;
     height: 404px;
 
@@ -178,6 +179,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .products {
+    margin-bottom: 95px;
     width: 1050px;
   }
 
@@ -221,7 +223,7 @@
   .products__picture {
     z-index: 1;
     top: 54px;
-    right: 0px;
+    right: 0;
     width: 525px;
     height: 636px;
 

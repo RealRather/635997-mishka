@@ -1,17 +1,131 @@
 /* promotion */
 .promotion {
+  @include reset-list;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+
   @include set-font (bold, inherit, inherit);
   @include paint-bg ($white, $black);
+  width: 260px;
 }
 
 .promotion__title {
+  @include reset-list;
+  margin-top: 30px;
+  margin-bottom: 26px;
+
   @include set-font (bold, 25px, 30px);
 }
 
 .promotion__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
   list-style: none;
 }
 
 .promotion__item {
+  @include reset-list;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
   @include set-font (bold, 17px, 20px);
+}
+
+.promotion__description {
+  @include reset-list;
+  padding-top: 56px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .promotion {
+    @include reset-list;
+    margin: 0 auto 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 668px;
+  }
+
+  .promotion__title {
+    @include reset-list;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    margin-left: -2px;
+
+    @include set-font (bold, 43px, 50px);
+  }
+
+  .promotion__list {
+    @include reset-list;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .promotion__item {
+    @include reset-list;
+    margin-bottom: 55px;
+
+    &--clean {
+      order: 0;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--hand-made {
+      order: 2;
+    }
+
+    &--native {
+      order: 4;
+    }
+
+    &--present {
+      order: 6;
+    }
+
+    @include set-font (bold, 20px, 22px);
+    width: 315px;
+  }
+
+  .promotion__description {
+    @include reset-list;
+    padding-top: 58px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .promotion {
+    @include reset-list;
+    margin: 0 auto 85px;
+    width: 1050px;
+  }
+
+  .promotion__list {
+    margin: 0 auto;
+    width: 700px;
+  }
+
+  .promotion__title {
+    @include reset-list;
+    margin-left: 172px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    @include set-font (bold, 53px, 57px);
+  }
+
+  .promotion__item {
+    width: 330px;
+  }
 }
