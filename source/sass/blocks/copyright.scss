@@ -9,10 +9,6 @@
   min-height: 80px;
 }
 
-.copyright__text {
-  @include reset-list;
-}
-
 .copyright__link {
   @include reset-list;
   text-decoration: none;
@@ -20,5 +16,6 @@
 }
 
 .copyright__text {
+  @include reset-list;
   @include set-font (bold, 19px, 18px);
 }
