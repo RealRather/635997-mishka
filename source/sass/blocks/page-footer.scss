@@ -1,11 +1,25 @@
 /* page-footer */
 .page-footer {
-  width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
 }
 
 .page-footer__social {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
   @include paint-bg ($light-grey, $black);
+}
+
+.page-footer__copyright {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 @media screen and (min-width: $tablet-width) {

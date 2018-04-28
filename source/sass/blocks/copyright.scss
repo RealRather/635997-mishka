@@ -1,9 +1,20 @@
 /* copyright */
 .copyright {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
   @include paint-bg (#f1f1f1, $black);
+  min-height: 80px;
+}
+
+.copyright__text {
+  @include reset-list;
 }
 
 .copyright__link {
+  @include reset-list;
   text-decoration: none;
   color: inherit;
 }

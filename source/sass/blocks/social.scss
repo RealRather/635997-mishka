@@ -1,14 +1,34 @@
 /* social */
 .social {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
   @include paint-bg ($light-grey, $black);
   border-bottom: 1px solid $border-grey;
+  min-height: 80px;
 }
 
 .social__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   list-style: none;
 }
 
+.social__item {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .social__link {
+  @include reset-list;
+  display: flex;
   text-decoration: none;
   color: inherit;
 }
