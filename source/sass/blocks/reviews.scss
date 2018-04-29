@@ -48,6 +48,7 @@
   margin-bottom: 13px;
 
   @include set-font (bold, 17px, 24px);
+  font-style: normal;
   color: $black;
 }
 
