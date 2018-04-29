@@ -1,35 +1,147 @@
 /* catalog */
 .catalog {
   @include reset-list;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  width: 260px;
 }
 
 .catalog-list {
+  @include reset-list;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  width: 260px;
 }
 
 .catalog__item {
+  @include reset-list;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
   @include set-font (inherit, inherit, inherit);
+  width: 260px;
 }
 
 .catalog-card {
+  @include reset-list;
+  margin: 30px auto;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid $light-grey;
+
+  &--making {
+    @include reset-list;
+    margin-bottom: 58px;
+    align-content: flex-start;
+  }
+}
+
+.catalog-card__picture {
+  @include reset-list;
+  margin-bottom: 25px;
+  display: flex;
+  width: 260px;
+}
+
+.catalog-card__image {
+  @include reset-list;
+  display: block;
+}
+
+.catalog-card__description {
+  @include reset-list;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid $light-grey;
+  width: 205px;
 }
 
 .catalog-card__title {
+  @include reset-list;
+  margin-bottom: 13px;
+
   @include set-font (bold, 17px, 24px);
   color: $black;
+
+  &--video {
+    @include reset-list;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .catalog-card__text {
+  @include reset-list;
+  margin: 0 auto;
   @include set-font (normal, 13px, 30px);
   color: $dark-grey;
+  width: 205px;
+
+  &--making {
+    width: 195px;
+    margin-bottom: 25px;
+  }
+}
+
+.catalog-card__buy {
+  @include reset-list;
+  margin: 22px auto 0;
+  width: 205px;
 }
 
 .catalog-card__price {
+  @include reset-list;
   @include set-font (bold, 15px, 24px);
   color: $black;
+}
+
+.catalog-card__video {
+  @include reset-list;
+  margin-bottom: 30px;
+}
+
+.catalog-card__do {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .catalog,
+  .catalog-list {
+    @include reset-list;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1050px;
+  }
+
+  .catalog-card {
+    @include reset-list;
+    margin-bottom: 57px;
+    width: 316px;
+
+    &--making {
+      @include reset-list;
+      margin-bottom: 0;
+    }
+
+    .catalog-card__picture {
+      width: 316px;
+
+      img {
+        width: 316px;
+        height: 462px;
+      }
+    }
+  }
 }
