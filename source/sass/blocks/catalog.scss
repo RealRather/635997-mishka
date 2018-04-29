@@ -1,4 +1,12 @@
 /* catalog */
+.catalog {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .catalog-list {
   list-style: none;
 }
