@@ -83,6 +83,7 @@
 .catalog-card__text {
   @include reset-list;
   margin: 0 auto;
+
   @include set-font (normal, 13px, 30px);
   color: $dark-grey;
   width: 205px;
