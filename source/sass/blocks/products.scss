@@ -111,7 +111,7 @@
 
   .products__header {
     @include reset-list;
-    margin-top: 35px;
+    margin-top: 45px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -121,14 +121,15 @@
   .products__title {
     @include reset-list;
     margin-right: 10px;
-    margin-bottom: 45px;
+    margin-left: -4px;
+    margin-bottom: 40px;
 
     @include set-font (bold, 43px, 50px);
   }
 
   .products__rating {
     @include reset-list;
-    margin-right: 20px;
+    margin-right: 14px;
     padding-top: 10px;
 
     @include set-font (bold, 17px, 17px);
@@ -186,23 +187,26 @@
   }
 
   .products__header {
-    margin-top: 100px;
+    margin-top: 124px;
+    margin-bottom: 58px;
     width: 100%;
   }
 
   .products__title {
+    @include reset-list;
     order: 1;
     position: absolute;
     z-index: 2;
-    left: 170px;
+    left: 169px;
 
     @include set-font (bold, 53px, 57px);
   }
 
   .products__rating {
+    @include reset-list;
+    margin: 0 33px;
+    padding-top: 15px;
     order: 0;
-    margin-right: 34px;
-    margin-bottom: 58px;
   }
 
   .products__main {
@@ -211,18 +215,22 @@
   }
 
   .products__promo {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     order: 2;
   }
 
   .products__list {
-    margin-bottom: 120px;
+    margin-bottom: 112px;
     width: 295px;
+  }
+
+  .products__field {
+    padding-right: 27px;
   }
 
   .products__picture {
     z-index: 1;
-    top: 54px;
+    top: 73px;
     right: 0;
     width: 525px;
     height: 636px;
@@ -234,6 +242,7 @@
   }
 
   .products__price {
+    margin-bottom: 33px;
     @include set-font (bold, 20px, 24px);
   }
 }

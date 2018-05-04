@@ -30,11 +30,10 @@
 
 @media screen and (min-width: $tablet-width) {
   .user-list {
+    @include reset-list;
     display: flex;
     justify-content: space-between;
-
-    @include reset-list;
-    width: 348px;
+    width: 100%;
     min-height: 88px;
   }
 
@@ -51,7 +50,6 @@
     }
 
     &--basket {
-      width: 234px;
       justify-content: flex-end;
     }
   }
@@ -62,10 +60,6 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .user-list {
-    width: 350px;
-  }
-
   .user-list__item {
     &--search {
       width: 83px;

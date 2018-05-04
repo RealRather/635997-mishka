@@ -64,32 +64,26 @@
   }
 
   .main-nav__user-wrapper {
+    @include reset-list;
     flex-direction: row;
     flex-wrap: nowrap;
     order: 2;
-
-    @include reset-list;
-
-    width: 348px;
+    width: 52%;
   }
 
   .main-nav__site-wrapper {
+    @include reset-list;
     flex-direction: row;
     order: 3;
-
-    @include reset-list;
-
-    width: 307px;
+    width: 50%;
   }
 
   .main-nav__additional-wrapper {
+    @include reset-list;
     display: flex;
     flex-direction: row;
     order: 4;
-
-    @include reset-list;
-
-    width: 265px;
+    width: 50%;
   }
 
   .main-nav__list,
@@ -108,18 +102,18 @@
   }
 
   .main-nav__user-wrapper {
-    width: 350px;
     order: 3;
+    width: 33.3%;
   }
 
   .main-nav__site-wrapper {
-    width: 376px;
     order: 1;
+    width: 38%;
   }
 
   .main-nav__additional-wrapper {
     display: flex;
     order: 4;
-    width: 1050px;
+    width: 100%;
   }
 }

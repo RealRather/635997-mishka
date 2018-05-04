@@ -60,14 +60,14 @@
     justify-content: center;
     background-size: 768px 746px;
     width: 768px;
-    min-height: 747px;
+    min-height: 745px;
   }
 
   .assortment__title {
     @include reset-list;
     margin-left: 50px;
     margin-right: 50px;
-    padding-top: 158px;
+    padding-top: 28px;
 
     @include set-font (bold, 43px, 50px);
     width: 100%;
@@ -95,14 +95,14 @@
     margin: 0 -100px;
     background-size: 1250px 746px;
     width: 1250px;
-    min-height: 747px;
+    min-height: 744px;
   }
 
   .assortment__title {
     @include reset-list;
     margin-left: 100px;
     margin-right: 100px;
-    padding-top: 160px;
+    padding-top: 34px;
 
     @include set-font (bold, 53px, 57px);
   }

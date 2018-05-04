@@ -107,7 +107,7 @@
 @media screen and (min-width: $desktop-width) {
   .promotion {
     @include reset-list;
-    margin: 0 auto 85px;
+    margin: 0 auto 37px;
     width: 1050px;
   }
 
@@ -118,14 +118,16 @@
 
   .promotion__title {
     @include reset-list;
-    margin-left: 172px;
+    margin-left: 169px;
     margin-top: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 
     @include set-font (bold, 53px, 57px);
+    width: 100%;
   }
 
   .promotion__item {
-    width: 330px;
+    margin-bottom: 54px;
+    width: 50%;
   }
 }

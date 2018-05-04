@@ -200,7 +200,7 @@
 @media screen and (min-width: $desktop-width) {
   .reviews {
     margin: 0 auto 70px;
-    padding-top: 76px;
+    padding-top: 69px;
 
     width: 1050px;
   }
@@ -213,17 +213,25 @@
   }
 
   .reviews__list {
-    margin-top: 40px;
-    margin-left: 170px;
+    margin-top: 44px;
+    margin-left: 175px;
     width: 780px;
   }
 
   .reviews__text {
-    margin-bottom: 35px;
-    width: 780px;
+    margin-bottom: 36px;
+  }
+
+  .reviews__author {
+    margin-left: 1px;
+  }
+
+  .reviews__author-name {
+    margin-bottom: 2px;
   }
 
   .reviews__author-mail {
+    margin-left: -2px;
     margin-bottom: 94px;
   }
 
@@ -244,5 +252,7 @@
 
   .reviews__comment {
     margin-right: 0;
+    margin-top: 9px;
+    width: 172px;
   }
 }

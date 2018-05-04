@@ -29,15 +29,13 @@
   .additional-list {
     display: flex;
     justify-content: space-between;
-    width: 265px;
-
-    min-height: 45px;
+    width: 100%;
+    min-height: 58px;
   }
 
   .additional-list__item {
     display: flex;
     align-items: center;
-    min-height: 45px;
   }
 
   .additional-list__link {
@@ -52,14 +50,14 @@
 @media screen and (min-width: $desktop-width) {
   .additional-list {
     width: 1050px;
-    min-height: 45px;
+    min-height: 60px;
   }
 
   .additional-list__item {
     margin-right: auto;
 
     &--new {
-      margin-right: 45px;
+      margin-right: 62px;
     }
 
     &--delivery {
