@@ -17,10 +17,10 @@
                 <button class="main-nav__toggle main-nav__toggle--hidden" type="button">Открыть меню</button>
                 <div class="main-nav__site-wrapper">
                     <ul class="main-nav__list site-list">
-                        <li class="site-list__item">
+                        <li class="site-list__item site-list__item--catalog">
                             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
                         </li>
-                        <li class="site-list__item">
+                        <li class="site-list__item site-list__item--knitting">
                             <a class="site-list__link" href="form.html">Вязание на заказ</a>
                         </li>
                     </ul>
@@ -93,7 +93,7 @@
                             <img class="catalog-card__image" src="img/photo-toys-mobile@1x.jpg" width="260" height="195" alt="Корзинка для игрушек">
                         </p>
                         <div class="catalog-card__wrapper">
-                            <p class="catalog-card__description">
+                            <p class="catalog-card__description catalog-card__description--toys">
                                 <strong class="catalog-card__title">Большая корзинка для&nbsp;игрушек</strong>
                                 <span class="catalog-card__text">Диаметр 30 см, высота 30 см</span>
                             </p>
@@ -107,12 +107,14 @@
 
             <section class="making">
                 <div class="catalog-card catalog-card--making">
-                    <h2 class="catalog-card__title catalog-card__title--video">Процесс производства</h2>
                     <p class="catalog-card__video">
                         <img class="catalog-card__image" src="img/video-mobile@1x.jpg" width="260" height="150" alt="Производство товаров">
                     </p>
-                    <p class="catalog-card__text catalog-card__text--making">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                    <a class="catalog-card__do button" href="#">Сделать заказ</a>
+                    <div class="catalog-card__wrapper catalog-card__wrapper--making">
+                        <h2 class="catalog-card__title catalog-card__title--video">Процесс производства</h2>
+                        <p class="catalog-card__text catalog-card__text--making">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                        <a class="catalog-card__do button" href="#">Сделать заказ</a>
+                    </div>
                 </div>
             </section>
         </main>

@@ -243,6 +243,7 @@
 
   .products__price {
     margin-bottom: 33px;
+
     @include set-font (bold, 20px, 24px);
   }
 }

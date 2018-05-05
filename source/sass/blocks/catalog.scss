@@ -38,7 +38,9 @@
   &--making {
     @include reset-list;
     margin-bottom: 58px;
-    align-content: flex-start;
+    padding-bottom: 33px;
+    position: relative;
+    z-index: 60;
   }
   width: 100%;
 }
@@ -57,6 +59,12 @@
 
 .catalog-card__wrapper {
   margin: 0 28px;
+
+  &--making {
+    display: flex;
+    flex-direction: column;
+    min-height: 470px;
+  }
 }
 
 .catalog-card__description {
@@ -78,11 +86,9 @@
 
   &--video {
     @include reset-list;
-    margin-left: 30px;
-    margin-right: 10px;
-    padding-top: 25px;
-    padding-left: 55px;
-    min-height: 71px;
+    padding-left: 60px;
+    padding-top: 26px;
+    min-height: 70px;
   }
 }
 
@@ -92,9 +98,8 @@
   color: $dark-grey;
 
   &--making {
+    margin-top: auto;
     margin-bottom: 25px;
-    padding-left: 32px;
-    padding-right: 36px;
   }
 }
 
@@ -111,13 +116,12 @@
 
 .catalog-card__video {
   @include reset-list;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 96px;
 }
 
 .catalog-card__do {
-  margin-bottom: 30px;
-  margin-left: 32px;
-  margin-right: 36px;
+  display: block;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -138,6 +142,11 @@
     flex-direction: row;
     flex-wrap: nowrap;
     min-height: 334px;
+
+    &--making {
+      flex-direction: column;
+      width: 100%;
+    }
   }
 
   .catalog-card__picture {
@@ -155,56 +164,154 @@
     margin-right: 35px;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    justify-content: space-between;
     width: 50%;
+
+    &--making {
+      @include reset-list;
+      margin: 0 auto;
+      justify-content: flex-start;
+      width: 87%;
+      min-height: 286px;
+    }
   }
 
   .catalog-card__description {
     @include reset-list;
     padding-top: 23px;
+    border: none;
   }
 
   .catalog-card__title {
     @include reset-list;
     margin-bottom: 5px;
+
+    &--video {
+      @include reset-list;
+      padding-top: 35px;
+      margin-bottom: 33px;
+      min-height: 35px;
+    }
+  }
+
+  .catalog-card__text {
+    &--making {
+      @include reset-list;
+      margin-bottom: 37px;
+
+      @include set-font (normal, 15px, 30px);
+    }
   }
 
   .catalog-card__buy {
-    @include reset-list {
-      margin-top: auto;
+    @include reset-list;
+    padding-bottom: 23px;
+    padding-top: 19px;
+    border-top: 1px solid $light-grey;
+  }
+
+  .catalog-card__video {
+    position: static;
+
+    img {
+      width: 668px;
+      height: 455px;
     }
   }
 }
 
 
 @media screen and (min-width: $desktop-width) {
-  .catalog,
-  .catalog-list {
+  .catalog {
     @include reset-list;
     margin: 0 auto;
+    width: 1050px;
+  }
+
+  .catalog-list {
+    @include reset-list;
+    margin: 130px auto 57px;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 1050px;
   }
 
   .catalog-card {
     @include reset-list;
-    margin-bottom: 57px;
-    width: 316px;
+    margin-right: 52px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    flex-direction: column;
 
     &--making {
       @include reset-list;
-      margin-bottom: 0;
+      margin-bottom: 107px;
+      flex-direction: row;
+      width: 100%;
     }
+    width: 30%;
+  }
 
-    .catalog-card__picture {
+  .catalog-card__picture {
+    @include reset-list;
+    margin-bottom: 15px;
+
+    img {
       width: 316px;
+      height: 462px;
+    }
+    width: 100%;
+  }
 
-      img {
-        width: 316px;
-        height: 462px;
-      }
+  .catalog-card__wrapper {
+    @include reset-list;
+    margin-left: 22px;
+    margin-right: 28px;
+    width: 84%;
+
+    &--making {
+      @include reset-list;
+      width: 25%;
+      padding-left: 55px;
+      padding-right: 35px;
+      min-height: 452px;
+    }
+  }
+
+  .catalog-card__title {
+    &--video {
+      @include reset-list;
+      padding-right: 85px;
+      padding-top: 93px;
+      margin-bottom: 30px;
+      min-height: 54px;
+    }
+  }
+
+  .catalog-card__description {
+    @include reset-list;
+    margin-bottom: 50px;
+
+    &--toys {
+      margin-bottom: 25px;
+    }
+  }
+
+  .catalog-card__video {
+    @include reset-list;
+    margin-right: 20px;
+
+    img {
+      width: 682px;
+      height: 455px;
+    }
+  }
+
+  .catalog-card__text {
+    &--making {
+      margin-bottom: 44px;
     }
   }
 }
