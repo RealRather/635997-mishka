@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 260px;
+  width: 100%;
 }
 
 .catalog__item {
@@ -24,7 +24,7 @@
   flex-direction: column;
 
   @include set-font (inherit, inherit, inherit);
-  width: 260px;
+  width: 100%;
 }
 
 .catalog-card {
@@ -40,13 +40,14 @@
     margin-bottom: 58px;
     align-content: flex-start;
   }
+  width: 100%;
 }
 
 .catalog-card__picture {
   @include reset-list;
   margin-bottom: 25px;
   display: flex;
-  width: 260px;
+  width: 100%;
 }
 
 .catalog-card__image {
@@ -54,15 +55,18 @@
   display: block;
 }
 
+.catalog-card__wrapper {
+  margin: 0 28px;
+}
+
 .catalog-card__description {
   @include reset-list;
-  margin: 0 auto;
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   border-bottom: 1px solid $light-grey;
-  width: 205px;
+  width: 100%;
 }
 
 .catalog-card__title {
@@ -74,30 +78,29 @@
 
   &--video {
     @include reset-list;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-left: 30px;
+    margin-right: 10px;
+    padding-top: 25px;
+    padding-left: 55px;
+    min-height: 71px;
   }
 }
 
 .catalog-card__text {
   @include reset-list;
-  margin: 0 auto;
-
   @include set-font (normal, 13px, 30px);
   color: $dark-grey;
-  width: 205px;
 
   &--making {
-    width: 195px;
     margin-bottom: 25px;
+    padding-left: 32px;
+    padding-right: 36px;
   }
 }
 
 .catalog-card__buy {
   @include reset-list;
-  margin: 22px auto 0;
-  width: 205px;
+  padding-top: 22px;
 }
 
 .catalog-card__price {
@@ -113,7 +116,66 @@
 
 .catalog-card__do {
   margin-bottom: 30px;
+  margin-left: 32px;
+  margin-right: 36px;
 }
+
+@media screen and (min-width: $tablet-width) {
+  .catalog {
+    @include reset-list;
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  .catalog-list {
+    @include reset-list;
+    margin-top: 80px;
+  }
+
+  .catalog-card {
+    @include reset-list;
+    margin-bottom: 54px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-height: 334px;
+  }
+
+  .catalog-card__picture {
+    @include reset-list;
+    width: 50%;
+  }
+
+  .catalog-card__image {
+    width: 100%;
+  }
+
+  .catalog-card__wrapper {
+    @include reset-list;
+    margin-left: 27px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 50%;
+  }
+
+  .catalog-card__description {
+    @include reset-list;
+    padding-top: 23px;
+  }
+
+  .catalog-card__title {
+    @include reset-list;
+    margin-bottom: 5px;
+  }
+
+  .catalog-card__buy {
+    @include reset-list {
+      margin-top: auto;
+    }
+  }
+}
+
 
 @media screen and (min-width: $desktop-width) {
   .catalog,

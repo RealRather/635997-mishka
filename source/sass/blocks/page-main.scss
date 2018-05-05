@@ -13,18 +13,19 @@
 .page-main__wrapper {
   @include reset-list;
   margin: 0 auto;
-  padding: 70px 30px 75px;
+  padding-top: 70px;
   text-align: center;
   background-color: $light-grey;
-  width: 260px;
+  width: 320px;
+  min-height: 107px;
 }
 
 .page-main__title {
   @include reset-list;
   display: block;
+  text-align: center;
 
   @include set-font (bold, 27px, 30px);
-  width: 260px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -39,10 +40,10 @@
 
   .page-main__wrapper {
     @include reset-list;
-    margin: 0 -50px;
-    padding: 95px 0 74px;
+    padding-top: 95px;
     border-top: 1px solid $border-grey;
     width: 768px;
+    min-height: 130px;
   }
 
   .page-main__title {
@@ -56,20 +57,22 @@
 
 @media screen and (min-width: $desktop-width) {
   .page-main {
-    width: 1050px;
-    padding: 0 100px;
+    width: 1150px;
     margin-top: -60px;
   }
 
   .page-main__wrapper {
     @include reset-list;
-    margin: 0 -50px 130px;
-    padding: 93px 50px 97px;
-    width: 1050px;
+    margin: 0 auto;
+    padding-top: 93px;
+    width: 1150px;
+    min-height: 161px;
   }
 
   .page-main__title {
     @include reset-list;
+    margin: 0 auto;
+
     @include set-font (bold, 53px, 57px);
     width: 1050px;
   }
