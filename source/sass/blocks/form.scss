@@ -1,11 +1,25 @@
 /* form */
 .form {
+  @include reset-list;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
   @include set-font (inherit, inherit, inherit);
   border: none;
-  border-top: 1px solid #63d1bb; /*временно*/
+  border-top: 1px solid #63d1bb;
+  width: 100%;
+}
+
+.form-field__extra {
+  margin-bottom: 15px;
 }
 
 .form__legend {
+  @include reset-list;
+  margin-bottom: 20px;
+  padding-right: 25px;
+
   @include set-font (bold, 17px, 16px);
   text-transform: uppercase;
   text-decoration: none;
@@ -13,25 +27,93 @@
 }
 
 .form__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
   list-style: none;
 }
 
+.form__option {
+  @include reset-list;
+  margin-bottom: 10px;
+  display: flex;
+
+  &--color {
+    margin-bottom: 25px;
+  }
+}
+
+.form__item {
+  @include reset-list;
+  padding-bottom: 15px;
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid $black;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  &--email {
+    width: 260px;
+  }
+
+  &--dop-info {
+    @include reset-list;
+    padding: 0 15px;
+    border: 2px solid $black;
+    min-height: 140px;
+  }
+}
+
 .form__label {
+  @include reset-list;
+  padding-left: 45px;
+
   @include set-font (bold, 17px, 18px);
   color: $black;
+
+  &--name {
+    @include reset-list;
+    margin-bottom: 16px;
+  }
 }
 
-.form__input,
-.form__textarea {
+.form__input {
+  @include reset-list;
   @include set-font (normal, 17px, 18px);
   border: none;
+
+  &--info,
+  &--phone,
+  &--email {
+    @include reset-list;
+    opacity: 0.3;
+  }
 }
 
-.form__input--info,
 .form__textarea {
+  @include reset-list;
+  padding-top: 15px;
+
+  @include set-font (normal, 17px, 18px);
+  border: none;
   opacity: 0.3;
 }
 
-.form__input--dop-info {
-  border: 2px solid $dark-grey;
+.knitting__required {
+  @include reset-list;
+  margin-bottom: 30px;
+
+  @include set-font (normal, 14px, 16px);
+}
+
+.knitting__send {
+  @include reset-list;
+  display: block;
+}
+
+.knitting__send-order {
+  width: 100%;
 }

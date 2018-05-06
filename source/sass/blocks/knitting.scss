@@ -1,6 +1,23 @@
 /* knitting */
+.knitting {
+  width: 260px;
+  margin: 0 auto;
+}
+
 .knitting__promo {
+  @include reset-list;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
   @include set-font (inherit, 13px, 24px);
+}
+
+.knitting__form {
+  @include reset-list;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .knitting__fields {
