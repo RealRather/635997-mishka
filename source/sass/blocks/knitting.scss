@@ -78,5 +78,19 @@
   .knitting__required {
     @include reset-list;
     order: 1;
+
+    @include set-font (normal, 17px, 30px);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .knitting {
+    width: 1050px;
+    padding: 0 100px;
+  }
+
+  .knitting__wrapper {
+    margin-left: 127px;
+    width: 66%;
   }
 }

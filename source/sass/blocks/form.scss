@@ -134,7 +134,7 @@
     @include reset-list;
     position: absolute;
     left: 50px;
-    top: 0;
+    top: 45px;
   }
 
   .form__list {
@@ -185,6 +185,8 @@
   }
 
   .form__label {
+    @include set-font (bold, 19px, 18px);
+
     &--name {
       @include reset-list;
       margin-right: 25px;
@@ -201,6 +203,45 @@
       padding-bottom: 15px;
       border-bottom: 2px solid #000000;
       width: 100%;
+    }
+  }
+
+  .form__textarea {
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 16px;
+
+    @include set-font (normal, 19px, 18px);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .form {
+    margin: 0 -100px 0;
+    width: 1150px;
+  }
+
+  .form__list {
+    margin: auto;
+    width: 60%;
+  }
+
+  .form__item {
+    margin: auto;
+    width: 60%;
+
+    &--userdata {
+      width: 100%;
+    }
+
+    &--email {
+      border-bottom: 2px solid #000000;
+    }
+  }
+
+  .form__option {
+    &--color {
+      width: 30%;
     }
   }
 }
