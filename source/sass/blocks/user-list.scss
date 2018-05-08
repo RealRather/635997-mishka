@@ -1,0 +1,68 @@
+/* user-list*/
+.user-list {
+  @include reset-list;
+  list-style: none;
+  width: 320px;
+  /*временно для сетки*/
+  min-height: 158px;
+
+  @include paint-bg ($white, $black);
+}
+
+.user-list__item {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  @include reset-list;
+
+  padding-left: 76px;
+  min-height: 78px;
+  border-top: 1px solid $border-grey;
+}
+
+.user-list__link {
+  @include set-font (bold, 17px, 24px);
+  @include paint-bg (inherit, inherit);
+
+  text-decoration: none;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .user-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 88px;
+  }
+
+  .user-list__item {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+    border: none;
+
+    &--search {
+      border-left: 1px solid $border-grey;
+      border-right: 1px solid $border-grey;
+      width: 81px;
+    }
+
+    &--basket {
+      justify-content: flex-end;
+    }
+  }
+
+  .user-list__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .user-list__item {
+    &--search {
+      width: 83px;
+    }
+  }
+}
