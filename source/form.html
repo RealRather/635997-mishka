@@ -11,11 +11,15 @@
 
         <header class="page-header">
             <nav class="page-header__nav main-nav">
-                <a class="page-header__logo" href="index.html">
-                    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
-                </a>
-                <button class="main-nav__toggle main-nav__toggle--hidden" type="button">Открыть меню</button>
-                <div class="main-nav__site-wrapper">
+                <button class="main-nav__toggle" type="button">
+                    <span class="visually-hidden">Открыть меню</span>
+                </button>
+                <div class="main-nav__wrapper">
+                    <div class="main-nav__logo">
+                        <a class="main-nav__logo-link" href="index.html">
+                            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
+                        </a>
+                    </div>
                     <ul class="main-nav__list site-list">
                         <li class="site-list__item site-list__item--catalog">
                             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -24,8 +28,6 @@
                             <a class="site-list__link" href="form.html">Вязание на заказ</a>
                         </li>
                     </ul>
-                </div>
-                <div class="main-nav__user-wrapper">
                     <ul class="main-nav__list user-list">
                         <li class="user-list__item  user-list__item--search">
                             <a class="user-list__link" href="#">
@@ -36,14 +38,12 @@
                             <a class="user-list__link" href="basket.html">Корзина: пока пуста</a>
                         </li>
                     </ul>
-                </div>
-                <div class="main-nav__additional-wrapper">
-                    <ul class="main-nav__additional additional-list">
-                        <li class="additional-list__item additional-list__item--new">
-                            <a class="additional-list__link additional-list__link--hidden" href="#">Новые поступления</a>
+                    <ul class="main-nav__list additional-list">
+                        <li class="additional-list__item additional-list__item--hidden">
+                            <a class="additional-list__link" href="#">Новые поступления</a>
                         </li>
-                        <li class="additional-list__item">
-                            <a class="additional-list__link additional-list__link--hidden" href="#">Распродажа</a>
+                        <li class="additional-list__item additional-list__item--hidden">
+                            <a class="additional-list__link" href="#">Распродажа</a>
                         </li>
                         <li class="additional-list__item additional-list__item--delivery">
                             <a class="additional-list__link additional-list__link--delivery" href="#">Бесплатная доставка по России</a>

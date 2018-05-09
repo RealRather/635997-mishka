@@ -1,6 +1,5 @@
 /* page-main */
 .page-main {
-  width: 320px;
   margin: 0 auto;
   background-size: 320px 373px;
   border-top: 1px solid $border-grey;
@@ -30,8 +29,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .page-main {
-    margin-top: -58px;
-    width: 768px;
+    margin-top: -40px;
 
     &--inner {
       border: none;
@@ -57,7 +55,6 @@
 
 @media screen and (min-width: $desktop-width) {
   .page-main {
-    width: 1150px;
     margin-top: -60px;
   }
 
