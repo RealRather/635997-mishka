@@ -60,7 +60,6 @@
     flex-wrap: wrap;
     justify-content: center;
     background-size: 768px 746px;
-    width: 768px;
     min-height: 745px;
   }
 
@@ -93,9 +92,7 @@
 @media screen and (min-width: $desktop-width) {
   .assortment {
     @include reset-list;
-    margin: 0 -100px;
     background-size: 1250px 746px;
-    width: 1250px;
     min-height: 744px;
   }
 

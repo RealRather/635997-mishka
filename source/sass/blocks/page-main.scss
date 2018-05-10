@@ -15,7 +15,6 @@
   padding-top: 70px;
   text-align: center;
   background-color: $light-grey;
-  width: 320px;
   min-height: 107px;
 }
 
@@ -40,7 +39,6 @@
     @include reset-list;
     padding-top: 95px;
     border-top: 1px solid $border-grey;
-    width: 768px;
     min-height: 130px;
   }
 
@@ -62,7 +60,6 @@
     @include reset-list;
     margin: 0 auto;
     padding-top: 93px;
-    width: 1150px;
     min-height: 161px;
   }
 

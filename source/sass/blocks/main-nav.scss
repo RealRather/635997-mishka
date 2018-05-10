@@ -68,8 +68,9 @@
   .main-nav__logo {
     position: absolute;
     z-index: 2;
-    top: 17px;
+    top: 37px;
     left: 50px;
+    cursor: pointer;
     min-height: 86px;
   }
 
@@ -100,6 +101,7 @@
   }
 
   .main-nav__logo {
+    top: 27px;
     left: 525px;
     min-height: 88px;
   }

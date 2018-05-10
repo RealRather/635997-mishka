@@ -1,16 +1,11 @@
 /* social */
 .social {
   @include reset-list;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-
-  @include paint-bg ($light-grey, $black);
 }
 
 .social__list {
   @include reset-list;
-  padding: 20px 0 20px;
+  padding: 20px 28px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -23,21 +18,19 @@
 
 .social__item {
   @include reset-list;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  width: 20%;
 }
 
 .social__link {
   @include reset-list;
-  display: flex;
+  display: block;
   text-decoration: none;
   color: inherit;
 }
 
 @media screen and (min-width: $tablet-width) {
   .social__list {
+    @include reset-list;
     border: none;
   }
 }
