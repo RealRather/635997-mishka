@@ -2,19 +2,20 @@
 .products {
   @include reset-list;
   margin: 0 auto 40px;
-  display: flex;
-  flex-direction: column;
 
   @include paint-bg ($white, $dark-grey);
-  width: 260px;
+}
+
+.products__wrapper {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .products__header {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 27px auto 10px;
-  width: 100%;
+  margin: 27px 0 10px;
 }
 
 .products__title {
@@ -32,11 +33,6 @@
 
   @include set-font (bold, 17px, 20px);
   @include paint-bg (inherit, #63d1bb);
-}
-
-.products__main {
-  margin: 0 auto;
-  width: 260px;
 }
 
 .products__promo {
@@ -82,6 +78,10 @@
 .products__picture {
   padding: 0;
   margin: 0 auto 26px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .products__price {
@@ -102,20 +102,18 @@
   .products {
     margin: 0 auto 70px;
     padding: 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 30;
-    width: 668px;
+  }
+
+  .products__wrapper {
+    @include tablet-container;
   }
 
   .products__header {
-    @include reset-list;
     margin-top: 45px;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100%;
   }
 
   .products__title {
@@ -138,8 +136,8 @@
   }
 
   .products__main {
-    margin: 0;
-    width: 301px;
+    position: relative;
+    width: 44%;
   }
 
   .products__promo {
@@ -159,8 +157,9 @@
   .products__picture {
     @include reset-list;
     position: absolute;
-    top: 135px;
-    right: 0;
+    z-index: 0;
+    bottom: 0;
+    left: 335px;
     width: 333px;
     height: 404px;
 
@@ -183,12 +182,16 @@
 @media screen and (min-width: $desktop-width) {
   .products {
     margin: 0 auto 95px;
-    width: 1050px;
+  }
+
+  .products__wrapper {
+    @include desktop-container;
   }
 
   .products__header {
     margin-top: 124px;
     margin-bottom: 58px;
+    position: relative;
     width: 100%;
   }
 
@@ -221,7 +224,6 @@
 
   .products__list {
     margin-bottom: 112px;
-    width: 295px;
   }
 
   .products__field {
@@ -229,9 +231,8 @@
   }
 
   .products__picture {
-    z-index: 1;
-    top: 73px;
-    right: 0;
+    z-index: 0;
+    left: 350px;
     width: 525px;
     height: 636px;
 

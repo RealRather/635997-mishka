@@ -26,6 +26,7 @@
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $tablet-width) {

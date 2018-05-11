@@ -1,9 +1,6 @@
 /* assortment */
 .assortment {
   @include reset-list;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
   color: $dark-grey;
   background-color: #f9f9f9;
@@ -11,62 +8,75 @@
   background-size: 575px 373px;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.assortment__wrapper {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 488px;
 }
 
 .assortment__title {
   @include reset-list;
-  margin-left: 29px;
-  margin-right: 30px;
   padding-top: 70px;
+  box-sizing: border-box;
 
   @include set-font (bold, 27px, 30px);
   color: $black;
-  width: 260px;
+  width: 81%;
 }
 
 .assortment__item-wrapper {
   @include reset-list;
-  margin: auto -30px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto 0 0;
+  text-align: left;
+
+  &--left {
+    @include paint-bg (#63d1bb, #ffffff);
+  }
+
+  &--right {
+    margin-top: 0;
+
+    @include paint-bg (#56c3b2, #ffffff);
+  }
+
   width: 100%;
 }
 
 .assortment__item {
-  @include reset-list;
+  @include mobile-container;
+  margin: 0;
   padding: 0 29px;
-  text-align: left;
 
   @include set-font (bold, 19px, 24px);
+  background-color: inherit;
+  color: inherit;
   border: none;
-  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  display: block;
   min-height: 103px;
-}
-
-.assortment__item--interior {
-  @include paint-bg (#63d1bb, #ffffff);
-}
-
-.assortment__item--toy {
-  @include paint-bg (#56c3b2, #ffffff);
 }
 
 @media screen and (min-width: $tablet-width) {
   .assortment {
-    margin: 0 auto;
+    background-size: 768px 746px;
+  }
+
+  .assortment__wrapper {
+    @include tablet-container;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-size: 768px 746px;
+    box-sizing: border-box;
     min-height: 745px;
   }
 
   .assortment__title {
     @include reset-list;
-    margin-left: 50px;
-    margin-right: 50px;
     padding-top: 28px;
 
     @include set-font (bold, 43px, 50px);
@@ -75,17 +85,25 @@
 
   .assortment__item-wrapper {
     @include reset-list;
-    margin-top: auto;
-    flex-direction: row;
-    width: 668px;
+    margin: auto;
+    margin-bottom: 0;
+    width: calc(#{$tablet-width} * 0.5 - 50px);
+
+    &--left {
+      margin-right: 0;
+    }
+
+    &--right {
+      margin-left: 0;
+    }
   }
 
   .assortment__item {
     padding: 0 36px;
 
     @include set-font (bold, 20px, 30px);
-    width: 50%;
     min-height: 119px;
+    width: 100%;
   }
 }
 
@@ -93,20 +111,22 @@
   .assortment {
     @include reset-list;
     background-size: 1250px 746px;
+  }
+
+  .assortment__wrapper {
+    @include desktop-container;
     min-height: 744px;
   }
 
   .assortment__title {
     @include reset-list;
-    margin-left: 100px;
-    margin-right: 100px;
     padding-top: 34px;
 
     @include set-font (bold, 53px, 57px);
   }
 
   .assortment__item-wrapper {
-    width: 1050px;
+    width: calc(#{$desktop-width} * 0.5 - 50px);
   }
 
   .assortment__item {

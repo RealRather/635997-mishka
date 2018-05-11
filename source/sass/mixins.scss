@@ -19,18 +19,18 @@
 
 @mixin mobile-container {
   margin: 0 auto;
-  width: 260px;
+  width: 320px;
   padding: 0 30px;
 }
 
 @mixin tablet-container {
   margin: 0 auto;
-  width: 668px;
+  width: 768px;
   padding: 0 50px;
 }
 
 @mixin desktop-container {
   margin: 0 auto;
-  width: 1050px;
+  width: 1150px;
   padding: 0 50px;
 }

@@ -25,6 +25,7 @@
 
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -53,19 +54,17 @@
     @include reset-list;
     justify-content: flex-start;
     order: 0;
-    width: 38%;
+    width: 37.7%;
   }
 
   .site-list__item {
     @include reset-list;
     min-height: 88px;
 
-    &--catalog {
-      border-right: 1px solid $border-grey;
-    }
-
     &--knitting {
+      padding-right: 22px;
       text-align: right;
+      border-left: 1px solid #e5e5e5;
     }
   }
 

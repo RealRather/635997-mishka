@@ -1,12 +1,16 @@
 /* reviews */
 .reviews {
   @include reset-list;
-  margin: 0 auto 50px;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 50px;
 
   @include paint-bg ($white, $dark-grey);
-  width: 260px;
+}
+
+.reviews__wrapper {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .reviews__title {
@@ -98,36 +102,38 @@
 
 @media screen and (min-width: $tablet-width) {
   .reviews {
-    margin: 0 auto 85px;
+    @include reset-list;
+    padding-bottom: 85px;
     padding-top: 76px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+
+  .reviews__wrapper {
+    @include tablet-container;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     z-index: 40;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 350px 457px;
-    width: 768px;
   }
 
   .reviews__title {
     @include reset-list;
-    margin-right: 10px;
+    margin-right: auto;
     margin-left: 50px;
     order: 0;
 
     @include set-font (bold, 43px, 50px);
-    width: 60%;
+    width: 54%;
   }
 
   .reviews__list {
     @include reset-list;
     margin-top: 45px;
-    margin-left: 50px;
     flex-direction: row;
     order: 3;
-    width: 668px;
   }
 
   .reviews__item {
@@ -145,9 +151,9 @@
   }
 
   .reviews__comment {
-    margin-right: 50px;
     order: 1;
     width: 175px;
+    max-height: 20px;
   }
 
   .reviews__author {
@@ -172,9 +178,8 @@
 
   .reviews__toggles {
     @include reset-list;
-    margin-left: 50px;
-    margin-bottom: 50px;
     margin-right: 50px;
+    margin-bottom: 50px;
     flex-direction: row;
     justify-content: space-between;
     order: 5;
@@ -199,14 +204,20 @@
 
 @media screen and (min-width: $desktop-width) {
   .reviews {
-    margin: 0 auto 70px;
-    padding-top: 69px;
-
+    @include reset-list;
+    margin: 0 auto;
+    padding: 69px 0 70px;
     width: 1050px;
   }
 
+  .reviews__wrapper {
+    @include reset-list;
+    padding-left: 170px;
+    width: 100%;
+  }
+
   .reviews__title {
-    margin-left: 170px;
+    @include reset-list;
     margin-right: auto;
 
     @include set-font (bold, 53px, 57px);
@@ -214,8 +225,7 @@
 
   .reviews__list {
     margin-top: 44px;
-    margin-left: 175px;
-    width: 780px;
+    width: 90%;
   }
 
   .reviews__text {

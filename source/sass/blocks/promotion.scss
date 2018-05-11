@@ -2,12 +2,17 @@
 .promotion {
   @include reset-list;
   margin: 0 auto 30px;
-  display: flex;
-  flex-direction: column;
 
   @include set-font (bold, inherit, inherit);
   @include paint-bg ($white, $black);
-  width: 260px;
+}
+
+.promotion__wrapper {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .promotion__title {
@@ -45,9 +50,13 @@
   .promotion {
     @include reset-list;
     margin: 0 auto 80px;
+  }
+
+  .promotion__wrapper {
+    @include tablet-container;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 668px;
+    width: 100%;
   }
 
   .promotion__title {
@@ -63,7 +72,7 @@
     @include reset-list;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .promotion__item {
@@ -95,7 +104,8 @@
     }
 
     @include set-font (bold, 20px, 22px);
-    width: 315px;
+    /*width: 315px;*/
+    width: 47%;
   }
 
   .promotion__description {
@@ -108,12 +118,18 @@
   .promotion {
     @include reset-list;
     margin: 0 auto 37px;
-    width: 1050px;
+  }
+
+  .promotion__wrapper {
+    @include desktop-container;
+    width: 100%;
   }
 
   .promotion__list {
-    margin: 0 auto;
-    width: 700px;
+    @include reset-list;
+    margin: 0 175px;
+    /*width: 700px;*/
+    /*width: 60.8%;*/
   }
 
   .promotion__title {
