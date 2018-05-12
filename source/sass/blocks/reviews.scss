@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .reviews__title {
@@ -78,7 +79,7 @@
   @include set-font (bold, 17px, 24px);
   @include paint-bg ($white, $black);
   border: 1px solid $border-grey;
-  width: 130px;
+  width: 50%;
 
   &--left {
     padding-left: 37px;
@@ -89,7 +90,6 @@
     padding-right: 37px;
     padding-left: 40px;
     border-left: none;
-    width: 130px;
   }
 }
 

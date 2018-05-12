@@ -2,12 +2,11 @@
 .modal-basket {
   @include reset-list;
   margin: 0 auto;
-  width: 320px;
   min-height: 336px;
 }
 
 .modal-basket__wrapper {
-  @include reset-list;
+  @include mobile-container;
   margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 45px;
@@ -20,7 +19,8 @@
   box-shadow:
     0 0 2px 0 $border-grey,
     0 5px 5px 0 $border-grey;
-  width: 320px;
+  box-sizing: border-box;
+  width: 100%;
   /*временно*/
   margin-bottom: 20px;
 }

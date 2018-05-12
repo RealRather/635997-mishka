@@ -11,9 +11,12 @@
 .contacts-wrapper {
   @include mobile-container;
   margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 100%;
+  min-height: 860px;
 }
 
 .contacts__title {
@@ -50,7 +53,7 @@
   margin-bottom: 37px;
   display: flex;
   align-items: center;
-  width: 72%;
+  width: 70%;
 }
 
 .contacts__mail {
@@ -64,13 +67,18 @@
 .contacts__map {
   @include reset-list;
   margin-bottom: 38px;
+  position: absolute;
+  bottom: 90px;
 
   img {
     width: 100%;
+    height: 457px;
   }
+  width: 100%;
 }
 
 .contacts__write {
+  margin-top: auto;
   margin-bottom: 38px;
 }
 
