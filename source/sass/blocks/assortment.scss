@@ -72,6 +72,7 @@
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
+    width: 100%;
     min-height: 745px;
   }
 
@@ -80,14 +81,13 @@
     padding-top: 28px;
 
     @include set-font (bold, 43px, 50px);
-    width: 100%;
   }
 
   .assortment__item-wrapper {
     @include reset-list;
     margin: auto;
     margin-bottom: 0;
-    width: calc(#{$tablet-width} * 0.5 - 50px);
+    /*width: calc(#{$tablet-width} * 0.5 - 50px);*/
 
     &--left {
       margin-right: 0;
@@ -96,6 +96,7 @@
     &--right {
       margin-left: 0;
     }
+    width: 50%;
   }
 
   .assortment__item {

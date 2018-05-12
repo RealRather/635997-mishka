@@ -64,15 +64,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     box-sizing: border-box;
+    width: 100%;
   }
 
   .main-nav__logo {
     position: absolute;
     z-index: 2;
-    top: 37px;
+    top: 27px;
     left: 50px;
     cursor: pointer;
-    min-height: 86px;
   }
 
   .main-nav__logo-link {

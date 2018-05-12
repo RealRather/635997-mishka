@@ -106,6 +106,7 @@
 
   .products__wrapper {
     @include tablet-container;
+    width: 100%;
   }
 
   .products__header {
@@ -159,13 +160,14 @@
     position: absolute;
     z-index: 0;
     bottom: 0;
-    left: 335px;
-    width: 333px;
+    right: -127.4%;
+    min-width: 333px;
+    width: 100%;
     height: 404px;
 
     img {
-      width: 333px;
       height: 404px;
+      width: 100%;
     }
   }
 

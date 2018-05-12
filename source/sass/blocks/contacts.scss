@@ -16,12 +16,13 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  min-height: 860px;
+  min-height: 885px;
 }
 
 .contacts__title {
   @include reset-list;
   margin-bottom: 26px;
+  padding-top: 25px;
 
   @include set-font (bold, 18px, 30px);
   @include paint-bg ($white, $black);
@@ -85,13 +86,14 @@
 @media screen and (min-width: $tablet-width) {
   .contacts-wrapper {
     @include tablet-container;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    min-height: 925px;
   }
 
   .contacts__title {
     @include reset-list;
     margin-bottom: 45px;
+    padding-top: 55px;
 
     @include set-font (bold, 43px, 50px);
     text-align: left;
@@ -139,6 +141,7 @@
 
   .contacts__map {
     @include reset-list;
+    bottom: 160px;
 
     img {
       width: 100%;
@@ -148,8 +151,8 @@
 
   .contacts__write {
     @include reset-list;
-    margin: 0 auto 57px;
-    width: 230px;
+    margin: auto auto 57px;
+    width: 33.9%;
   }
 }
 

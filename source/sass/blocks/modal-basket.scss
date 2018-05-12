@@ -32,7 +32,6 @@
   text-transform: uppercase;
 
   @include set-font(bold, 25px, 30px);
-  width: 155px;
 }
 
 .modal-basket__choice {
@@ -71,13 +70,11 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .modal-basket {
-    width: 566px;
-  }
-
   .modal-basket__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
     border: 1px solid $border-grey;
-    width: 566px;
+    width: 73.7%;
   }
 
   .modal-basket__title {
@@ -85,6 +82,5 @@
     margin-bottom: 20px;
 
     @include set-font (bold, 30px, 57px);
-    width: 365px;
   }
 }
