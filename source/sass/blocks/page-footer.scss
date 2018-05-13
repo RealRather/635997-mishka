@@ -72,5 +72,6 @@
 
   .page-footer__wrapper {
     @include desktop-container;
+    width: 100%;
   }
 }

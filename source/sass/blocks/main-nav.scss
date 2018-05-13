@@ -99,11 +99,12 @@
   .main-nav__wrapper {
     @include desktop-container;
     justify-content: space-between;
+    width: 100%;
   }
 
   .main-nav__logo {
     top: 27px;
-    left: 525px;
+    left: 47%;
     min-height: 88px;
   }
 }

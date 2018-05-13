@@ -84,3 +84,9 @@
     @include set-font (bold, 30px, 57px);
   }
 }
+
+@media screen and (min-width: $desktop-width) {
+  .modal-basket__wrapper {
+    width: 49.2%;
+  }
+}

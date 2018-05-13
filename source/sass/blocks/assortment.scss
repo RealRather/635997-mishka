@@ -117,6 +117,7 @@
   .assortment__wrapper {
     @include desktop-container;
     min-height: 744px;
+    width: 100%;
   }
 
   .assortment__title {
@@ -127,7 +128,8 @@
   }
 
   .assortment__item-wrapper {
-    width: calc(#{$desktop-width} * 0.5 - 50px);
+    /*width: calc(#{$desktop-width} * 0.5 - 50px);*/
+    width: 50%;
   }
 
   .assortment__item {

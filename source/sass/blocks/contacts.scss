@@ -159,9 +159,10 @@
 @media screen and (min-width: $desktop-width) {
   .contacts {
     margin-bottom: 104px;
-    padding-top: 81px;
+    margin-top: 81px;
+    padding: 0 50px;
     flex-direction: column;
-    width: 1050px;
+    box-sizing: border-box;
   }
 
   .contacts-wrapper {
@@ -170,6 +171,7 @@
     padding-top: 81px;
     flex-direction: column;
     width: 33.3%;
+    min-height: 464px;
   }
 
   .contacts__title {
@@ -221,19 +223,14 @@
   .contacts__map {
     @include reset-list;
     position: absolute;
-    top: 91px;
-    right: 0;
-    width: 525px;
-
-    img {
-      width: 525px;
-      height: 457px;
-    }
+    bottom: 0;
+    left: 50%;
+    width: 45.6%;
+    min-height: 457px;
   }
 
   .contacts__write {
     @include reset-list;
-    margin-left: 175px;
     width: 227px;
   }
 }

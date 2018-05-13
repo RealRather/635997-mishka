@@ -183,11 +183,13 @@
 
 @media screen and (min-width: $desktop-width) {
   .products {
-    margin: 0 auto 95px;
+    margin: 0 auto;
+    padding-bottom: 95px;
   }
 
   .products__wrapper {
     @include desktop-container;
+    width: 100%;
   }
 
   .products__header {
@@ -202,7 +204,8 @@
     order: 1;
     position: absolute;
     z-index: 2;
-    left: 169px;
+    /*left: 169px;*/
+    left: 15%;
 
     @include set-font (bold, 53px, 57px);
   }
@@ -215,8 +218,9 @@
   }
 
   .products__main {
-    margin-left: 175px;
-    width: 292px;
+    /*margin-left: 175px;*/
+    margin-left: 15.2%;
+    width: 28.5%;
   }
 
   .products__promo {
@@ -234,12 +238,14 @@
 
   .products__picture {
     z-index: 0;
-    left: 350px;
-    width: 525px;
+    /*left: 350px;*/
+    left: 118%;
+    /* width: 525px; */
+    width: 179%;
     height: 636px;
 
     img {
-      width: 525px;
+      /*width: 525px;*/
       height: 636px;
     }
   }
