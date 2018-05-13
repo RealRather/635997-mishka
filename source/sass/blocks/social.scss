@@ -1,8 +1,4 @@
 /* social */
-.social {
-  @include reset-list;
-}
-
 .social__list {
   @include reset-list;
   padding: 20px 28px 20px;

@@ -52,9 +52,9 @@
 @media screen and (min-width: $desktop-width) {
   .site-list {
     @include reset-list;
-    justify-content: flex-start;
+    justify-content: space-between;
     order: 0;
-    width: 37.7%;
+    width: 38.3%;
   }
 
   .site-list__item {
@@ -62,9 +62,13 @@
     min-height: 88px;
 
     &--knitting {
-      padding-right: 22px;
-      text-align: right;
-      border-left: 1px solid #e5e5e5;
+      text-align: left;
+      width: 50%;
+    }
+
+    &--catalog {
+      width: 43%;
+      border-right: 1px solid #e5e5e5;
     }
   }
 

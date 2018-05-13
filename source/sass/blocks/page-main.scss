@@ -10,16 +10,18 @@
 }
 
 .page-main__wrapper {
-  @include reset-list;
+  @include mobile-container;
   margin: 0 auto;
-  padding-top: 70px;
   text-align: center;
   background-color: $light-grey;
-  min-height: 107px;
+  box-sizing: border-box;
+  min-height: 177px;
+  width: 100%;
 }
 
 .page-main__title {
   @include reset-list;
+  padding-top: 70px;
   display: block;
   text-align: center;
 
@@ -36,10 +38,12 @@
   }
 
   .page-main__wrapper {
-    @include reset-list;
+    @include tablet-container;
     padding-top: 95px;
     border-top: 1px solid $border-grey;
-    min-height: 130px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 226px;
   }
 
   .page-main__title {
@@ -47,7 +51,7 @@
     margin: 0 auto;
 
     @include set-font (bold, 43px, 50px);
-    width: 668px;
+    width: 100%;
   }
 }
 
@@ -57,17 +61,15 @@
   }
 
   .page-main__wrapper {
-    @include reset-list;
-    margin: 0 auto;
-    padding-top: 93px;
-    min-height: 161px;
+    @include desktop-container;
+    min-height: 254px;
+    width: 100%;
   }
 
   .page-main__title {
     @include reset-list;
-    margin: 0 auto;
+    padding-top: 93px;
 
     @include set-font (bold, 53px, 57px);
-    width: 1050px;
   }
 }
