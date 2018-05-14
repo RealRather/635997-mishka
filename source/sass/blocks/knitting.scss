@@ -10,6 +10,7 @@
 
   @include set-font (inherit, 13px, 24px);
   box-sizing: border-box;
+  width: 100%;
 }
 
 .knitting__form {
@@ -18,6 +19,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .knitting__fields {
@@ -51,6 +53,7 @@
     padding-top: 73px;
 
     @include set-font (inherit, 17px, 30px);
+    width: 100%;
   }
 
   .knitting__form {
@@ -60,11 +63,14 @@
   }
 
   .knitting__wrapper {
+    @include tablet-container;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .knitting__send {
@@ -81,8 +87,15 @@
 }
 
 @media screen and (min-width: $desktop-width) {
+  .knitting__promo {
+    width: 60%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .knitting__wrapper {
-    margin-left: 127px;
-    width: 66%;
+    @include desktop-container;
+    padding: 0;
+    width: 60%;
   }
 }
