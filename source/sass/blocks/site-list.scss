@@ -31,6 +31,7 @@
 @media screen and (min-width: $tablet-width) {
   .site-list {
     @include reset-list;
+    padding-top: 10px;
     order: 1;
     background-color: transparent;
     width: 50%;

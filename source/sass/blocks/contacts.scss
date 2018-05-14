@@ -4,25 +4,23 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  position: relative;
   z-index: 50;
 }
 
 .contacts-wrapper {
   @include mobile-container;
   margin: 0 auto;
-  position: relative;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
-  min-height: 885px;
 }
 
 .contacts__title {
   @include reset-list;
   margin-bottom: 26px;
-  padding-top: 25px;
+  padding-top: 34px;
+  margin-left: -2px;
 
   @include set-font (bold, 18px, 30px);
   @include paint-bg ($white, $black);
@@ -30,6 +28,7 @@
 
 .contacts__list {
   @include reset-list;
+  margin-left: -1.5px;
   display: flex;
   flex-direction: column;
 
@@ -38,20 +37,23 @@
 
   tr {
     @include reset-list;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
+
+    &:nth-last-child(1) {
+      margin-bottom: 38.5px;
+    }
   }
 }
 
 .contacts__field {
   @include reset-list;
-  margin-bottom: 33px;
   display: flex;
 }
 
 .contacts__value {
   @include reset-list;
-  margin-bottom: 37px;
   display: flex;
   align-items: center;
   width: 70%;
@@ -68,26 +70,39 @@
 .contacts__map {
   @include reset-list;
   margin-bottom: 38px;
-  position: absolute;
-  bottom: 90px;
-
-  img {
-    width: 100%;
-    height: 457px;
-  }
+  background-image:
+    url("../img/icon-map-pin.svg"),
+    url("../img/map-mobile@1x.jpg");
+  background-size: auto, cover;
+  background-position-x: 55%, center;
+  background-position-y: 41%, center;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  position: relative;
   width: 100%;
 }
 
+.contacts__map-img {
+  margin: 0 auto;
+  position: relative;
+  z-index: -2;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
 .contacts__write {
-  margin-top: auto;
-  margin-bottom: 38px;
+  @include reset-list;
+  margin: auto auto 39px;
+  width: 80%;
 }
 
 @media screen and (min-width: $tablet-width) {
   .contacts-wrapper {
     @include tablet-container;
     width: 100%;
-    min-height: 925px;
   }
 
   .contacts__title {
@@ -141,12 +156,11 @@
 
   .contacts__map {
     @include reset-list;
-    bottom: 160px;
+  }
 
-    img {
-      width: 100%;
-      height: 457px;
-    }
+  .contacts__map-img {
+    width: 100%;
+    height: 457px;
   }
 
   .contacts__write {
@@ -161,6 +175,7 @@
     margin-bottom: 104px;
     margin-top: 81px;
     padding: 0 50px;
+    position: relative;
     flex-direction: column;
     box-sizing: border-box;
   }
@@ -171,7 +186,6 @@
     padding-top: 81px;
     flex-direction: column;
     width: 33.3%;
-    min-height: 464px;
   }
 
   .contacts__title {
@@ -231,6 +245,9 @@
 
   .contacts__write {
     @include reset-list;
+    position: absolute;
+    left: 176px;
+    bottom: 40px;
     width: 227px;
   }
 }

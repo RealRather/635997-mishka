@@ -160,7 +160,7 @@
 
   .catalog-card__picture {
     @include reset-list;
-    margin-bottom: 95px;
+    /*margin-bottom: 95px;*/
     width: 50%;
     min-height: 334px;
     height: 100%;
@@ -290,6 +290,7 @@
       min-width: 316px;
       min-height: 455px;
     }
+
     height: 100%;
     width: 100%;
   }

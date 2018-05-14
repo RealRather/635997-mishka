@@ -1,7 +1,8 @@
 /* products */
 .products {
   @include reset-list;
-  margin: 0 auto 40px;
+  margin: 0 auto 0;
+  padding-bottom: 44px;
 
   @include paint-bg ($white, $dark-grey);
 }
@@ -15,12 +16,12 @@
 }
 
 .products__header {
-  margin: 27px 0 10px;
+  margin: 29px 0 20px;
 }
 
 .products__title {
   @include reset-list;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   @include set-font (bold, 25px, 30px);
   color: $black;
@@ -37,7 +38,7 @@
 
 .products__promo {
   @include reset-list;
-  margin-bottom: 17px;
+  margin-bottom: 18.2px;
 
   @include set-font (normal, 15px, 24px);
 }
@@ -60,11 +61,11 @@
 
 .products__field {
   @include reset-list;
-  padding-right: 24px;
+  padding-right: 26.4px;
   display: flex;
   align-items: center;
   width: 70px;
-  min-height: 38px;
+  min-height: 38.6px;
 }
 
 .products__value {
@@ -77,7 +78,7 @@
 
 .products__picture {
   padding: 0;
-  margin: 0 auto 26px;
+  margin: 0 auto 16.8px;
 
   img {
     width: 100%;
@@ -121,7 +122,7 @@
     @include reset-list;
     margin-right: 10px;
     margin-left: -4px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
     @include set-font (bold, 43px, 50px);
   }

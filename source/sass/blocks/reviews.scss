@@ -1,7 +1,7 @@
 /* reviews */
 .reviews {
   @include reset-list;
-  padding-bottom: 50px;
+  padding-bottom: 53px;
 
   @include paint-bg ($white, $dark-grey);
 }
@@ -16,8 +16,9 @@
 
 .reviews__title {
   @include reset-list;
-  margin-top: 26px;
-  margin-bottom: 30px;
+  margin-top: 0px;
+  margin-left: -1px;
+  margin-bottom: 25.2px;
 
   @include set-font (bold, 25px, 30px);
   color: $black;
@@ -37,20 +38,21 @@
 
 .reviews__text {
   @include reset-list;
-  margin-bottom: 35px;
+  margin-bottom: 28.1px;
 
   @include set-font (normal, 15px, 30px);
 }
 
 .reviews__author {
   @include reset-list;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .reviews__author-name {
   @include reset-list;
-  margin-bottom: 13px;
+  margin-bottom: 3px;
 
   @include set-font (bold, 17px, 24px);
   font-style: normal;
@@ -59,14 +61,12 @@
 
 .reviews__author-mail {
   @include reset-list;
-  margin-bottom: 13px;
-
   @include set-font (normal, 17px, 30px);
 }
 
 .reviews__toggles {
   @include reset-list;
-  margin-bottom: 50px;
+  margin-bottom: 38.5px;
   display: flex;
   flex-direction: row;
 }

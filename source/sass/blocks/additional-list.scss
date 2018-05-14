@@ -33,6 +33,7 @@
 @media screen and (min-width: $tablet-width) {
   .additional-list {
     @include reset-list;
+    padding-top: 10px;
     display: flex;
     order: 2;
     background-color: transparent;

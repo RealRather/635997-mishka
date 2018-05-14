@@ -17,8 +17,9 @@
 
 .promotion__title {
   @include reset-list;
-  margin-top: 30px;
-  margin-bottom: 26px;
+  margin-top: 27px;
+  margin-bottom: 28.5px;
+  margin-left: -2px;
 
   @include set-font (bold, 25px, 30px);
 }
@@ -34,7 +35,7 @@
 
 .promotion__item {
   @include reset-list;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: column;
 

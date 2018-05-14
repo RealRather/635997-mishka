@@ -10,12 +10,16 @@
   list-style: none;
   text-align: center;
   border-bottom: 1px solid $border-grey;
-  min-height: 40px;
 }
 
 .social__item {
   @include reset-list;
+  margin-right: 9.2%;
   width: 20%;
+
+  &:nth-last-child(1) {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -23,6 +27,7 @@
   display: block;
   text-decoration: none;
   color: inherit;
+  min-height: 40px;
 }
 
 @media screen and (min-width: $tablet-width) {
