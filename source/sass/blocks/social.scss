@@ -35,6 +35,10 @@
     @include reset-list;
     border: none;
   }
+
+  .social__item {
+    margin-right: 14%;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -45,6 +49,7 @@
   }
 
   .social__item {
+    margin-right: 2%;
     min-height: 30px;
   }
 }

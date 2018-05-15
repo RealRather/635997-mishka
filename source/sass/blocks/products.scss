@@ -78,7 +78,7 @@
 
 .products__picture {
   padding: 0;
-  margin: 0 auto 16.8px;
+  margin: 0 auto 18.8px;
 
   img {
     width: 100%;
@@ -101,7 +101,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .products {
-    margin: 0 auto 70px;
+    margin: 0 auto 71px;
     padding: 0;
   }
 
@@ -121,7 +121,7 @@
   .products__title {
     @include reset-list;
     margin-right: 10px;
-    margin-left: -4px;
+    margin-left: -3.8px;
     margin-bottom: 30px;
 
     @include set-font (bold, 43px, 50px);
@@ -130,7 +130,7 @@
   .products__rating {
     @include reset-list;
     margin-right: 14px;
-    padding-top: 10px;
+    padding-top: 11px;
 
     @include set-font (bold, 17px, 17px);
     text-align: center;
@@ -138,22 +138,26 @@
   }
 
   .products__main {
+    margin-left: -0.5px;
     position: relative;
     width: 44%;
   }
 
   .products__promo {
     @include reset-list;
-    margin-bottom: 43px;
+    margin-bottom: 35.8px;
 
     @include set-font (normal, 17px, 30px);
   }
 
   .products__list {
     @include reset-list;
-    margin-right: 378px;
-    margin-bottom: 52px;
+    margin-bottom: 57px;
     width: 100%;
+  }
+
+  .products__field {
+    padding-right: 25.4px;
   }
 
   .products__picture {
@@ -174,18 +178,22 @@
 
   .products__price {
     @include reset-list;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-right: 4.7px;
+
+    @include set-font (bold, 20px, 24px);
   }
 
   .products__order {
     @include reset-list;
+    margin-right: 4.5px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .products {
     margin: 0 auto;
-    padding-bottom: 95px;
+    padding-bottom: 99px;
   }
 
   .products__wrapper {
@@ -194,8 +202,8 @@
   }
 
   .products__header {
-    margin-top: 124px;
-    margin-bottom: 58px;
+    margin-top: 45px;
+    margin-bottom: 55.5px;
     position: relative;
     width: 100%;
   }
@@ -205,8 +213,7 @@
     order: 1;
     position: absolute;
     z-index: 2;
-    /*left: 169px;*/
-    left: 15%;
+    left: 16.1%;
 
     @include set-font (bold, 53px, 57px);
   }
@@ -219,9 +226,8 @@
   }
 
   .products__main {
-    /*margin-left: 175px;*/
-    margin-left: 15.2%;
-    width: 28.5%;
+    margin-left: 16.7%;
+    width: 28.2%;
   }
 
   .products__promo {
@@ -239,14 +245,11 @@
 
   .products__picture {
     z-index: 0;
-    /*left: 350px;*/
     left: 118%;
-    /* width: 525px; */
-    width: 179%;
+    width: 177.5%;
     height: 636px;
 
     img {
-      /*width: 525px;*/
       height: 636px;
     }
   }

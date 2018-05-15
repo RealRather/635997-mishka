@@ -18,7 +18,7 @@
 
 .contacts__title {
   @include reset-list;
-  margin-bottom: 26px;
+  margin-bottom: 25.3px;
   padding-top: 34px;
   margin-left: -2px;
 
@@ -69,7 +69,7 @@
 
 .contacts__map {
   @include reset-list;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
   background-image:
     url("../img/icon-map-pin.svg"),
     url("../img/map-mobile@1x.jpg");
@@ -100,6 +100,10 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 57.5px;
+  }
+
   .contacts-wrapper {
     @include tablet-container;
     width: 100%;
@@ -107,8 +111,9 @@
 
   .contacts__title {
     @include reset-list;
-    margin-bottom: 45px;
-    padding-top: 55px;
+    margin-bottom: 49px;
+    margin-left: -5px;
+    padding-top: 59px;
 
     @include set-font (bold, 43px, 50px);
     text-align: left;
@@ -117,6 +122,7 @@
 
   .contacts__list {
     @include reset-list;
+    margin-bottom: 56.5px;
     flex-direction: row;
     flex-wrap: nowrap;
 
@@ -127,35 +133,41 @@
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-between;
       width: 100%;
     }
 
     tr {
       @include reset-list;
+      margin-right: 2.2%;
       flex-direction: row;
       flex-wrap: nowrap;
-      width: 50%;
+      justify-content: flex-start;
+      width: 48%;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+        margin-right: 0;
+      }
     }
     width: 100%;
   }
 
   .contacts__field {
     @include reset-list;
-    margin-bottom: 33px;
+    margin-right: 22.7px;
     display: flex;
     align-items: flex-start;
   }
 
   .contacts__value {
     @include reset-list;
-    margin-bottom: 37px;
     display: flex;
     align-items: flex-start;
   }
 
   .contacts__map {
     @include reset-list;
+    margin-bottom: 56px;
   }
 
   .contacts__map-img {
@@ -165,27 +177,28 @@
 
   .contacts__write {
     @include reset-list;
-    margin: auto auto 57px;
-    width: 33.9%;
+    margin: auto auto 0;
+    width: 29.5%;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 104px;
-    margin-top: 81px;
+    margin-bottom: 105px;
+    margin-top: 67px;
     padding: 0 50px;
     position: relative;
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
   }
 
   .contacts-wrapper {
     @include reset-list;
-    margin-left: 168px;
-    padding-top: 81px;
+    margin-right: 0.3%;
+    margin-left: 16.1%;
+    padding-top: 71px;
     flex-direction: column;
-    width: 33.3%;
+    width: 33.7%;
   }
 
   .contacts__title {
@@ -236,18 +249,15 @@
 
   .contacts__map {
     @include reset-list;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 45.6%;
+    width: 50%;
     min-height: 457px;
   }
 
   .contacts__write {
     @include reset-list;
     position: absolute;
-    left: 176px;
-    bottom: 40px;
-    width: 227px;
+    left: 19.6%;
+    bottom: 0;
+    width: 19.7%;
   }
 }

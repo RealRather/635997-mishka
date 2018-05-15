@@ -63,17 +63,18 @@
     min-height: 88px;
 
     &--knitting {
-      text-align: left;
+      text-align: center;
       width: 50%;
     }
 
     &--catalog {
-      width: 43%;
+      width: 45.8%;
       border-right: 1px solid #e5e5e5;
     }
   }
 
   .site-list__link {
     font-size: 17px;
+    padding-right: 10px;
   }
 }

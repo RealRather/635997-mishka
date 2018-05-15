@@ -82,4 +82,8 @@
     @include reset-list;
     min-height: 88px;
   }
+
+  .user-list__link {
+    margin-right: 2px;
+  }
 }

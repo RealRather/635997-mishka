@@ -64,6 +64,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .additional-list {
+    @include reset-list;
     justify-content: flex-start;
     width: 100%;
     min-height: 60px;
@@ -76,7 +77,7 @@
       width: 15.6%;
 
       &:nth-child(1) {
-        margin-right: 3.7%;
+        margin-right: 5.3%;
       }
     }
 

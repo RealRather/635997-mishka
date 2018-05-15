@@ -34,9 +34,20 @@
 @media screen and (min-width: $tablet-width) {
   .copyright {
     @include reset-list;
+    margin-right: -8px;
   }
 
   .copyright__link {
-    text-align: right;
+    padding-left: 10.6%;
+    text-align: left;
+  }
+
+  .copyright__text {
+    @include reset-list;
+  }
+
+  .copyright__image {
+    @include reset-list;
+    margin-left: 18px;
   }
 }

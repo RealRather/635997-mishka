@@ -103,8 +103,13 @@
   }
 
   .main-nav__logo {
-    top: 27px;
-    left: 47%;
+    top: 0px;
+    left: 42.5%;
+    display: block;
+    width: 15%;
+  }
+
+  .main-nav__logo-image {
     min-height: 88px;
   }
 }
