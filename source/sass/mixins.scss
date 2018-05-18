@@ -31,6 +31,6 @@
 
 @mixin desktop-container {
   margin: 0 auto;
-  width: 1150px;
+  max-width: 1150px;
   padding: 0 50px;
 }

@@ -1,19 +1,20 @@
 /* contacts */
 .contacts {
   @include reset-list;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  z-index: 50;
+  margin-bottom: 40px;
 }
 
-.contacts-wrapper {
+.contacts__wrapper {
   @include mobile-container;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;
+}
+
+.contacts__text {
+  @include reset-list;
 }
 
 .contacts__title {
@@ -69,6 +70,7 @@
 
 .contacts__map {
   @include reset-list;
+  margin: 0 -30px;
   margin-bottom: 40px;
   background-image:
     url("../img/icon-map-pin.svg"),
@@ -77,9 +79,7 @@
   background-position-x: 55%, center;
   background-position-y: 41%, center;
   background-repeat: no-repeat, no-repeat;
-  display: flex;
   position: relative;
-  width: 100%;
 }
 
 .contacts__map-img {
@@ -95,8 +95,6 @@
 
 .contacts__write {
   @include reset-list;
-  margin: auto auto 39px;
-  width: 80%;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -104,7 +102,7 @@
     margin-bottom: 57.5px;
   }
 
-  .contacts-wrapper {
+  .contacts__wrapper {
     @include tablet-container;
     width: 100%;
   }
@@ -167,7 +165,7 @@
 
   .contacts__map {
     @include reset-list;
-    margin-bottom: 56px;
+    margin: 0 -50px 56px;
   }
 
   .contacts__map-img {
@@ -178,7 +176,7 @@
   .contacts__write {
     @include reset-list;
     margin: auto auto 0;
-    width: 29.5%;
+    width: 33.5%;
   }
 }
 
@@ -186,24 +184,26 @@
   .contacts {
     margin-bottom: 105px;
     margin-top: 67px;
-    padding: 0 50px;
-    position: relative;
-    flex-direction: row;
-    box-sizing: border-box;
   }
 
-  .contacts-wrapper {
+  .contacts__wrapper {
+    @include desktop-container;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contacts__text {
     @include reset-list;
-    margin-right: 0.3%;
-    margin-left: 16.1%;
-    padding-top: 71px;
-    flex-direction: column;
-    width: 33.7%;
+    padding-left: 16.1%;
+    width: 50%;
   }
 
   .contacts__title {
     @include reset-list;
     margin-bottom: 49px;
+    margin-top: 71px;
 
     @include set-font (bold, 53px, 57px);
     width: 100%;
