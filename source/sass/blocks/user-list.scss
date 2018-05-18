@@ -66,17 +66,16 @@
 @media screen and (min-width: $desktop-width) {
   .user-list {
     @include reset-list;
-    justify-content: flex-start;
-    order: 1;
+    order: 3;
     width: 33.3%;
   }
 
   .user__item {
     @include reset-list;
-    min-height: 88px;
+    width: 24%;
   }
 
   .user-list__link {
-    margin-right: 2px;
+    padding-right: 2px;
   }
 }

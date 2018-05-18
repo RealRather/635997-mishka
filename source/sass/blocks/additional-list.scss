@@ -60,6 +60,7 @@
 @media screen and (min-width: $desktop-width) {
   .additional-list {
     @include reset-list;
+    padding-top: 17px;
     justify-content: flex-start;
     width: 100%;
   }
