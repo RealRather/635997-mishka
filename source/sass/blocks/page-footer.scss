@@ -38,20 +38,20 @@
     @include tablet-container;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
   .page-footer__logo {
     @include reset-list;
-    margin-right: 22%;
-    padding-left: 1.3px;
+    /*margin-right: 22%;
+    padding-left: 1.3px;*/
 
     &--hidden {
       display: block;
     }
-    width: 15%;
+    /*width: 15%;*/
   }
 
   .page-footer__logo-image {
@@ -59,12 +59,12 @@
   }
 
   .page-footer__social {
-    margin-right: auto;
-    width: 25%;
+    /*margin-right: auto;
+    width: 25%;*/
   }
 
   .page-footer__copyright {
-    width: 32%;
+    /*width: 32%;*/
   }
 }
 
@@ -79,10 +79,10 @@
   }
 
   .page-footer__logo {
-    margin-right: 22%;
+    /*margin-right: 22%;*/
   }
 
   .page-footer__copyright {
-    width: 20.5%;
+    /*width: 20.5%;*/
   }
 }

@@ -61,15 +61,14 @@
   }
 
   .page-main__wrapper {
-    @include desktop-container;
-    min-height: 254px;
-    width: 100%;
+    @include reset-list;
+    padding-top: 93px;
+    padding-bottom: 103px;
   }
 
   .page-main__title {
-    @include reset-list;
-    padding-top: 93px;
-
+    @include desktop-container;
     @include set-font (bold, 53px, 57px);
+    max-width: 1150px;
   }
 }
