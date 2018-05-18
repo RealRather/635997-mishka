@@ -4,23 +4,18 @@
   list-style: none;
 
   @include paint-bg ($white, $black);
-  width: 100%;
 }
 
 .user-list__item {
-  display: flex;
-  align-items: center;
-  align-content: center;
-
   @include reset-list;
-  min-height: 78px;
+  padding: 27px 30px;
+  display: block;
   border-top: 1px solid $border-grey;
-  width: 100%;
 }
 
 .user-list__link {
-  @include mobile-container;
-  padding-left: 76px;
+  @include reset-list;
+  padding-left: 17.7%;
   display: block;
 
   @include set-font (bold, 17px, 24px);
@@ -33,7 +28,9 @@
   .user-list {
     @include reset-list;
     margin-left: auto;
-    order: 0;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
     background-color: transparent;
     width: 52%;
   }
@@ -41,26 +38,22 @@
   .user-list__item {
     @include reset-list;
     border: none;
+    box-sizing: border-box;
+    white-space: nowrap;
 
     &--search {
       @include reset-list;
+      padding: 44px 0;
       border: none;
       border-left: 1px solid $border-grey;
       border-right: 1px solid $border-grey;
       width: 23.5%;
     }
-
-    &--basket {
-      flex-grow: 1;
-    }
-    width: inherit;
-    min-height: 88px;
   }
 
   .user-list__link {
     @include reset-list;
     text-align: right;
-    width: 100%;
   }
 
   .user-list__search {

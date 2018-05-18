@@ -11,7 +11,6 @@
   text-decoration: none;
   text-align: center;
   color: inherit;
-  min-height: 38px;
 }
 
 .copyright__text {
@@ -34,11 +33,9 @@
 @media screen and (min-width: $tablet-width) {
   .copyright {
     @include reset-list;
-    /*margin-right: -8px;*/
   }
 
   .copyright__link {
-    /*padding-left: 10.6%;*/
     text-align: left;
   }
 
@@ -48,6 +45,5 @@
 
   .copyright__image {
     @include reset-list;
-    /*margin-left: 18px;*/
   }
 }

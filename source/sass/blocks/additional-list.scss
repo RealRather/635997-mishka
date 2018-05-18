@@ -11,10 +11,7 @@
 
 .additional-list__item {
   @include reset-list;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  width: 100%;
+  display: block;
 }
 
 .additional-list__link {
@@ -27,7 +24,6 @@
   &--delivery {
     @include set-font (normal, 15px, 24px);
   }
-  width: 100%;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -35,10 +31,10 @@
     @include reset-list;
     padding-top: 10px;
     display: flex;
-    order: 2;
+    justify-content: flex-end;
+    order: 3;
     background-color: transparent;
     width: 50%;
-    min-height: 40px;
   }
 
   .additional-list__item {
@@ -58,7 +54,6 @@
     &--hidden {
       display: none;
     }
-    width: 100%;
   }
 }
 
@@ -67,7 +62,6 @@
     @include reset-list;
     justify-content: flex-start;
     width: 100%;
-    min-height: 60px;
   }
 
   .additional-list__item {

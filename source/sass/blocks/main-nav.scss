@@ -3,11 +3,6 @@
   @include reset-list;
   @include paint-bg ($white, $black);
   background-color: transparent;
-  min-height: 316px;
-}
-
-.main-nav__wrapper {
-  width: 100%;
 }
 
 .main-nav__logo {
@@ -16,16 +11,16 @@
 
 .main-nav__logo-link {
   @include reset-list;
-  padding-top: 20px;
+  padding: 21px 0;
   display: block;
   text-decoration: none;
-  text-align: center;
-  min-height: 59px;
 }
 
 .main-nav__logo-image {
   @include reset-list;
-  display: inline-block;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: block;
 }
 
 .main-nav__toggle {
@@ -49,7 +44,6 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 100%;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -63,19 +57,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
     width: 100%;
   }
 
   .main-nav__logo {
-    position: absolute;
-    z-index: 2;
-    top: 27px;
-    left: 50px;
+    order: 0;
     cursor: pointer;
   }
 
   .main-nav__logo-link {
+    @include reset-list;
+  }
+
+  .main-nav__logo-image {
     @include reset-list;
   }
 

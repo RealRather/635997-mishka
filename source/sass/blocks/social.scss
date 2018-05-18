@@ -14,8 +14,7 @@
 
 .social__item {
   @include reset-list;
-  margin-right: 9.2%;
-  /*width: 20%;*/
+  margin-right: 20px;
 
   &:nth-last-child(1) {
     margin-right: 0;
@@ -27,7 +26,6 @@
   display: block;
   text-decoration: none;
   color: inherit;
-  /*min-height: 40px;*/
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -38,8 +36,7 @@
 
   .social__item {
     @include reset-list;
-    padding: 10px;
-    /*margin-right: 14%;*/
+    margin-right: 20px;
   }
 }
 
@@ -47,11 +44,8 @@
   .social__list {
     margin: 0;
     justify-content: center;
-    width: 100%;
   }
 
   .social__item {
-    /*margin-right: 2%;
-    min-height: 30px;*/
   }
 }
