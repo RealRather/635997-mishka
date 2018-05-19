@@ -69,6 +69,8 @@
 
   .page-main__title {
     @include desktop-container;
+    padding: 0;
+
     @include set-font (bold, 53px, 57px);
     max-width: 1150px;
   }
