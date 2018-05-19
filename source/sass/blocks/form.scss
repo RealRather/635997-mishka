@@ -1,19 +1,19 @@
 /* form */
 .form {
   @include reset-list;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 
   @include set-font (inherit, inherit, inherit);
   border: none;
-  border-top: 1px solid #63d1bb;
+  /*border-top: 1px solid #63d1bb;*/
   width: 100%;
 }
 
 .form__legend {
   @include reset-list;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   padding-right: 25px;
 
   @include set-font (bold, 17px, 16px);
@@ -31,17 +31,22 @@
 
 .form__option {
   @include reset-list;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
+  padding-left: 5px;
   display: flex;
 
   &--color {
-    margin-bottom: 25px;
+    margin-bottom: 43px;
+
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .form__item {
   @include reset-list;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
   margin-bottom: 22px;
   display: flex;
   flex-direction: column;
@@ -49,6 +54,11 @@
 
   &:nth-last-child(1) {
     margin-bottom: 0;
+  }
+
+  &--userdata {
+    padding-bottom: 18px;
+    margin-bottom: 21px;
   }
 
   &--dop-info {
@@ -68,7 +78,7 @@
 
   &--name {
     @include reset-list;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
   }
 }
 

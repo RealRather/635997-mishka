@@ -1,6 +1,31 @@
 /* form-field */
+.form-field__color {
+  margin-bottom: 42px;
+}
+
+.form-field__fio {
+  margin-bottom: 33px;
+
+  legend {
+    margin-bottom: 29px;
+  }
+}
+
+.form-field__phone,
+.form-field__email {
+  margin-bottom: 31px;
+
+  legend {
+    margin-bottom: 22px;
+  }
+}
+
 .form-field__extra {
-  margin-bottom: 15px;
+  margin-bottom: 11px;
+
+  legend {
+    margin-bottom: 27px;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
