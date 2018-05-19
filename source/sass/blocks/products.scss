@@ -19,6 +19,10 @@
   margin: 29px 0 20px;
 }
 
+.products__main-wrapper {
+  @include reset-list;
+}
+
 .products__title {
   @include reset-list;
   margin-bottom: 4px;
@@ -108,7 +112,6 @@
 
   .products__wrapper {
     @include tablet-container;
-    position: relative;
     width: 100%;
   }
 
@@ -140,6 +143,12 @@
     width: 98px;
   }
 
+  .products__main-wrapper {
+    @include reset-list;
+    position: relative;
+    width: 100%;
+  }
+
   .products__main {
     width: 44%;
   }
@@ -166,8 +175,12 @@
     position: absolute;
     z-index: 0;
     bottom: -4px;
-    right: 50px;
-    width: 43.6%;
+    right: 0;
+    width: 50%;
+  }
+
+  .products__image {
+    height: 404px; /*временно*/
   }
 
   .products__price {
@@ -192,13 +205,13 @@
 
   .products__wrapper {
     @include desktop-container;
+    position: relative;
     width: 100%;
   }
 
   .products__header {
     margin-top: 52px;
     margin-bottom: 56px;
-    position: relative;
   }
 
   .products__title {
@@ -206,7 +219,7 @@
     order: 1;
     position: absolute;
     z-index: 2;
-    left: 16.1%;
+    left: 19%;
 
     @include set-font (bold, 53px, 57px);
   }
@@ -216,6 +229,10 @@
     margin: 0 33px;
     padding-top: 15px;
     order: 0;
+  }
+
+  .products__main-wrapper {
+    position: static;
   }
 
   .products__main {
@@ -240,7 +257,12 @@
     z-index: 0;
     top: 0;
     right: 50px;
-    width: 45.7%;
+    width: 45.8%;
+  }
+
+  .products__image {
+    height: 636px; /*временно*/
+    width: 100% /*временно*/
   }
 
   .products__price {
