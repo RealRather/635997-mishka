@@ -33,9 +33,9 @@
 
 .catalog-card {
   @include reset-list;
-  margin: 30px 0;
-  margin-bottom: 1.5px;
-  padding-bottom: 27px;
+  margin: 32px 0;
+  margin-bottom: 0;
+  padding-bottom: 26px;
   display: flex;
   flex-direction: column;
   border: 1px solid $light-grey;
@@ -51,14 +51,14 @@
 
 .catalog-card__title {
   @include reset-list;
-  margin-bottom: 6.5px;
+  margin-bottom: 6px;
 
   @include set-font (bold, 17px, 24px);
   color: $black;
 
   &--video {
     @include reset-list;
-    margin: 21.5px 0 26px;
+    margin: 21px 0 26px;
     padding-left: 34.6%;
     padding-right: 7%;
     min-height: 43px;
@@ -67,20 +67,19 @@
 
 .catalog-card__picture {
   @include reset-list;
-  margin-bottom: 26.5px;
+  margin-bottom: 25px;
   display: flex;
   width: 100%;
 
   &--video {
-    margin-bottom: 26.5px;
+    margin-bottom: 26px;
   }
 }
 
 .catalog-card__image {
   @include reset-list;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: auto;
 }
 
 .catalog-card__wrapper {
@@ -90,11 +89,12 @@
     display: flex;
     flex-direction: column;
   }
+  box-sizing: border-box;
 }
 
 .catalog-card__description {
   @include reset-list;
-  padding-bottom: 15px;
+  padding-bottom: 19px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -109,8 +109,9 @@
 
   &--making {
     margin-top: auto;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     margin-left: 2.5%;
+    padding-right: 7px;
 
     @include set-font (normal, 13px, 24px);
   }
@@ -118,7 +119,7 @@
 
 .catalog-card__buy {
   @include reset-list;
-  padding-top: 24px;
+  padding-top: 22px;
 }
 
 .catalog-card__price {
@@ -146,15 +147,14 @@
 
   .catalog-list {
     @include reset-list;
-    margin-top: 80px;
+    margin-top: 78px;
   }
 
   .catalog-card {
     @include reset-list;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     flex-direction: row;
     flex-wrap: nowrap;
-    min-height: 334px;
 
     &--making {
       margin-bottom: 63px;
@@ -165,28 +165,30 @@
 
   .catalog-card__picture {
     @include reset-list;
-    width: 50%;
-    min-height: 334px;
+    width: 61%;
     height: 100%;
 
     &--video {
-      margin-bottom: 39.6px;
+      margin-bottom: 39px;
       order: 0;
       width: 100%;
-      min-height: 450px;
+      min-height: 454px; /*временно*/
+
+      img {
+        height: auto;
+      }
     }
   }
 
   .catalog-card__image {
-    min-height: 334px;
-    min-width: 334px;
+    height: 331px;  /*временно*/
     width: 100%;
   }
 
   .catalog-card__wrapper {
     @include reset-list;
     margin-left: 27px;
-    margin-right: 35px;
+    margin-right: 33px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,19 +206,19 @@
 
   .catalog-card__description {
     @include reset-list;
-    padding-top: 23px;
+    padding-top: 25px;
     border: none;
   }
 
   .catalog-card__title {
     @include reset-list;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     @include set-font (bold, 20px, 24px);
 
     &--video {
       @include reset-list;
-      margin-bottom: 20px;
+      margin-bottom: 21px;
       padding-left: 15.8%;
       padding-right: 50px;
       order: 1;
@@ -237,8 +239,8 @@
   .catalog-card__buy {
     @include reset-list;
     margin-left: 2%;
-    padding-bottom: 29.3px;
-    padding-top: 22px;
+    padding-bottom: 26px;
+    padding-top: 20px;
 
     border-top: 1px solid $light-grey;
   }
@@ -284,7 +286,7 @@
 
   .catalog-card {
     @include reset-list;
-    margin-right: 5%;
+    margin-right: 4.8%;
 
     &:nth-child(3n) {
       margin-right: 0;
@@ -294,60 +296,73 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 107px;
+      margin-bottom: 104px;
       flex-direction: row;
       width: 100%;
     }
     width: 30%;
-    min-height: 450px;
   }
 
   .catalog-card__picture {
     @include reset-list;
+    margin-bottom: 25px;
 
     img {
-      min-width: 316px;
-      min-height: 455px;
+      min-height: 461px;
     }
 
-    height: 100%;
+    &--video {
+      margin-bottom: 0;
+
+      img {
+        min-height: 455px;
+      }
+    }
+
+    height: auto;
     width: 100%;
   }
 
   .catalog-card__wrapper {
     @include reset-list;
-    margin-left: 22px;
+    margin-left: 26px;
     margin-right: 28px;
-    width: 84%;
 
     &--making {
       @include reset-list;
-      margin-bottom: 58px;
+      margin-bottom: 61px;
       margin-top: auto;
-      padding-left: 80px;
-      padding-right: 60px;
-      width: 47.8%;
+      padding-left: 77px;
+      padding-right: 61px;
+      width: 46.6%;
     }
+    box-sizing: border-box;
+    width: auto;
   }
 
   .catalog-card__title {
     &--video {
       @include reset-list;
       position: absolute;
-      right: 18.5%;
-      top: 27%;
-      width: 15%;
-      min-height: 54px;
+      right: 9.6%;
+      top: 21%;
+      width: 18%;
     }
   }
 
   .catalog-card__description {
     @include reset-list;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
 
     &--toys {
-      margin-bottom: 25px;
+      margin-bottom: 13px;
     }
+  }
+
+  .catalog-card__buy {
+    @include reset-list;
+    padding-bottom: 25px;
+    padding-top: 23px;
   }
 
   .catalog-card__video {
@@ -362,7 +377,12 @@
 
   .catalog-card__text {
     &--making {
-      margin-bottom: 44px;
+      @include reset-list;
+      margin-bottom: 46px;
     }
+  }
+
+  .catalog-card__do {
+    margin-left: 0;
   }
 }
