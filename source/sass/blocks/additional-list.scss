@@ -29,7 +29,7 @@
 @media screen and (min-width: $tablet-width) {
   .additional-list {
     @include reset-list;
-    padding-top: 10px;
+    padding-top: 14px;
     display: flex;
     justify-content: flex-end;
     order: 3;

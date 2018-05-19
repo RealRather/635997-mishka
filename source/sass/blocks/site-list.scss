@@ -27,11 +27,11 @@
 @media screen and (min-width: $tablet-width) {
   .site-list {
     @include reset-list;
-    padding-top: 10px;
+    padding-top: 15px;
     justify-content: space-between;
     order: 2;
     background-color: transparent;
-    width: 46%;
+    width: 45.5%;
   }
 
   .site-list__item {

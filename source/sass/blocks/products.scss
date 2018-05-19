@@ -101,8 +101,9 @@
 
 @media screen and (min-width: $tablet-width) {
   .products {
-    margin: 0 auto 71px;
+    margin: 0 auto;
     padding: 0;
+    padding-bottom: 66px;
   }
 
   .products__wrapper {
@@ -112,6 +113,7 @@
   }
 
   .products__header {
+    @include reset-list;
     margin-top: 45px;
     display: flex;
     flex-direction: row;
@@ -123,7 +125,7 @@
     @include reset-list;
     margin-right: 10px;
     margin-left: -3.8px;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 
     @include set-font (bold, 43px, 50px);
   }
@@ -139,7 +141,6 @@
   }
 
   .products__main {
-    margin-left: -0.5px;
     width: 44%;
   }
 
@@ -164,22 +165,22 @@
     @include reset-list;
     position: absolute;
     z-index: 0;
-    bottom: 0;
+    bottom: -4px;
     right: 50px;
-    width: 46%;
+    width: 43.6%;
   }
 
   .products__price {
     @include reset-list;
     margin-bottom: 35px;
-    margin-right: 4.7px;
+    margin-right: 5px;
 
     @include set-font (bold, 20px, 24px);
   }
 
   .products__order {
     @include reset-list;
-    margin-right: 4.5px;
+    margin-right: 5px;
   }
 }
 
@@ -195,8 +196,8 @@
   }
 
   .products__header {
-    margin-top: 45px;
-    margin-bottom: 55.5px;
+    margin-top: 52px;
+    margin-bottom: 56px;
     position: relative;
   }
 
@@ -219,16 +220,16 @@
 
   .products__main {
     margin-left: 16.7%;
-    width: 28.2%;
+    width: 28.5%;
   }
 
   .products__promo {
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     order: 2;
   }
 
   .products__list {
-    margin-bottom: 112px;
+    margin-bottom: 111px;
   }
 
   .products__field {
@@ -239,12 +240,17 @@
     z-index: 0;
     top: 0;
     right: 50px;
-    width: 45%;
+    width: 45.7%;
   }
 
   .products__price {
     margin-bottom: 33px;
+    margin-right: 7px;
 
     @include set-font (bold, 20px, 24px);
+  }
+
+  .products__order {
+    margin-right: 7px;
   }
 }

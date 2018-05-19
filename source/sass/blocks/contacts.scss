@@ -29,7 +29,7 @@
 
 .contacts__list {
   @include reset-list;
-  margin-left: -1.5px;
+  margin-left: -2px;
   display: flex;
   flex-direction: column;
 
@@ -38,12 +38,12 @@
 
   tr {
     @include reset-list;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     display: flex;
     justify-content: space-between;
 
     &:nth-last-child(1) {
-      margin-bottom: 38.5px;
+      margin-bottom: 36px;
     }
   }
 }
@@ -71,7 +71,7 @@
 .contacts__map {
   @include reset-list;
   margin: 0 -30px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   background-image:
     url("../img/icon-map-pin.svg"),
     url("../img/map-mobile@1x.jpg");
@@ -165,7 +165,7 @@
 
   .contacts__map {
     @include reset-list;
-    margin: 0 -50px 56px;
+    margin: 0 -50px 49px;
   }
 
   .contacts__map-img {
@@ -196,8 +196,8 @@
 
   .contacts__text {
     @include reset-list;
-    padding-left: 16.1%;
-    width: 50%;
+    padding-left: 16%;
+    width: 33.3%;
   }
 
   .contacts__title {
@@ -250,7 +250,10 @@
   .contacts__map {
     @include reset-list;
     width: 50%;
-    min-height: 457px;
+
+    img {
+      height: 452px;
+    }
   }
 
   .contacts__write {

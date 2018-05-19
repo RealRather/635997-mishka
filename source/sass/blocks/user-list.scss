@@ -41,9 +41,13 @@
     box-sizing: border-box;
     white-space: nowrap;
 
+    &--basket {
+      padding-bottom: 7px;
+    }
+
     &--search {
       @include reset-list;
-      padding: 44px 0;
+      padding: 45px 0;
       border: none;
       border-left: 1px solid $border-grey;
       border-right: 1px solid $border-grey;
@@ -70,9 +74,13 @@
     width: 33.3%;
   }
 
-  .user__item {
+  .user-list__item {
     @include reset-list;
-    width: 24%;
+
+    &--search {
+      padding: 44px 0;
+      width: 24%;
+    }
   }
 
   .user-list__link {

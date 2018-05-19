@@ -21,6 +21,7 @@
 .assortment__title {
   @include reset-list;
   padding-top: 70px;
+  padding-bottom: 10px;
   box-sizing: border-box;
 
   @include set-font (bold, 27px, 30px);
@@ -49,7 +50,7 @@
 .assortment__item {
   @include mobile-container;
   margin: 0;
-  padding: 0 29px;
+  padding: 27px 29px;
 
   @include set-font (bold, 19px, 24px);
   background-color: inherit;
@@ -58,7 +59,7 @@
   box-sizing: border-box;
   text-align: left;
   display: block;
-  min-height: 103px;
+  width: 100%;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -79,7 +80,8 @@
 
   .assortment__title {
     @include reset-list;
-    padding-top: 28px;
+    padding-top: 29px;
+    padding-bottom: 10px;
 
     @include set-font (bold, 43px, 50px);
   }
@@ -101,10 +103,9 @@
   }
 
   .assortment__item {
-    padding: 0 37px 2px;
+    padding: 27px 36px 32px;
 
     @include set-font (bold, 20px, 30px);
-    min-height: 119px;
     width: 100%;
   }
 }
@@ -112,7 +113,7 @@
 @media screen and (min-width: $desktop-width) {
   .assortment {
     @include reset-list;
-    margin-bottom: 79px;
+    margin-bottom: 71px;
     background-size: 1250px 746px;
   }
 
@@ -135,7 +136,6 @@
   }
 
   .assortment__item {
-    padding: 0 37px;
-    min-height: 119px;
+    padding: 27px 37px 31px;
   }
 }
