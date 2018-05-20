@@ -15,8 +15,19 @@
   }
 }
 
-.form-field__phone,
 .form-field__email {
+  margin-bottom: 33px;
+
+  legend {
+    margin-bottom: 22px;
+    &::after {
+      left: 80px;
+      width: 179px;
+    }
+  }
+}
+
+.form-field__phone {
   margin-bottom: 31px;
 
   legend {
@@ -25,7 +36,7 @@
 }
 
 .form-field__extra {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   legend {
     margin-bottom: 27px;
@@ -43,8 +54,9 @@
   }
 
   .form-field__type {
+    @include reset-list;
     padding-top: 15px;
-    padding-bottom: 24px;
+    padding-bottom: 21px;
 
     legend {
       top: 17%;
@@ -54,28 +66,43 @@
   .form-field__color {
     @include reset-list;
     padding-top: 51px;
-    padding-bottom: 26px;
+    padding-bottom: 23px;
     background-color: $light-grey;
   }
 
   .form-field__fio {
-    padding-top: 56px;
-    padding-bottom: 46px;
+    padding-top: 66px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
   }
 
 
   .form-field__email {
+    padding-top: 22px;
+    padding-bottom: 32px;
+    margin-bottom: 21px;
     background-color: $light-grey;
   }
 
   .form-field__phone {
     @include reset-list;
+    padding-top: 63px;
     padding-bottom: 0;
     background-color: $light-grey;
+
+    legend {
+      top: 56%;
+    }
   }
 
   .form-field__extra {
-    margin-bottom: 52px;
+    margin-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+
+    legend {
+      top: 25%;
+    }
   }
 }
 

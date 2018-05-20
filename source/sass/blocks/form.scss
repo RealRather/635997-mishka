@@ -183,8 +183,10 @@
 .form__textarea {
   @include reset-list;
   padding-top: 12px;
+  padding-bottom: 17px;
 
   @include set-font (normal, 17px, 18px);
+  font-family: inherit;
   border: none;
   opacity: 0.3;
 }
@@ -204,13 +206,18 @@
     position: absolute;
     left: 6.6%;
     top: 17%;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form__list {
     margin-left: auto;
+    padding-right: 50px;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 73.5%;
+    width: 65.2%;
   }
 
   .form__option {
@@ -219,14 +226,13 @@
     width: 100%;
 
     &--color {
-      margin-bottom: 23px;
-      width: 46.5%;
+      margin-bottom: 21px;
+      width: 47.6%;
     }
 
     label {
-      padding-top: 14px;
-      padding-bottom: 21px;
-      padding-left: 82px;
+      padding-top: 13px;
+      padding-bottom: 24px;
     }
   }
 
@@ -235,23 +241,22 @@
     border: none;
     width: 100%;
 
-    &--phone {
+    &--phone,
+    &--email,
+    &--dop-info {
       margin-right: 50px;
-      width: 65%;
-    }
-
-    &--email {
-      margin-right: 50px;
-      width: 65%;
+      box-sizing: border-box;
+      width: 65.2%;
     }
 
     &--dop-info {
       padding: 0;
-      margin-right: 50px;
-      width: 65%;
+      border: 2px solid $black;
     }
 
     &--userdata {
+      padding-bottom: 18px;
+      margin-bottom: 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
@@ -262,24 +267,59 @@
 
   .form__label {
     @include set-font (bold, 19px, 18px);
+    padding-top: 14px;
+    padding-bottom: 21px;
+    padding-left: 79px;
+
+    &--radio,
+    &--checkbox {
+      &::before {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &--radio {
+      &::after {
+        top: 16px;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--checkbox {
+      &::after {
+        top: 8px;
+        left: 10px;
+        width: 34px;
+        height: 34px;
+      }
+    }
 
     &--name {
       @include reset-list;
+      padding-bottom: 20px;
       margin-right: 25px;
     }
   }
 
   .form__input {
+    @include set-font (normal, 20px, 22px);
+
     &--phone,
     &--email {
+      padding-left: 13px;
       background-color: inherit;
+      box-sizing: border-box;
     }
 
     &--phone,
     &--email,
     &--info {
-      padding-bottom: 15px;
-      border-bottom: 2px solid #000000;
+      padding-left: 16px;
+      padding-bottom: 14px;
+      border-bottom: 2px solid $black;
       width: 100%;
       opacity: 1;
 
@@ -301,17 +341,12 @@
     }
   }
 
-  .form__userdata {
-    padding-right: 50px;
-    padding-left: 38px;
-  }
-
   .form__textarea {
-    padding-left: 17px;
-    padding-right: 17px;
-    padding-top: 16px;
+    padding: 13px 15px 6px;
 
-    @include set-font (normal, 19px, 18px);
+    @include set-font (normal, 19px, 20px);
+    opacity: 1;
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 

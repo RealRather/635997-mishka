@@ -6,7 +6,7 @@
 .knitting__promo {
   @include mobile-container;
   padding-top: 23px;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   @include set-font (inherit, 13px, 24px);
   box-sizing: border-box;
@@ -64,6 +64,7 @@
 
   .knitting__wrapper {
     @include tablet-container;
+    margin-bottom: 52px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
