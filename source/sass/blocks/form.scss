@@ -357,21 +357,34 @@
 
   .form__list {
     margin: auto;
-    width: 60%;
+    padding-right: 0;
+    width: 60.8%;
+    max-width: 1150px;
   }
 
   .form__item {
     margin: auto;
-    width: 60%;
+    width: 60.8%;
 
     &--userdata {
+      padding-bottom: 38px;
       width: 100%;
     }
   }
 
   .form__option {
+    margin-bottom: 21px;
+
     &--color {
-      width: 30%;
+      width: 26.3%;
     }
+  }
+
+  .form__input--info {
+    padding-left: 18px;
+  }
+
+  .form__input--phone {
+    padding-left: 10px;
   }
 }

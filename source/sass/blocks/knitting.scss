@@ -89,14 +89,16 @@
 
 @media screen and (min-width: $desktop-width) {
   .knitting__promo {
-    width: 60%;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 43px;
+    padding: 122px 0 0;
+    width: 60.8%;
+    max-width: 1150px;
   }
 
   .knitting__wrapper {
     @include desktop-container;
+    margin-bottom: 50px;
     padding: 0;
-    width: 60%;
+    width: 60.8%;
   }
 }

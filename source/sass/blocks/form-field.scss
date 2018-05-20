@@ -107,10 +107,53 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .form-field__color {
-    ul {
-      width: 78.5%;
-      margin-left: 20%;
+  .form-field {
+    legend {
+      top: 25%;
+      left: 9.6%;
     }
+  }
+
+  .form-field__type {
+    padding-top: 15px;
+    padding-bottom: 24px;
+
+    legend {
+      top: 16%;
+      left: 9.9%;
+    }
+  }
+
+  .form-field__color {
+    padding-bottom: 25px;
+
+    ul {
+      width: 62%;
+      margin-left: 19.7%;
+    }
+
+    legend {
+      top: 29.4%;
+    }
+  }
+
+  .form-field__fio {
+    padding-bottom: 13px;
+    padding-top: 64px;
+
+    legend {
+      top: 22%;
+    }
+  }
+
+  .form-field__phone {
+    legend {
+      top: 56%;
+      left: 9.7%;
+    }
+  }
+
+  .form-field__extra {
+    margin-bottom: 31px;
   }
 }
