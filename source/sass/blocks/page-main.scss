@@ -15,14 +15,13 @@
   text-align: center;
   background-color: $light-grey;
   box-sizing: border-box;
-  min-height: 177px;
   width: 100%;
 }
 
 .page-main__title {
   @include reset-list;
-  margin-left: -5px;
-  padding-top: 70px;
+  padding-bottom: 76px;
+  padding-top: 71px;
   display: block;
   text-align: center;
 
@@ -40,16 +39,16 @@
 
   .page-main__wrapper {
     @include tablet-container;
-    padding-top: 95px;
     border-top: 1px solid $border-grey;
     box-sizing: border-box;
     width: 100%;
-    min-height: 226px;
   }
 
   .page-main__title {
     @include reset-list;
     margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 83px;
 
     @include set-font (bold, 43px, 50px);
     width: 100%;

@@ -29,15 +29,43 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .form-field {
+    @include reset-list;
+
+    legend {
+      @include reset-list;
+      top: 22%;
+    }
+  }
+
+  .form-field__type {
+    padding-top: 15px;
+    padding-bottom: 24px;
+
+    legend {
+      top: 17%;
+    }
+  }
+
   .form-field__color {
+    @include reset-list;
+    padding-top: 51px;
+    padding-bottom: 26px;
     background-color: $light-grey;
   }
+
+  .form-field__fio {
+    padding-top: 56px;
+    padding-bottom: 46px;
+  }
+
 
   .form-field__email {
     background-color: $light-grey;
   }
 
   .form-field__phone {
+    @include reset-list;
     padding-bottom: 0;
     background-color: $light-grey;
   }
