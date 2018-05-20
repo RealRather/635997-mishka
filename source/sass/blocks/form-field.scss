@@ -1,10 +1,14 @@
 /* form-field */
+.form-field__type {
+  margin-bottom: 30px;
+}
+
 .form-field__color {
-  margin-bottom: 42px;
+  margin-bottom: 28px;
 }
 
 .form-field__fio {
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 
   legend {
     margin-bottom: 29px;
@@ -21,7 +25,7 @@
 }
 
 .form-field__extra {
-  margin-bottom: 11px;
+  margin-bottom: 15px;
 
   legend {
     margin-bottom: 27px;
