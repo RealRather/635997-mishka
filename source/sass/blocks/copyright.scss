@@ -1,13 +1,40 @@
 /* copyright */
 .copyright {
-  @include paint-bg (#f1f1f1, #000000);
+  @include reset-list;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @include paint-bg (#f1f1f1, $black);
 }
 
 .copyright__link {
+  @include reset-list;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: inherit;
+  min-height: 38px;
+  width: 185px;
 }
 
 .copyright__text {
+  @include reset-list;
   @include set-font (bold, 19px, 18px);
+}
+
+.copyright__image {
+  @include reset-list;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .copyright {
+    @include reset-list;
+  }
 }

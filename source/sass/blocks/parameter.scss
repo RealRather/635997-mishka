@@ -1,10 +1,33 @@
 /* parameter */
 .parameter {
+  @include reset-list;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
   @include paint-bg (inherit, inherit);
+  width: 260px;
+}
+
+.parameter__item {
+  @include reset-list;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 52px;
+  width: 82px;
 }
 
 .parameter__size {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+
   @include set-font (bold, 17px, 16px);
   @include paint-bg ($white, $dark-grey);
   border: 1px solid $border-grey;
+  height: 52px;
+  width: 82px;
 }

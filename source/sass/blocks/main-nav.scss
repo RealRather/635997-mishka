@@ -1,19 +1,119 @@
 /* main-nav */
 .main-nav {
-  @include paint-bg ($white, #000000);
+  display: flex;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 260px;
+  /*временно для сетки*/
+  min-height: 316px;
+
+  @include paint-bg ($white, $black);
+  background-color: transparent;
 }
 
 .main-nav__toggle {
+  @include reset-list;
   @include paint-bg (inherit, inherit);
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.main-nav__site-wrapper,
+.main-nav__user-wrapper {
+  @include reset-list;
+  margin: 0;
+  display: flex;
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+
+  @include reset-list;
+  /*временно для сетки*/
+  min-height: 79px;
 }
 
-.main-nav__link {
-  text-decoration: none;
+.main-nav__additional-wrapper {
+  display: none;
+}
 
-  @include set-font (bold, 17px, 24px);
-  @include paint-bg(inherit, inherit);
+.main-nav__additional {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  @include reset-list;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @include reset-list;
+    margin: 0 auto;
+    width: 668px;
+    /*временно для сетки*/
+    min-height: 133px;
+  }
+
+  .main-nav__user-wrapper {
+    @include reset-list;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    order: 2;
+    width: 52%;
+  }
+
+  .main-nav__site-wrapper {
+    @include reset-list;
+    flex-direction: row;
+    order: 3;
+    width: 50%;
+  }
+
+  .main-nav__additional-wrapper {
+    @include reset-list;
+    display: flex;
+    flex-direction: row;
+    order: 4;
+    width: 50%;
+  }
+
+  .main-nav__list,
+  .main-nav__additional {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .main-nav {
+    @include reset-list;
+    margin: 0 auto;
+    width: 1050px;
+  }
+
+  .main-nav__user-wrapper {
+    order: 3;
+    width: 33.3%;
+  }
+
+  .main-nav__site-wrapper {
+    order: 1;
+    width: 38%;
+  }
+
+  .main-nav__additional-wrapper {
+    display: flex;
+    order: 4;
+    width: 100%;
+  }
 }

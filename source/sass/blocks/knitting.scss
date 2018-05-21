@@ -1,9 +1,96 @@
 /* knitting */
+.knitting {
+  width: 260px;
+  margin: 0 auto;
+}
 
 .knitting__promo {
-  @include set-font(inherit, 13px, 24px);
+  @include reset-list;
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  @include set-font (inherit, 13px, 24px);
+}
+
+.knitting__form {
+  @include reset-list;
+  margin-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .knitting__fields {
-  @include set-font(normal, 14px, 16px);
+  @include set-font (normal, 14px, 16px);
+}
+
+.knitting__required {
+  @include reset-list;
+  margin-bottom: 30px;
+
+  @include set-font (normal, 14px, 16px);
+}
+
+.knitting__wrapper {
+  @include reset-list;
+}
+
+.knitting__send {
+  @include reset-list;
+  display: block;
+}
+
+.knitting__send-order {
+  width: 100%;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .knitting {
+    width: 668px;
+    padding: 0 50px;
+  }
+
+  .knitting__promo {
+    @include reset-list;
+    margin-top: 73px;
+    margin-bottom: 50px;
+
+    @include set-font (inherit, 17px, 30px);
+  }
+
+  .knitting__form {
+    margin-bottom: 50px;
+  }
+
+  .knitting__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .knitting__send {
+    order: 0;
+    width: 230px;
+  }
+
+  .knitting__required {
+    @include reset-list;
+    order: 1;
+
+    @include set-font (normal, 17px, 30px);
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .knitting {
+    width: 1050px;
+    padding: 0 100px;
+  }
+
+  .knitting__wrapper {
+    margin-left: 127px;
+    width: 66%;
+  }
 }
