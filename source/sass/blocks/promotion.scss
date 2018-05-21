@@ -1,19 +1,25 @@
 /* promotion */
 .promotion {
   @include reset-list;
-  margin: 0 auto 30px;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto 29px;
 
   @include set-font (bold, inherit, inherit);
   @include paint-bg ($white, $black);
-  width: 260px;
+}
+
+.promotion__wrapper {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .promotion__title {
   @include reset-list;
-  margin-top: 30px;
-  margin-bottom: 26px;
+  margin-top: 27px;
+  margin-bottom: 28.5px;
+  margin-left: -2px;
 
   @include set-font (bold, 25px, 30px);
 }
@@ -29,7 +35,7 @@
 
 .promotion__item {
   @include reset-list;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   display: flex;
   flex-direction: column;
 
@@ -44,31 +50,37 @@
 @media screen and (min-width: $tablet-width) {
   .promotion {
     @include reset-list;
-    margin: 0 auto 80px;
+    margin: 0 auto 33px;
+  }
+
+  .promotion__wrapper {
+    @include tablet-container;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 668px;
+    width: 100%;
   }
 
   .promotion__title {
     @include reset-list;
-    margin-top: 50px;
-    margin-bottom: 45px;
-    margin-left: -2px;
+    margin-top: 51px;
+    margin-bottom: 45.5px;
+    margin-left: -6px;
 
     @include set-font (bold, 43px, 50px);
   }
 
   .promotion__list {
     @include reset-list;
+    margin-left: 1px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .promotion__item {
     @include reset-list;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+    margin-right: 4.5%;
 
     &--clean {
       order: 0;
@@ -95,7 +107,7 @@
     }
 
     @include set-font (bold, 20px, 22px);
-    width: 315px;
+    width: 45.5%;
   }
 
   .promotion__description {
@@ -108,19 +120,25 @@
   .promotion {
     @include reset-list;
     margin: 0 auto 37px;
-    width: 1050px;
+  }
+
+  .promotion__wrapper {
+    @include desktop-container;
+    width: 100%;
   }
 
   .promotion__list {
-    margin: 0 auto;
-    width: 700px;
+    @include reset-list;
+    margin: 0 175px;
+    margin-left: 175.5px;
+    width: 66.7%;
   }
 
   .promotion__title {
     @include reset-list;
     margin-left: 169px;
-    margin-top: 60px;
-    margin-bottom: 42px;
+    margin-top: 57px;
+    margin-bottom: 43px;
 
     @include set-font (bold, 53px, 57px);
     width: 100%;
@@ -128,6 +146,7 @@
 
   .promotion__item {
     margin-bottom: 54px;
-    width: 50%;
+    width: 45.5%;
+    margin-right: 4.5%;
   }
 }

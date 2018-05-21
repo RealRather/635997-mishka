@@ -1,18 +1,24 @@
 /* reviews */
 .reviews {
   @include reset-list;
-  margin: 0 auto 50px;
-  display: flex;
-  flex-direction: column;
+  padding-bottom: 53px;
 
   @include paint-bg ($white, $dark-grey);
-  width: 260px;
+}
+
+.reviews__wrapper {
+  @include mobile-container;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .reviews__title {
   @include reset-list;
-  margin-top: 26px;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-left: -1px;
+  margin-bottom: 23.2px;
 
   @include set-font (bold, 25px, 30px);
   color: $black;
@@ -32,20 +38,21 @@
 
 .reviews__text {
   @include reset-list;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 
   @include set-font (normal, 15px, 30px);
 }
 
 .reviews__author {
   @include reset-list;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .reviews__author-name {
   @include reset-list;
-  margin-bottom: 13px;
+  margin-bottom: 3px;
 
   @include set-font (bold, 17px, 24px);
   font-style: normal;
@@ -54,14 +61,12 @@
 
 .reviews__author-mail {
   @include reset-list;
-  margin-bottom: 13px;
-
   @include set-font (normal, 17px, 30px);
 }
 
 .reviews__toggles {
   @include reset-list;
-  margin-bottom: 50px;
+  margin-bottom: 38.7px;
   display: flex;
   flex-direction: row;
 }
@@ -74,7 +79,7 @@
   @include set-font (bold, 17px, 24px);
   @include paint-bg ($white, $black);
   border: 1px solid $border-grey;
-  width: 130px;
+  width: 50%;
 
   &--left {
     padding-left: 37px;
@@ -85,7 +90,6 @@
     padding-right: 37px;
     padding-left: 40px;
     border-left: none;
-    width: 130px;
   }
 }
 
@@ -98,40 +102,44 @@
 
 @media screen and (min-width: $tablet-width) {
   .reviews {
-    margin: 0 auto 85px;
+    @include reset-list;
+    padding-bottom: 87px;
     padding-top: 76px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+  }
+
+  .reviews__wrapper {
+    @include tablet-container;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
     z-index: 40;
-    background-image: url("../img/review@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 350px 457px;
-    width: 768px;
+    width: 100%;
   }
 
   .reviews__title {
     @include reset-list;
-    margin-right: 10px;
-    margin-left: 50px;
+    margin-right: auto;
+    margin-left: -3.7px;
     order: 0;
 
     @include set-font (bold, 43px, 50px);
-    width: 60%;
+    width: 54%;
   }
 
   .reviews__list {
     @include reset-list;
     margin-top: 45px;
-    margin-left: 50px;
     flex-direction: row;
     order: 3;
-    width: 668px;
   }
 
   .reviews__item {
     @include reset-list;
+    margin-left: -1px;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
@@ -145,9 +153,10 @@
   }
 
   .reviews__comment {
-    margin-right: 50px;
+    margin-top: 2px;
     order: 1;
-    width: 175px;
+    width: 172.5px;
+    max-height: 20px;
   }
 
   .reviews__author {
@@ -159,8 +168,9 @@
   .reviews__author-name {
     @include reset-list;
     margin-bottom: 5px;
+    margin-left: 1.5px;
 
-    @include set-font (bold, 17px, 30px);
+    @include set-font (bold, 18px, 24px);
   }
 
   .reviews__author-mail {
@@ -172,9 +182,8 @@
 
   .reviews__toggles {
     @include reset-list;
-    margin-left: 50px;
-    margin-bottom: 50px;
     margin-right: 50px;
+    margin-bottom: 53.5px;
     flex-direction: row;
     justify-content: space-between;
     order: 5;
@@ -199,27 +208,38 @@
 
 @media screen and (min-width: $desktop-width) {
   .reviews {
-    margin: 0 auto 70px;
+    @include desktop-container;
     padding-top: 69px;
+    padding-bottom: 96px;
+    box-sizing: border-box;
+    background-position-x: 50px;
+    width: 100%;
+  }
 
-    width: 1050px;
+  .reviews__wrapper {
+    @include reset-list;
+    padding-left: 170px;
+    width: 100%;
   }
 
   .reviews__title {
-    margin-left: 170px;
+    @include reset-list;
     margin-right: auto;
 
     @include set-font (bold, 53px, 57px);
   }
 
   .reviews__list {
-    margin-top: 44px;
-    margin-left: 175px;
-    width: 780px;
+    margin-top: 45.5px;
+    width: 90%;
+  }
+
+  .reviews__item {
+    margin-left: 4.5px;
   }
 
   .reviews__text {
-    margin-bottom: 36px;
+    margin-bottom: 37.8px;
   }
 
   .reviews__author {
@@ -228,6 +248,8 @@
 
   .reviews__author-name {
     margin-bottom: 2px;
+
+    @include set-font (bold, 17px, 24px);
   }
 
   .reviews__author-mail {

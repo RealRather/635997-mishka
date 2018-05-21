@@ -1,6 +1,5 @@
 /* page-main */
 .page-main {
-  width: 320px;
   margin: 0 auto;
   background-size: 320px 373px;
   border-top: 1px solid $border-grey;
@@ -11,17 +10,18 @@
 }
 
 .page-main__wrapper {
-  @include reset-list;
+  @include mobile-container;
   margin: 0 auto;
-  padding-top: 70px;
   text-align: center;
   background-color: $light-grey;
-  width: 320px;
-  min-height: 107px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .page-main__title {
   @include reset-list;
+  padding-bottom: 76px;
+  padding-top: 71px;
   display: block;
   text-align: center;
 
@@ -30,8 +30,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .page-main {
-    margin-top: -58px;
-    width: 768px;
+    margin-top: -40px;
 
     &--inner {
       border: none;
@@ -39,41 +38,39 @@
   }
 
   .page-main__wrapper {
-    @include reset-list;
-    padding-top: 95px;
+    @include tablet-container;
     border-top: 1px solid $border-grey;
-    width: 768px;
-    min-height: 130px;
+    box-sizing: border-box;
+    width: 100%;
   }
 
   .page-main__title {
     @include reset-list;
     margin: 0 auto;
+    padding-top: 91px;
+    padding-bottom: 83px;
 
     @include set-font (bold, 43px, 50px);
-    width: 668px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .page-main {
-    width: 1150px;
-    margin-top: -60px;
+    margin-top: -41px;
   }
 
   .page-main__wrapper {
     @include reset-list;
-    margin: 0 auto;
     padding-top: 93px;
-    width: 1150px;
-    min-height: 161px;
+    padding-bottom: 103px;
   }
 
   .page-main__title {
-    @include reset-list;
-    margin: 0 auto;
+    @include desktop-container;
+    padding: 0;
 
     @include set-font (bold, 53px, 57px);
-    width: 1050px;
+    max-width: 1150px;
   }
 }

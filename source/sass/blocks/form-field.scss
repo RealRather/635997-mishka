@@ -1,1 +1,160 @@
 /* form-field */
+.form-field__type {
+  margin-bottom: 30px;
+}
+
+.form-field__color {
+  margin-bottom: 28px;
+}
+
+.form-field__fio {
+  margin-bottom: 32px;
+
+  legend {
+    margin-bottom: 29px;
+  }
+}
+
+.form-field__email {
+  margin-bottom: 33px;
+
+  legend {
+    margin-bottom: 22px;
+
+    &::after {
+      left: 80px;
+      width: 179px;
+    }
+  }
+}
+
+.form-field__phone {
+  margin-bottom: 31px;
+
+  legend {
+    margin-bottom: 22px;
+  }
+}
+
+.form-field__extra {
+  margin-bottom: 12px;
+
+  legend {
+    margin-bottom: 27px;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .form-field {
+    @include reset-list;
+
+    legend {
+      @include reset-list;
+      top: 22%;
+    }
+  }
+
+  .form-field__type {
+    @include reset-list;
+    padding-top: 15px;
+    padding-bottom: 21px;
+
+    legend {
+      top: 17%;
+    }
+  }
+
+  .form-field__color {
+    @include reset-list;
+    padding-top: 51px;
+    padding-bottom: 23px;
+    background-color: $light-grey;
+  }
+
+  .form-field__fio {
+    padding-top: 66px;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+
+
+  .form-field__email {
+    padding-top: 22px;
+    padding-bottom: 32px;
+    margin-bottom: 21px;
+    background-color: $light-grey;
+  }
+
+  .form-field__phone {
+    @include reset-list;
+    padding-top: 63px;
+    padding-bottom: 0;
+    background-color: $light-grey;
+
+    legend {
+      top: 56%;
+    }
+  }
+
+  .form-field__extra {
+    margin-bottom: 35px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+
+    legend {
+      top: 25%;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .form-field {
+    legend {
+      top: 25%;
+      left: 9.6%;
+    }
+  }
+
+  .form-field__type {
+    padding-top: 15px;
+    padding-bottom: 24px;
+
+    legend {
+      top: 16%;
+      left: 9.9%;
+    }
+  }
+
+  .form-field__color {
+    padding-bottom: 25px;
+
+    ul {
+      width: 62%;
+      margin-left: 19.7%;
+    }
+
+    legend {
+      top: 29.4%;
+    }
+  }
+
+  .form-field__fio {
+    padding-bottom: 13px;
+    padding-top: 64px;
+
+    legend {
+      top: 22%;
+    }
+  }
+
+  .form-field__phone {
+    legend {
+      top: 56%;
+      left: 9.7%;
+    }
+  }
+
+  .form-field__extra {
+    margin-bottom: 31px;
+  }
+}

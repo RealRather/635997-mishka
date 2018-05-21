@@ -1,16 +1,17 @@
 /* additional-list */
 .additional-list {
+  @include reset-list;
+  display: none;
   list-style: none;
 
-  @include reset-list;
   @include paint-bg ($white, $black);
   background-color: transparent;
+  width: 100%;
 }
 
 .additional-list__item {
   @include reset-list;
-
-  align-content: center;
+  display: block;
 }
 
 .additional-list__link {
@@ -27,19 +28,28 @@
 
 @media screen and (min-width: $tablet-width) {
   .additional-list {
+    @include reset-list;
+    padding-top: 14px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 58px;
+    justify-content: flex-end;
+    order: 3;
+    background-color: transparent;
+    width: 50%;
   }
 
   .additional-list__item {
-    display: flex;
-    align-items: center;
+    @include reset-list;
+    border: none;
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .additional-list__link {
+    @include reset-list;
     display: block;
+    text-align: right;
 
     &--hidden {
       display: none;
@@ -49,23 +59,34 @@
 
 @media screen and (min-width: $desktop-width) {
   .additional-list {
-    width: 1050px;
-    min-height: 60px;
+    @include reset-list;
+    padding-top: 17px;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .additional-list__item {
-    margin-right: auto;
+    &--hidden {
+      display: block;
+      margin-right: auto;
+      width: 15.6%;
 
-    &--new {
-      margin-right: 62px;
+      &:nth-child(1) {
+        margin-right: 5.3%;
+      }
     }
 
     &--delivery {
       margin-right: 0;
+      width: 33%;
     }
   }
 
-  .additional-list__link--hidden {
-    display: block;
+  .additional-list__link {
+    text-align: left;
+
+    &--delivery {
+      text-align: right;
+    }
   }
 }
