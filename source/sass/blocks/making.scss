@@ -2,17 +2,25 @@
 .making {
   @include reset-list;
   margin: 0 auto;
-  width: 260px;
+}
+
+.making__wrapper {
+  @include mobile-container;
+  margin-top: 32px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @media screen and (min-width: $tablet-width) {
-  .making {
-    width: 668px;
+  .making__wrapper {
+    @include tablet-container;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
-  .making {
-    width: 1050px;
+  .making__wrapper {
+    @include desktop-container;
+    width: 100%;
   }
 }

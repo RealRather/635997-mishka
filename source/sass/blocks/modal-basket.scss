@@ -2,12 +2,11 @@
 .modal-basket {
   @include reset-list;
   margin: 0 auto;
-  width: 320px;
   min-height: 336px;
 }
 
 .modal-basket__wrapper {
-  @include reset-list;
+  @include mobile-container;
   margin: 0 auto;
   padding-top: 32px;
   padding-bottom: 45px;
@@ -20,19 +19,18 @@
   box-shadow:
     0 0 2px 0 $border-grey,
     0 5px 5px 0 $border-grey;
-  width: 320px;
-  /*временно*/
-  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .modal-basket__title {
   @include reset-list;
   margin-bottom: 10px;
+  padding: 0 50px;
   text-align: center;
   text-transform: uppercase;
 
   @include set-font(bold, 25px, 30px);
-  width: 155px;
 }
 
 .modal-basket__choice {
@@ -53,6 +51,7 @@
 .modal-basket__add {
   @include reset-list;
   font-family: inherit;
+  width: 100%;
 }
 
 .modal-basket__add-to {
@@ -67,17 +66,16 @@
   @include set-font (bold, 17px, 16px);
   @include paint-bg (#63d1bb, $white);
   border: none;
-  width: 260px;
+  width: 100%;
 }
 
 @media screen and (min-width: $tablet-width) {
-  .modal-basket {
-    width: 566px;
-  }
-
   .modal-basket__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
     border: 1px solid $border-grey;
-    width: 566px;
+    width: 73.7%;
+    max-width: 569px;
   }
 
   .modal-basket__title {
@@ -85,6 +83,20 @@
     margin-bottom: 20px;
 
     @include set-font (bold, 30px, 57px);
-    width: 365px;
+  }
+
+  .modal-basket__add {
+    margin: 0 auto;
+    width: 75.4%;
+  }
+
+  .modal-basket__add-to {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .modal-basket__wrapper {
+    width: 49.2%;
   }
 }

@@ -8,7 +8,7 @@
   justify-content: space-between;
 
   @include paint-bg (inherit, inherit);
-  width: 260px;
+  width: 100%;
 }
 
 .parameter__item {
@@ -16,18 +16,27 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 52px;
-  width: 82px;
+  width: 30%;
 }
 
 .parameter__size {
   @include reset-list;
+  padding: 16px 34px;
   display: flex;
   justify-content: center;
 
   @include set-font (bold, 17px, 16px);
   @include paint-bg ($white, $dark-grey);
-  border: 1px solid $border-grey;
-  height: 52px;
-  width: 82px;
+  border: 2px solid $border-grey;
+  width: 100%;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .parameter {
+    width: 75.4%;
+  }
+
+  .parameter__size {
+    padding: 17px 49px;
+  }
 }

@@ -1,52 +1,8 @@
 /* page-header */
 .page-header {
-  width: 320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-
   @include paint-bg ($white, $black);
 }
 
 .page-header__nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.page-header__logo {
-  display: flex;
-  justify-content: center;
-  height: 79px;
-}
-
-@media screen and (min-width: $tablet-width) {
-  .page-header {
-    width: 668px;
-    padding: 0 50px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    min-height: 133px;
-  }
-
-  .page-header__logo {
-    justify-content: flex-start;
-    order: 1;
-    width: 156px;
-    min-height: 88px;
-  }
-}
-
-@media screen and (min-width: $desktop-width) {
-  .page-header {
-    width: 1050px;
-    padding: 0 100px;
-  }
-
-  .page-header__logo {
-    margin-left: -48px;
-    justify-content: center;
-    order: 2;
-    min-height: 88px;
-  }
+  position: relative;
 }

@@ -2,74 +2,69 @@
 .site-list {
   @include reset-list;
   list-style: none;
-  width: 320px;
-  /*временно для сетки*/
-  min-height: 158px;
 
   @include paint-bg ($white, $black);
 }
 
 .site-list__item {
-  display: flex;
-  align-items: center;
-  align-content: center;
-
   @include reset-list;
-
-  padding-left: 76px;
-  min-height: 78px;
+  padding: 27px 30px;
+  display: block;
   border-top: 1px solid $border-grey;
 }
 
 .site-list__link {
+  @include reset-list;
+  padding-left: 17.7%;
   display: block;
   text-decoration: none;
 
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $tablet-width) {
   .site-list {
     @include reset-list;
-    display: flex;
+    padding-top: 15px;
     justify-content: space-between;
+    order: 2;
     background-color: transparent;
-    width: 100%;
-    min-height: 58px;
+    width: 45.5%;
   }
 
   .site-list__item {
     @include reset-list;
-    display: flex;
-    align-items: center;
     border: none;
-    min-height: 58px;
-
-    &--knitting {
-      margin-right: 29px;
-    }
   }
 
   .site-list__link {
+    @include reset-list;
     font-size: 15px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .site-list {
-    justify-content: flex-start;
-    width: 100%;
+    @include reset-list;
+    justify-content: space-between;
+    order: 1;
+    width: 37.7%;
   }
 
   .site-list__item {
     @include reset-list;
-    min-height: 88px;
+
+    &--knitting {
+      text-align: center;
+      width: 50%;
+    }
 
     &--catalog {
-      margin-right: 35px;
-      padding-right: 35px;
-      border-right: 1px solid $border-grey;
+      padding: 32px 0;
+      border-right: 1px solid #e5e5e5;
+      width: 46.5%;
     }
   }
 

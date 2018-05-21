@@ -2,67 +2,88 @@
 .user-list {
   @include reset-list;
   list-style: none;
-  width: 320px;
-  /*временно для сетки*/
-  min-height: 158px;
 
   @include paint-bg ($white, $black);
 }
 
 .user-list__item {
-  display: flex;
-  align-items: center;
-  align-content: center;
-
   @include reset-list;
-
-  padding-left: 76px;
-  min-height: 78px;
+  padding: 27px 30px;
+  display: block;
   border-top: 1px solid $border-grey;
 }
 
 .user-list__link {
+  @include reset-list;
+  padding-left: 17.7%;
+  display: block;
+
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
-
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: $tablet-width) {
   .user-list {
     @include reset-list;
-    display: flex;
+    margin-left: auto;
     justify-content: space-between;
-    width: 100%;
-    min-height: 88px;
+    align-items: center;
+    order: 1;
+    background-color: transparent;
+    width: 52%;
   }
 
   .user-list__item {
     @include reset-list;
-    display: flex;
-    align-items: center;
     border: none;
-
-    &--search {
-      border-left: 1px solid $border-grey;
-      border-right: 1px solid $border-grey;
-      width: 81px;
-    }
+    box-sizing: border-box;
+    white-space: nowrap;
 
     &--basket {
-      justify-content: flex-end;
+      padding-bottom: 7px;
+    }
+
+    &--search {
+      @include reset-list;
+      padding: 45px 0;
+      border: none;
+      border-left: 1px solid $border-grey;
+      border-right: 1px solid $border-grey;
+      width: 24%;
     }
   }
 
   .user-list__link {
-    display: block;
+    @include reset-list;
+    text-align: right;
+  }
+
+  .user-list__search {
+    &--hidden {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
+  .user-list {
+    @include reset-list;
+    order: 3;
+    width: 33.3%;
+  }
+
   .user-list__item {
+    @include reset-list;
+
     &--search {
-      width: 83px;
+      padding: 44px 0;
+      width: 24%;
     }
+  }
+
+  .user-list__link {
+    padding-right: 2px;
   }
 }
