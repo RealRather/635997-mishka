@@ -73,6 +73,12 @@
 
   &--video {
     margin-bottom: 26px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -173,16 +179,15 @@
       margin-bottom: 39px;
       order: 0;
       width: 100%;
-      min-height: 454px; /*временно*/
 
       img {
-        height: auto;
+        height: 100%;
+        width: 100%;
       }
     }
   }
 
   .catalog-card__image {
-    height: 331px;  /*временно*/
     width: 100%;
   }
 
@@ -251,11 +256,6 @@
 
   .catalog-card__video {
     position: static;
-
-    img {
-      width: 668px;
-      height: 455px;
-    }
   }
 
   .catalog-card__do {
@@ -305,10 +305,6 @@
   .catalog-card__picture {
     @include reset-list;
     margin-bottom: 25px;
-
-    img {
-      min-height: 461px;
-    }
 
     &--video {
       margin-bottom: 0;
@@ -369,10 +365,6 @@
     @include reset-list;
     margin-right: 20px;
 
-    img {
-      width: 682px;
-      height: 455px;
-    }
   }
 
   .catalog-card__text {
