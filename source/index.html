@@ -17,7 +17,11 @@
                 <div class="main-nav__wrapper">
                     <div class="main-nav__logo">
                         <a class="main-nav__logo-link">
-                            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mimimishka Shop">
+                            <picture>
+                                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                                <source media="(min-width:768px)" srcset ="img/logo-tablet.svg">
+                                <img class="main-nav__logo-image" src="img/logo-mobile.svg" alt="Mimimishka Shop">
+                            </picture>
                         </a>
                     </div>
                     <ul class="main-nav__list site-list">
@@ -111,7 +115,11 @@
                                 </tr>
                             </table>
                             <p class="products__picture">
-                                <img class="products__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+                                <picture>
+                                    <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                                    <img class="products__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+                                </picture>
                             </p>
                             <div class="products__price">Цена: 990 руб.</div>
                             <a class="button products__order" href="#">Заказать</a>
@@ -204,7 +212,12 @@
                         </table>
                     </div>
                     <div class="contacts__map">
-                        <img class="contacts__map-img" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта">
+                        <picture>
+                            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                            <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+                        </picture>
+                        <iframe class="contacts__map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.396461306528!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1526993412094" width="100%" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                     <a class="contacts__write button" href="mailto:info@mimimishkashop.ru">Напишите нам</a>
                 </div>
@@ -214,7 +227,7 @@
         <footer class="page-footer">
             <div class="page-footer__wrapper">
                 <a class="page-footer__logo page-footer__logo--hidden">
-                    <img class="page-footer__logo-image" href="#" src="img/logo-mobile.svg" width="102" height="34" alt="Mimimishka Shop">
+                    <img class="page-footer__logo-image" href="#" src="img/logo-footer.svg" width="102" height="34" alt="Mimimishka Shop">
                 </a>
                 <div class="page-footer__social social">
                     <ul class="social__list">
@@ -258,6 +271,5 @@
                 </p>
             </div>
         </section>
-
     </body>
 </html>
