@@ -72,7 +72,7 @@
   width: 100%;
 
   &--video {
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     width: 100%;
 
     img {
@@ -159,7 +159,7 @@
 
   .catalog-card {
     @include reset-list;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
     flex-direction: row;
     flex-wrap: nowrap;
 
@@ -176,12 +176,12 @@
     height: 100%;
 
     &--video {
-      margin-bottom: 39px;
+      margin-bottom: 32px;
       order: 0;
       width: 100%;
 
       img {
-        height: 100%;
+        height: auto;
         width: 100%;
       }
     }
@@ -272,7 +272,7 @@
 
   .catalog__wrapper {
     @include desktop-container;
-    margin: 130px auto 57px;
+    margin: 130px auto 58px;
     width: 100%;
   }
 
@@ -296,7 +296,7 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 104px;
+      margin-bottom: 98px;
       flex-direction: row;
       width: 100%;
     }
@@ -325,7 +325,7 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 61px;
+      margin-bottom: 68px;
       margin-top: auto;
       padding-left: 77px;
       padding-right: 61px;
@@ -341,7 +341,7 @@
       @include reset-list;
       position: absolute;
       right: 9.6%;
-      top: 21%;
+      top: 20.5%;
       width: 18%;
     }
   }
