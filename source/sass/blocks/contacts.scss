@@ -120,10 +120,23 @@
     margin-bottom: 49px;
     margin-left: -5px;
     padding-top: 59px;
+    position: relative;
 
     @include set-font (bold, 43px, 50px);
     text-align: left;
     width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+      background-size: 47px 81px;
+      top: 35px;
+      right: 0;
+      width: 47px;
+      height: 81px;
+    }
   }
 
   .contacts__list {
@@ -210,6 +223,12 @@
 
     @include set-font (bold, 53px, 57px);
     width: 100%;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: -120px;
+    }
   }
 
   .contacts__list {

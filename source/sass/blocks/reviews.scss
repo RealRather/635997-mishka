@@ -45,7 +45,7 @@
 
 .reviews__author {
   @include reset-list;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   display: flex;
   flex-direction: column;
 }
@@ -73,8 +73,7 @@
 
 .reviews__toggle {
   @include reset-list;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding: 25px 0;
 
   @include set-font (bold, 17px, 24px);
   @include paint-bg ($white, $black);
@@ -84,12 +83,20 @@
   &--left {
     padding-left: 37px;
     padding-right: 40px;
+    cursor: pointer;
+    background-image: url("../img/icon-left-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   &--right {
     padding-right: 37px;
     padding-left: 40px;
     border-left: none;
+    cursor: pointer;
+    background-image: url("../img/icon-right-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
