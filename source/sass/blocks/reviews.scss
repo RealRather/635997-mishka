@@ -196,15 +196,15 @@
 
   .reviews__toggles {
     @include reset-list;
-    margin-right: 50px;
-    margin-bottom: 53.5px;
+    margin-right: 56px;
+    margin-bottom: 53px;
     flex-direction: row;
     justify-content: space-between;
     order: 5;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 167px;
+    width: 162px;
   }
 
   .reviews__toggle {

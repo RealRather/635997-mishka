@@ -107,7 +107,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .contacts {
-    margin-bottom: 57.5px;
+    margin-bottom: 59px;
   }
 
   .contacts__wrapper {
@@ -132,8 +132,8 @@
       background-image: url("../img/icon-flag.svg");
       background-repeat: no-repeat;
       background-size: 47px 81px;
-      top: 35px;
-      right: 0;
+      top: 45px;
+      right: -2px;
       width: 47px;
       height: 81px;
     }
@@ -186,7 +186,7 @@
 
   .contacts__map {
     @include reset-list;
-    margin: 0 -50px 49px;
+    margin: 0 -50px 50px;
   }
 
   .contacts__write {
