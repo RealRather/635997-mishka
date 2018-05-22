@@ -177,10 +177,17 @@
     bottom: -4px;
     right: 0;
     width: 50%;
+
+    img {
+      width: auto;
+    }
   }
 
   .products__image {
-    height: 404px; /*временно*/
+    margin-left: auto;
+    display: block;
+    width: auto;
+
   }
 
   .products__price {
