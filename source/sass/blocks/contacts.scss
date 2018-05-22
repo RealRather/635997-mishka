@@ -198,7 +198,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .contacts {
-    margin-bottom: 105px;
+    margin-bottom: 101px;
     margin-top: 67px;
   }
 
@@ -226,8 +226,8 @@
 
     &::before {
       content: "";
-      top: 0;
-      left: -120px;
+      top: -7px;
+      left: -104px;
     }
   }
 
@@ -278,7 +278,7 @@
     @include reset-list;
     position: absolute;
     left: 19.6%;
-    bottom: 0;
+    bottom: 5px;
     width: 19.7%;
   }
 }
