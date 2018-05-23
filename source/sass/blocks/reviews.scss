@@ -87,6 +87,8 @@
     background-image: url("../img/icon-left-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
+
+
   }
 
   &--right {
@@ -97,6 +99,14 @@
     background-image: url("../img/icon-right-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3
   }
 }
 

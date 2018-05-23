@@ -63,6 +63,14 @@
     padding-right: 7%;
     min-height: 43px;
   }
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .catalog-card__picture {

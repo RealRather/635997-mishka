@@ -11,6 +11,15 @@
   @include set-font (bold, 18px, 20px);
   @include paint-bg ($white, $dark-grey);
   border: 2px solid $dark-grey;
+
+  &:hover {
+    background-color: $dark-grey;
+    color: $white;
+  }
+
+  &:active {
+    color: #818181;
+  }
 }
 
 @media screen and (min-width: $tablet-width),

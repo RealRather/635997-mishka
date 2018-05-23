@@ -66,6 +66,14 @@
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid #46c1ae;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {

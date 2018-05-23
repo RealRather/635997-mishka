@@ -11,6 +11,14 @@
   padding: 27px 30px;
   display: block;
   border-top: 1px solid $border-grey;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .site-list__link {
