@@ -3,6 +3,7 @@
   @include reset-list;
   @include paint-bg ($white, $black);
   background-color: transparent;
+  position: relative;
 }
 
 .main-nav__logo {
@@ -26,16 +27,15 @@
 .main-nav__toggle {
   @include reset-list;
   position: absolute;
-  z-index: 4;
+  z-index: 2;
   top: 0;
   right: 0;
   display: block;
 
   @include paint-bg (inherit, inherit);
-  background-color: grey; /*временно*/
   cursor: pointer;
   border: none;
-  width: 40px;
+  width: 70px;
   height: 77px;
 }
 
@@ -47,12 +47,36 @@
 }
 
 @media screen and (max-width: $mobile-only) {
+  .main-nav--open .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-menu-close.svg");
+      background-repeat: no-repeat;
+      z-index: 3;
+      top: 30px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   .main-nav--close .main-nav__list {
     display: none;
   }
 
-  .main-nav--close {
-
+  .main-nav--close .main-nav__toggle {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-menu-open.svg");
+      background-repeat: no-repeat;
+      z-index: 4;
+      top: 30px;
+      right: 30px;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
