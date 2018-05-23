@@ -17,8 +17,8 @@
 
 .promotion__title {
   @include reset-list;
-  margin-top: 27px;
-  margin-bottom: 28.5px;
+  margin-top: 26px;
+  margin-bottom: 29px;
   margin-left: -2px;
 
   @include set-font (bold, 25px, 30px);
@@ -50,7 +50,7 @@
 @media screen and (min-width: $tablet-width) {
   .promotion {
     @include reset-list;
-    margin: 0 auto 33px;
+    margin: 0 auto 32px;
   }
 
   .promotion__wrapper {
@@ -63,7 +63,7 @@
   .promotion__title {
     @include reset-list;
     margin-top: 51px;
-    margin-bottom: 45.5px;
+    margin-bottom: 46px;
     margin-left: -6px;
 
     @include set-font (bold, 43px, 50px);
@@ -79,7 +79,7 @@
 
   .promotion__item {
     @include reset-list;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
     margin-right: 4.5%;
 
     &--clean {
