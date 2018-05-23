@@ -36,7 +36,7 @@
   cursor: pointer;
   border: none;
   width: 40px;
-  height: 79px;
+  height: 77px;
 }
 
 .main-nav__list {
@@ -44,6 +44,16 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+}
+
+@media screen and (max-width: $mobile-only) {
+  .main-nav--close .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--close {
+
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
