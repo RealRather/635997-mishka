@@ -135,12 +135,30 @@
 .catalog-card__buy {
   @include reset-list;
   padding-top: 22px;
+  position: relative;
 }
 
 .catalog-card__price {
   @include reset-list;
   @include set-font (bold, 15px, 24px);
   color: $black;
+}
+
+.catalog-card__icon-cart {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  opacity: 0.2;
+  fill: $black;
+
+  &:hover {
+    opacity: 1;
+    fill: #63d1bb;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog-card__do {

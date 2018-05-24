@@ -87,6 +87,11 @@
     padding: 0 15px;
     border: 2px solid $black;
   }
+
+  &--email,
+  &--phone {
+    position: relative;
+  }
 }
 
 .form__label {
@@ -177,6 +182,21 @@
   &[type="radio"]:checked + label::after,
   &[type="checkbox"]:checked + label::after {
     display: block;
+  }
+}
+
+.form__icon-mail,
+.form__icon-phone {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  opacity: 0.2;
+  fill: $black;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+    fill: #63d1bb;
   }
 }
 

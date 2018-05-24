@@ -13,6 +13,7 @@
 
 .page-footer__logo {
   @include reset-list;
+  cursor: pointer;
 
   &--hidden {
     display: none;
