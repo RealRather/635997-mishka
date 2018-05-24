@@ -11,6 +11,13 @@
   width: 100%;
 }
 
+.form__wrapper {
+  @include reset-list;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
 .form__legend {
   @include reset-list;
   margin-bottom: 25px;
@@ -217,6 +224,9 @@
     padding-top: 30px;
     padding-bottom: 28px;
     border: none;
+  }
+
+  .form__wrapper {
     position: relative;
     z-index: 60;
   }
@@ -375,21 +385,32 @@
     margin: 0;
   }
 
+  .form__wrapper {
+    @include desktop-container;
+  }
+
   .form__list {
     margin: auto;
     padding-right: 0;
-    width: 60.8%;
-    max-width: 1150px;
+    width: 66.7%;
+
+    &--color {
+      margin-left: 16.7%;
+      width: 68.1%;
+    }
   }
 
   .form__item {
     margin: auto;
-    width: 60.8%;
-    max-width: 1150px;
+    width: 66.7%;
 
     &--userdata {
       padding-bottom: 38px;
       width: 100%;
+    }
+
+    &--dop-info {
+      width: 66.7%;
     }
   }
 
