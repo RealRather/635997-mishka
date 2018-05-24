@@ -52,6 +52,16 @@
     @include paint-bg (#56c3b2, #ffffff);
   }
 
+  &--left:hover {
+    background-color: #59d5bc;
+  }
+
+  &--right:hover {
+    margin-top: -5px;
+    margin-bottom: 0;
+    background-color: #46c1ae;
+  }
+
   width: 100%;
 }
 
@@ -59,6 +69,7 @@
   @include mobile-container;
   margin: 0;
   padding: 27px 29px;
+  position: relative;
 
   @include set-font (bold, 19px, 24px);
   background-color: inherit;
@@ -67,7 +78,50 @@
   box-sizing: border-box;
   text-align: left;
   display: block;
+  cursor: pointer;
   width: 100%;
+
+  &:hover {
+    padding-bottom: 34px;
+  }
+
+  &:hover .assortment__icon-interior {
+    fill: #29a592;
+  }
+
+  &:hover .assortment__icon-toy {
+    fill: #239f8e;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active .assortment__icon-interior {
+    fill: #44c0aa;
+    opacity: 1;
+  }
+
+  &:active .assortment__icon-toy{
+    fill: #37b2a0;
+    opacity: 1;
+  }
+}
+
+.assortment__icon-toy,
+.assortment__icon-interior {
+  position: absolute;
+  top: 23px;
+  right: 9.5%;
+}
+
+.assortment__icon-interior {
+  fill: #3bb09d;
+}
+
+.assortment__icon-toy {
+  fill: #35a999;
+
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -116,6 +170,11 @@
     &--right {
       margin-left: 0;
     }
+
+    &--right:hover {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
     width: 50%;
   }
 
@@ -124,6 +183,10 @@
 
     @include set-font (bold, 20px, 30px);
     width: 100%;
+
+    &:hover {
+      padding-bottom: 37px;
+    }
   }
 }
 
@@ -161,5 +224,9 @@
 
   .assortment__item {
     padding: 27px 37px 31px;
+
+    &:hover {
+      padding-bottom: 36px;
+    }
   }
 }

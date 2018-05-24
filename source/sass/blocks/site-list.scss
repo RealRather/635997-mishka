@@ -11,14 +11,6 @@
   padding: 27px 30px;
   display: block;
   border-top: 1px solid $border-grey;
-
-  &:hover {
-    color: rgba(0, 0, 0, 0.6);
-  }
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .site-list__link {
@@ -30,6 +22,14 @@
   @include set-font (bold, 17px, 24px);
   @include paint-bg (inherit, inherit);
   box-sizing: border-box;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
