@@ -62,6 +62,18 @@
     padding-left: 34.6%;
     padding-right: 7%;
     min-height: 43px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-video.svg");
+      background-repeat: no-repeat;
+      width:32px;
+      height:32px;
+      top: 10px;
+      left: 30px;
+    }
   }
 
   &:hover {
@@ -81,6 +93,8 @@
 
   &--video {
     margin-bottom: 21px;
+    cursor: pointer;
+    display: block;
     width: 100%;
 
     img {
@@ -88,6 +102,21 @@
       height: auto;
     }
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.catalog-card__icon-play {
+  position: absolute;
+  width: 101px;
+  height: 77px;
+  top: 26%;
+  left: 31%;
+  z-index: 40;
 }
 
 .catalog-card__image {
@@ -255,6 +284,12 @@
       padding-right: 50px;
       order: 1;
       min-height: 35px;
+
+      &::before {
+        content: "";
+        top: 0;
+        left: 40px;
+      }
     }
   }
 
