@@ -40,7 +40,21 @@
     @include tablet-container;
     border-top: 1px solid $border-grey;
     box-sizing: border-box;
+    position: relative;
     width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+      bottom: -12px;
+      left: -4px;
+      height: 23px;
+      width: 100%;
+    }
   }
 
   .page-main__title {
@@ -63,6 +77,12 @@
     @include reset-list;
     padding-top: 93px;
     padding-bottom: 103px;
+
+    &::before {
+      content: "";
+      height: 29px;
+      background-size: auto 37px;
+    }
   }
 
   .page-main__title {
