@@ -126,8 +126,20 @@
 
 @media screen and (min-width: $tablet-width) {
   .assortment {
-    background-size: cover;
-    background-position: center top;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+      bottom: -12px;
+      left: -4px;
+      height: 23px;
+      width: 100%;
+    }
   }
 
   .assortment__wrapper {
@@ -137,6 +149,7 @@
     justify-content: center;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px auto;
+    background-position: center;
     box-sizing: border-box;
     width: 100%;
     min-height: 744px;
@@ -188,6 +201,12 @@
       padding-bottom: 37px;
     }
   }
+
+  .assortment__icon-toy,
+  .assortment__icon-interior {
+    top: 30px;
+    right: 10.5%;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -195,6 +214,12 @@
     @include reset-list;
     margin-bottom: 71px;
     background-size: 1250px 746px;
+
+    &::before {
+      content: "";
+      height: 29px;
+      background-size: auto 37px;
+    }
   }
 
   .assortment__wrapper {
@@ -228,5 +253,10 @@
     &:hover {
       padding-bottom: 36px;
     }
+  }
+
+  .assortment__icon-toy,
+  .assortment__icon-interior {
+    right: 7%;
   }
 }

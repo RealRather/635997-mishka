@@ -2,9 +2,13 @@
 .products {
   @include reset-list;
   margin: 0 auto 0;
-  padding-bottom: 44px;
+  padding-bottom: 43px;
 
   @include paint-bg ($white, $dark-grey);
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+  background-position: bottom;
 }
 
 .products__wrapper {
@@ -108,6 +112,7 @@
     margin: 0 auto;
     padding: 0;
     padding-bottom: 66px;
+    background-size: auto 16px;
   }
 
   .products__wrapper {
@@ -207,6 +212,7 @@
   .products {
     margin: 0 auto;
     padding-bottom: 99px;
+    background-size: auto 22px;
   }
 
   .products__wrapper {

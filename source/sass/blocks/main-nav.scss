@@ -92,6 +92,7 @@
   .main-nav__wrapper {
     @include tablet-container;
     position: relative;
+    z-index: 60;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
