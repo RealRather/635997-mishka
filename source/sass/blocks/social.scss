@@ -26,6 +26,26 @@
   display: block;
   text-decoration: none;
   color: inherit;
+
+  &:hover .social__icon-fb,
+  &:hover .social__icon-insta,
+  &:hover .social__icon-twitter {
+    fill: #63d1bb;
+  }
+
+  &:active .social__icon-fb,
+  &:active .social__icon-insta,
+  &:active .social__icon-twitter {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.social__icon-fb,
+.social__icon-insta,
+.social__icon-twitter {
+  cursor: pointer;
+  fill: $black;
 }
 
 @media screen and (min-width: $tablet-width) {

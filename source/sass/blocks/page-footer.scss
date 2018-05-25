@@ -18,6 +18,20 @@
   &--hidden {
     display: none;
   }
+
+  &:hover .page-footer__logo-image {
+    fill: #63d1bb;
+  }
+
+  &:active .page-footer__logo-image {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo-image {
+  cursor: pointer;
+  fill: $black;
 }
 
 .page-footer__social {
