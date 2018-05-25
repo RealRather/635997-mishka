@@ -10,6 +10,7 @@ var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -25,6 +26,18 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("serve", ["style"], function() {
+  server.init({
+    server: "source/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
+
+  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/*.html").on("change", server.reload);
+});
 
 gulp.task("webp", function() {
   return gulp.src("source/img/**/*.{png,jpg}")
@@ -42,15 +55,11 @@ gulp.task("images", function() {
     .pipe(gulp.dest("source/img"));
 });
 
-gulp.task("serve", ["style"], function() {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/*.html").on("change", server.reload);
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
 });
