@@ -50,8 +50,8 @@
   opacity: 0.2;
   fill: $black;
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: 3px;
+  left: 0px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -95,6 +95,16 @@
       display: none;
     }
   }
+
+  .user-list__icon-search {
+    top: -8px;
+    left: 33px;
+  }
+
+  .user-list__icon-cart {
+    top: 5px;
+    left: -51px;
+  }
 }
 
 @media screen and (min-width: $desktop-width) {
@@ -115,5 +125,14 @@
 
   .user-list__link {
     padding-right: 2px;
+  }
+
+  .user-list__icon-search {
+    top: -6px;
+    left: 32px;
+  }
+
+  .user-list__icon-cart {
+    top: 3px;
   }
 }

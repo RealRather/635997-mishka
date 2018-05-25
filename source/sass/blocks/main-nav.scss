@@ -12,7 +12,7 @@
 
 .main-nav__logo-link {
   @include reset-list;
-  padding: 21px 0;
+  padding: 22px 0 21px;
   display: block;
   text-decoration: none;
 }
@@ -80,8 +80,8 @@
       background-image: url("../img/icon-menu-open.svg");
       background-repeat: no-repeat;
       z-index: 4;
-      top: 30px;
-      right: 30px;
+      top: 32px;
+      right: 31px;
       width: 20px;
       height: 20px;
     }

@@ -32,7 +32,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .page-footer {
-    padding: 52px 0 48px;
+    padding: 51px 0 42px;
   }
 
   .page-footer__wrapper {
@@ -46,6 +46,7 @@
 
   .page-footer__logo {
     @include reset-list;
+    margin-bottom: 10px;
 
     &--hidden {
       display: block;
@@ -69,16 +70,8 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .page-footer {
-    padding: 51px 0 42px;
-  }
-
   .page-footer__wrapper {
     @include desktop-container;
     width: 100%;
-  }
-
-  .page-footer__logo {
-    margin-bottom: 10px;
   }
 }
