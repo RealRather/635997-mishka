@@ -50,7 +50,7 @@
 
     legend {
       @include reset-list;
-      top: 22%;
+      top: 11%;
     }
   }
 
@@ -58,10 +58,6 @@
     @include reset-list;
     padding-top: 15px;
     padding-bottom: 21px;
-
-    legend {
-      top: 17%;
-    }
   }
 
   .form-field__color {
@@ -69,12 +65,20 @@
     padding-top: 51px;
     padding-bottom: 23px;
     background-color: $light-grey;
+
+    legend {
+      top: 7%;
+    }
   }
 
   .form-field__fio {
     padding-top: 66px;
     padding-bottom: 32px;
     margin-bottom: 0;
+
+    legend {
+      top: 1%;
+    }
   }
 
 
@@ -83,6 +87,10 @@
     padding-bottom: 32px;
     margin-bottom: 21px;
     background-color: $light-grey;
+
+    legend {
+      top: 3%;
+    }
   }
 
   .form-field__phone {
@@ -92,50 +100,37 @@
     background-color: $light-grey;
 
     legend {
-      top: 56%;
+      top: 5%;
     }
   }
 
   .form-field__extra {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     padding-top: 30px;
     padding-bottom: 18px;
-
-    legend {
-      top: 25%;
-    }
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .form-field {
     legend {
-      top: 25%;
-      left: 9.6%;
+      top: 11%;
+      left: 9.7%;
     }
   }
 
   .form-field__type {
     padding-top: 15px;
     padding-bottom: 24px;
-
-    legend {
-      top: 16%;
-      left: 9.9%;
-    }
   }
 
   .form-field__color {
     padding-bottom: 25px;
 
-    ul {
+    /*ul {
       width: 62%;
       margin-left: 19.7%;
-    }
-
-    legend {
-      top: 29.4%;
-    }
+    }*/
   }
 
   .form-field__fio {
@@ -143,14 +138,19 @@
     padding-top: 64px;
 
     legend {
-      top: 22%;
+      top: 1.8%;
     }
   }
 
   .form-field__phone {
     legend {
-      top: 56%;
-      left: 9.7%;
+      top: 6%;
+    }
+  }
+
+  .form-field__email {
+    legend {
+      top: 8%;
     }
   }
 

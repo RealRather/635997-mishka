@@ -38,8 +38,87 @@
   margin-bottom: 27px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @include set-font (bold, 17px, 20px);
+
+  &--clean {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-flower.svg");
+      background-repeat: no-repeat;
+      top: 3px;
+      left: 7px;
+      width: 32px;
+      height: 37px;
+    }
+  }
+
+  &--price {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-money.svg");
+      background-repeat: no-repeat;
+      top: 4px;
+      left: 0;
+      width: 47px;
+      height: 27px;
+    }
+  }
+
+  &--likes {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-heart.svg");
+      background-repeat: no-repeat;
+      top: 8px;
+      left: 7px;
+      width: 33px;
+      height: 28px;
+    }
+  }
+
+  &--hand-made {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-ball.svg");
+      background-repeat: no-repeat;
+      top: 6px;
+      left: 3px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  &--native {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-rocket.svg");
+      background-repeat: no-repeat;
+      top: 7px;
+      left: -6px;
+      width: 54px;
+      height: 23px;
+    }
+  }
+
+  &--present {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon-feature-gift.svg");
+      background-repeat: no-repeat;
+      top: 4px;
+      left: 3px;
+      width: 33px;
+      height: 33px;
+    }
+  }
 }
 
 .promotion__description {

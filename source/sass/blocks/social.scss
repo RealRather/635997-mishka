@@ -1,7 +1,7 @@
 /* social */
 .social__list {
   @include reset-list;
-  padding: 20px 28px 35px;
+  padding: 26px 28px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -14,10 +14,10 @@
 
 .social__item {
   @include reset-list;
-  margin-right: 20px;
+  margin-right: 40px;
 
   &:nth-last-child(1) {
-    margin-right: 0;
+    margin-right: 5px;
   }
 }
 
@@ -31,18 +31,29 @@
 @media screen and (min-width: $tablet-width) {
   .social__list {
     @include reset-list;
+    margin-left: 80px;
     border: none;
   }
 
   .social__item {
     @include reset-list;
-    margin-right: 20px;
+    margin: 0 20px;
+
+    &:nth-last-child(1) {
+      margin: 0 20px;
+    }
+  }
+
+  .social__link {
+    margin: 0;
+    padding: 8px 0;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
   .social__list {
     margin: 0;
+    margin-left: 80px;
     justify-content: center;
   }
 }

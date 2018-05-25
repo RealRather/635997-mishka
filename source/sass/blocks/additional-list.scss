@@ -12,6 +12,16 @@
 .additional-list__item {
   @include reset-list;
   display: block;
+
+  &--hidden {
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 }
 
 .additional-list__link {
