@@ -41,7 +41,11 @@
     "node": "8.11"
   },
   "dependencies": {
+    "del": "^3.0.0",
+    "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.3",
-    "gulp-svgstore": "^6.1.1"
+    "gulp-svgstore": "^6.1.1",
+    "posthtml-include": "^1.1.0",
+    "run-sequence": "^2.2.1"
   }
 }
