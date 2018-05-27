@@ -31,6 +31,14 @@
   @include set-font (inherit, inherit, inherit);
 }
 
+.catalog-card__link {
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .catalog-card {
   @include reset-list;
   margin: 32px 0;
@@ -39,6 +47,7 @@
   display: flex;
   flex-direction: column;
   border: 1px solid $light-grey;
+  cursor: pointer;
 
   &--making {
     @include reset-list;
@@ -175,6 +184,12 @@
   @include reset-list;
   @include set-font (bold, 15px, 24px);
   color: $black;
+}
+
+.catalog-card__cart-link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-card__icon-cart {
