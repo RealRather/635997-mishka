@@ -94,6 +94,10 @@
       display: block;
     }
   }
+
+  .main-nav--withoutjs .main-nav__toggle {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
