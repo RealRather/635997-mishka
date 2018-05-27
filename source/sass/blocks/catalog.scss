@@ -186,6 +186,12 @@
   color: $black;
 }
 
+.catalog-card__cart-link {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-card__icon-cart {
   position: absolute;
   top: 22px;
