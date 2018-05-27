@@ -14,6 +14,7 @@
 .form__wrapper {
   @include reset-list;
   display: block;
+  border: none;
   box-sizing: border-box;
   width: 100%;
 }
