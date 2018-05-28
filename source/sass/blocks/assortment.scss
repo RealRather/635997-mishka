@@ -16,6 +16,7 @@
   background-size: 575px auto;
   background-position: center -16px;
   background-repeat: no-repeat;
+  position: relative;
   min-height: 487px;
 }
 
@@ -41,28 +42,11 @@
   @include reset-list;
   margin: auto 0 0;
   text-align: left;
-
-  &--left {
-    @include paint-bg (#63d1bb, #ffffff);
-  }
-
-  &--right {
-    margin-top: 0;
-
-    @include paint-bg (#56c3b2, #ffffff);
-  }
-
-  &--left:hover {
-    background-color: #59d5bc;
-  }
-
-  &--right:hover {
-    margin-top: -5px;
-    margin-bottom: 0;
-    background-color: #46c1ae;
-  }
-
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .assortment__item {
@@ -70,10 +54,6 @@
   margin: 0;
   padding: 27px 29px;
   position: relative;
-
-  @include set-font (bold, 19px, 24px);
-  background-color: inherit;
-  color: inherit;
   border: none;
   box-sizing: border-box;
   text-align: left;
@@ -82,8 +62,23 @@
   cursor: pointer;
   width: 100%;
 
-  &:hover {
-    padding-bottom: 34px;
+  @include set-font (bold, 19px, 24px);
+
+
+  &--interior {
+    @include paint-bg (#63d1bb, #ffffff);
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+  }
+
+  &--toy {
+    @include paint-bg (#56c3b2, #ffffff);
+
+    &:hover {
+      @include paint-bg (#56c3b2, #ffffff);
+    }
   }
 
   &:hover .assortment__icon-interior {
@@ -135,8 +130,8 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 23px;
-      bottom: -12px;
-      left: -4px;
+      bottom: 0;
+      left: -5px;
       height: 23px;
       width: 100%;
     }
@@ -147,12 +142,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px auto;
-    background-position: center;
+    background-position: center -3px;
     box-sizing: border-box;
     width: 100%;
-    min-height: 744px;
+    min-height: 756px;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -164,7 +160,7 @@
 
   .assortment__title {
     @include reset-list;
-    padding-top: 29px;
+    padding-top: 151px;
     padding-bottom: 10px;
 
     @include set-font (bold, 43px, 50px);
@@ -174,31 +170,30 @@
     @include reset-list;
     margin: auto;
     margin-bottom: 0;
-    /*width: calc(#{$tablet-width} * 0.5 - 50px);*/
-
-    &--left {
-      margin-right: 0;
-    }
-
-    &--right {
-      margin-left: 0;
-    }
-
-    &--right:hover {
-      margin-top: auto;
-      margin-bottom: 0;
-    }
-    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: calc(#{percentage(1)} - 100px);
   }
 
   .assortment__item {
-    padding: 27px 36px 32px;
+    padding: 27px 36px 43px;
 
     @include set-font (bold, 20px, 30px);
-    width: 100%;
+    width: 50%;
+
+  /*  &--interior
+     &:hover {
+        padding-bottom: 37px;
+    }
+
+    &--toy
+      &:hover {
+        padding-bottom: 37px;
+    }*/
 
     &:hover {
-      padding-bottom: 37px;
+      bottom: 5px;
+      padding-bottom: 48px;
     }
   }
 
@@ -213,7 +208,7 @@
   .assortment {
     @include reset-list;
     margin-bottom: 71px;
-    background-size: 1250px 746px;
+    background-size: 1250px auto;
 
     &::before {
       content: "";
@@ -225,7 +220,7 @@
   .assortment__wrapper {
     @include desktop-container;
     background-image: url("../img/hero-desktop@1x.jpg");
-    min-height: 745px;
+    min-height: 756px;
     width: 100%;
   }
 
@@ -237,18 +232,13 @@
 
   .assortment__title {
     @include reset-list;
-    padding-top: 35px;
+    padding-top: 154px;
 
     @include set-font (bold, 53px, 57px);
   }
 
-  .assortment__item-wrapper {
-    /*width: calc(#{$desktop-width} * 0.5 - 50px);*/
-    width: 50%;
-  }
-
   .assortment__item {
-    padding: 27px 37px 31px;
+    padding: 27px 37px 43px;
 
     &:hover {
       padding-bottom: 36px;
