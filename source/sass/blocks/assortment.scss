@@ -181,16 +181,6 @@
     @include set-font (bold, 20px, 30px);
     width: 50%;
 
-  /*  &--interior
-     &:hover {
-        padding-bottom: 37px;
-    }
-
-    &--toy
-      &:hover {
-        padding-bottom: 37px;
-    }*/
-
     &:hover {
       bottom: 5px;
       padding-bottom: 48px;
