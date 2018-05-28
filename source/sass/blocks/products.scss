@@ -122,7 +122,7 @@
 
   .products__header {
     @include reset-list;
-    margin-top: 45px;
+    margin-top: 33px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -213,6 +213,7 @@
     margin: 0 auto;
     padding-bottom: 99px;
     background-size: auto 22px;
+    max-width: 1150px;
   }
 
   .products__wrapper {
@@ -222,7 +223,7 @@
   }
 
   .products__header {
-    margin-top: 52px;
+    margin-top: 40px;
     margin-bottom: 57px;
   }
 
