@@ -2,7 +2,33 @@
 .modal-basket {
   @include reset-list;
   margin: 0 auto;
+  position: fixed;
+  z-index: 600;
+  top: calc(35%);
+  display: none;
+  width: calc(100%);
+  min-width: 320px;
   min-height: 336px;
+
+  &--open {
+    display: block;
+  }
+
+  &--close {
+    display: none;
+  }
+}
+
+.modal-basket__container-overlay {
+  @include reset-list;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 320px;
+  width: calc(100%);
+  height: calc(1000vw);
 }
 
 .modal-basket__wrapper {
@@ -20,6 +46,8 @@
     0 0 2px 0 $border-grey,
     0 5px 5px 0 $border-grey;
   box-sizing: border-box;
+  position: relative;
+  z-index: 450;
   width: 100%;
 }
 
@@ -51,6 +79,7 @@
 .modal-basket__add {
   @include reset-list;
   font-family: inherit;
+  cursor: pointer;
   width: 100%;
 }
 

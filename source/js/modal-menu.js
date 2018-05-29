@@ -1,3 +1,4 @@
+/*modal-menu*/
 var navMenu = document.querySelector(".main-nav");
 var mainToogle = document.querySelector(".main-nav__toggle");
 navMenu.classList.remove("main-nav--withoutjs");
