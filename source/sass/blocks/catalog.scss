@@ -61,6 +61,7 @@
 .catalog-card__title {
   @include reset-list;
   margin-bottom: 6px;
+  display: block;
 
   @include set-font (bold, 17px, 24px);
   color: $black;
@@ -97,11 +98,11 @@
 .catalog-card__picture {
   @include reset-list;
   margin-bottom: 25px;
-  display: flex;
+  display: block;
   width: 100%;
 
   &--video {
-    margin-bottom: 21px;
+    margin-bottom: 27px;
     position: relative;
     display: block;
     width: 100%;
@@ -152,15 +153,17 @@
 .catalog-card__description {
   @include reset-list;
   padding-bottom: 19px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  display: block;
+  /*flex-direction: column;
+  align-items: flex-start;*/
   border-bottom: 1px solid $light-grey;
   width: 100%;
 }
 
 .catalog-card__text {
   @include reset-list;
+  display: block;
+
   @include set-font (normal, 13px, 30px);
   color: $dark-grey;
 
@@ -238,7 +241,7 @@
     flex-wrap: nowrap;
 
     &--making {
-      margin-bottom: 65px;
+      margin-bottom: 63px;
       flex-direction: column;
       width: 100%;
     }
@@ -246,11 +249,11 @@
 
   .catalog-card__picture {
     @include reset-list;
-    width: 61%;
+    width: 100%;
     height: 100%;
 
     &--video {
-      margin-bottom: 32px;
+      margin-bottom: 39px;
       order: 0;
       width: 100%;
 
@@ -272,7 +275,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    width: 82%;
 
     &--making {
       @include reset-list;
@@ -292,7 +295,7 @@
 
   .catalog-card__title {
     @include reset-list;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 
     @include set-font (bold, 20px, 24px);
 
@@ -306,7 +309,7 @@
 
       &::before {
         content: "";
-        top: -4px;
+        top: -5px;
         left: 40px;
       }
     }
@@ -325,7 +328,7 @@
   .catalog-card__buy {
     @include reset-list;
     margin-left: 2%;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
     padding-top: 20px;
     border-top: 1px solid $light-grey;
   }
@@ -381,7 +384,7 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 98px;
+      margin-bottom: 103px;
       flex-direction: row;
       width: 100%;
     }
@@ -410,11 +413,11 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 68px;
+      margin-bottom: 62px;
       margin-top: auto;
-      padding-left: 77px;
+      padding-left: 79px;
       padding-right: 61px;
-      width: 46.6%;
+      width: 46.9%;
     }
 
     box-sizing: border-box;
@@ -422,6 +425,8 @@
   }
 
   .catalog-card__title {
+    margin-bottom: 7px;
+
     &--video {
       @include reset-list;
       position: absolute;
@@ -454,7 +459,6 @@
 
   .catalog-card__video {
     @include reset-list;
-    margin-right: 20px;
   }
 
   .catalog-card__text {
