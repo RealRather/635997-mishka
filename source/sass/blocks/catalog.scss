@@ -384,7 +384,7 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 98px;
+      margin-bottom: 103px;
       flex-direction: row;
       width: 100%;
     }
@@ -413,11 +413,11 @@
 
     &--making {
       @include reset-list;
-      margin-bottom: 68px;
+      margin-bottom: 62px;
       margin-top: auto;
-      padding-left: 77px;
+      padding-left: 79px;
       padding-right: 61px;
-      width: 46.6%;
+      width: 46.9%;
     }
 
     box-sizing: border-box;
@@ -425,6 +425,8 @@
   }
 
   .catalog-card__title {
+    margin-bottom: 7px;
+
     &--video {
       @include reset-list;
       position: absolute;
@@ -457,7 +459,6 @@
 
   .catalog-card__video {
     @include reset-list;
-    margin-right: 20px;
   }
 
   .catalog-card__text {
