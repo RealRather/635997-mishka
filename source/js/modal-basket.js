@@ -11,7 +11,7 @@ if (productsOpen) {
 }
 
 if (cartOpen) {
-  for (var i = 0; j < cartOpen.length; i++) {
+  for (var j = 0; j < cartOpen.length; j++) {
     cartOpen[j].addEventListener("click", function(evt) {
       evt.preventDefault();
       modBasket.classList.add("modal-basket--open");
