@@ -51,6 +51,7 @@
 .modal-basket__add {
   @include reset-list;
   font-family: inherit;
+  cursor: pointer;
   width: 100%;
 }
 
