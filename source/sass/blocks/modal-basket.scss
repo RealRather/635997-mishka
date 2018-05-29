@@ -10,12 +10,12 @@
   min-width: 320px;
   min-height: 336px;
 
-  &--open {
-    display: block;
-  }
-
   &--close {
     display: none;
+  }
+
+  &--open {
+    display: block;
   }
 }
 
