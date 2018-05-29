@@ -1,7 +1,7 @@
 var modBasket = document.querySelector(".modal-basket");
 var modToogle = document.querySelector(".modal-basket__add");
 var productsOpen = document.querySelector(".products__order");
-var cartOpen = document.querySelector(".catalog-card__cart-link");
+var cartOpen = document.querySelectorALL(".catalog-card__icon-cart");
 
 if (productsOpen) {
   productsOpen.addEventListener("click", function(evt) {
@@ -11,8 +11,8 @@ if (productsOpen) {
 }
 
 if (cartOpen) {
-  for (var i = 0; i < cartOpen.length; i++) {
-    cartOpen[i].addEventListener("click", function(evt) {
+  for (var j = 0; j < cartOpen.length; j++) {
+    cartOpen[j].addEventListener("click", function(evt) {
       evt.preventDefault();
       modBasket.classList.add("modal-basket--open");
     })
