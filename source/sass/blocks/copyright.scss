@@ -1,7 +1,7 @@
 /* copyright */
 .copyright {
   @include reset-list;
-  padding: 20px 0;
+  padding: 21px 0;
 }
 
 .copyright__link {
@@ -15,7 +15,6 @@
 
 .copyright__text {
   @include reset-list;
-  margin-left: 2%;
   display: inline-block;
 
   @include set-font (bold, 19px, 18px);
@@ -25,10 +24,10 @@
   @include reset-list;
   cursor: pointer;
   vertical-align: middle;
-  margin-left: 7%;
+  margin-left: 10%;
   margin-right: 0;
-  width: 41px;
-  height: 40px;
+  width: 27px;
+  height: 34px;
   fill: #63d1bb;
 
   &:hover {
@@ -52,12 +51,11 @@
 
   .copyright__text {
     @include reset-list;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .copyright__image {
     @include reset-list;
-    margin-left: 19px;
-    margin-right: -7px;
+    margin-left: 26px;
   }
 }
