@@ -23,7 +23,6 @@ modToogle.addEventListener("click", function(evt) {
   evt.preventDefault();
   if (modBasket.classList.contains("modal-basket--open")) {
     modBasket.classList.remove("modal-basket--open");
-    modBasket.classList.add("modal-basket--close");
   }
 });
 
@@ -32,7 +31,6 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (modBasket.classList.contains("modal-basket--open")) {
       modBasket.classList.remove("modal-basket--open");
-      modBasket.classList.add("modal-basket--close");
     }
   }
 });
