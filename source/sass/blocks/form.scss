@@ -185,6 +185,7 @@
   &--email {
     @include reset-list;
     opacity: 0.3;
+    background-color: transparent;
   }
 
   &[type="radio"]:checked + label::after,
@@ -341,7 +342,7 @@
     &--phone,
     &--email {
       padding-left: 13px;
-      background-color: inherit;
+      background-color: transparent;
       box-sizing: border-box;
     }
 
