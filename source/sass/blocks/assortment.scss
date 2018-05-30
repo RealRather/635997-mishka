@@ -65,7 +65,6 @@
 
   @include set-font (bold, 19px, 24px);
 
-
   &--interior {
     @include paint-bg (#63d1bb, #ffffff);
 
@@ -133,7 +132,7 @@
       background-size: auto 23px;
       bottom: 0;
       left: -5px;
-      height: 23px;
+      height: 22px;
       width: 100%;
     }
   }
@@ -173,6 +172,7 @@
     margin-bottom: 0;
     flex-direction: row;
     flex-wrap: nowrap;
+    left: 50px;
     width: calc(#{percentage(1)} - 100px);
   }
 
