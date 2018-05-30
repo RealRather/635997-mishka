@@ -53,6 +53,14 @@
     position: relative;
     z-index: 60;
   }
+
+  &:hover {
+    box-shadow: 0 5px 5px 0 #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 2px 2px 0 #ececec;
+  }
 }
 
 .catalog-card__title {
@@ -127,6 +135,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+    opacity: 0.6;
+  }
 }
 
 .catalog-card__image {
